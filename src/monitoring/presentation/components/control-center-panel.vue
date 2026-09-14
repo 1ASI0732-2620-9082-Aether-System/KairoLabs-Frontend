@@ -49,8 +49,16 @@ const props = defineProps({
 const { t, locale } = useI18n();
 
 const chartFont = () => ({
-  family: "'DM Sans', system-ui, sans-serif",
+  family: "'Outfit', system-ui, sans-serif",
 });
+
+const KL = {
+  navy: '#112433',
+  navyMid: '#1a3a4f',
+  orange: '#F37021',
+  teal: '#0d9488',
+  muted: '#64748b',
+};
 
 function numAvg(arr, key) {
   const vals = arr.map((x) => Number(x[key])).filter((n) => !Number.isNaN(n));
@@ -108,7 +116,10 @@ const kpis = computed(() => {
   const devs = devices.value;
   const temps = devs.map((d) => Number(d.temperature)).filter((n) => !Number.isNaN(n));
   const avgTemp = temps.length ? temps.reduce((a, b) => a + b, 0) / temps.length : null;
-  const openDoors = devs.filter((d) => String(d.door_status).toUpperCase() === 'OPEN').length;
+  const openDoors = devs.filter((d) => {
+    const s = String(d.door_status || '').toUpperCase();
+    return s === 'OPEN' || s === 'ABIERTA' || s === 'OPENED';
+  }).length;
   return {
     devices: devs.length,
     establishments: establishments.value.length,
@@ -124,7 +135,7 @@ const planCounts = computed(() => {
   for (const s of subscriptions.value) {
     const p = String(s.plan || '').toUpperCase();
     if (p === 'BASIC') c.BASIC++;
-    else if (p === 'PREMIUM') c.PREMIUM++;
+    else if (p === 'PREMIUM' || p === 'PROFESSIONAL' || p === 'PRO') c.PREMIUM++;
     else if (p === 'ENTERPRISE') c.ENTERPRISE++;
     else if (s.plan) c.OTHER++;
   }
@@ -138,8 +149,8 @@ const biometricData = computed(() => {
     return {
       labels: ['—'],
       datasets: [
-        { label: t('monitoring.ccLegendTemp'), data: [0], borderColor: '#0d9488', backgroundColor: 'rgba(13, 148, 136, 0.08)', fill: true, tension: 0.35, pointRadius: 4 },
-        { label: t('monitoring.ccLegendHum'), data: [0], borderColor: '#1e40af', backgroundColor: 'rgba(30, 64, 175, 0.06)', fill: true, tension: 0.35, pointRadius: 4 },
+        { label: t('monitoring.ccLegendTemp'), data: [0], borderColor: KL.orange, backgroundColor: 'rgba(243, 112, 33, 0.1)', fill: true, tension: 0.35, pointRadius: 4 },
+        { label: t('monitoring.ccLegendHum'), data: [0], borderColor: KL.navyMid, backgroundColor: 'rgba(17, 36, 51, 0.08)', fill: true, tension: 0.35, pointRadius: 4 },
       ],
     };
   }
@@ -149,22 +160,24 @@ const biometricData = computed(() => {
       {
         label: t('monitoring.ccLegendTemp'),
         data: devs.map((d) => Number(d.temperature) || 0),
-        borderColor: '#0d9488',
-        backgroundColor: 'rgba(13, 148, 136, 0.12)',
+        borderColor: KL.orange,
+        backgroundColor: 'rgba(243, 112, 33, 0.14)',
         fill: true,
         tension: 0.35,
         pointRadius: 4,
         pointHoverRadius: 6,
+        pointBackgroundColor: KL.orange,
       },
       {
         label: t('monitoring.ccLegendHum'),
         data: devs.map((d) => Number(d.humidity) || 0),
-        borderColor: '#1e40af',
-        backgroundColor: 'rgba(30, 64, 175, 0.08)',
+        borderColor: KL.navyMid,
+        backgroundColor: 'rgba(26, 58, 79, 0.1)',
         fill: true,
         tension: 0.35,
         pointRadius: 4,
         pointHoverRadius: 6,
+        pointBackgroundColor: KL.navyMid,
       },
     ],
   };
@@ -173,6 +186,7 @@ const biometricData = computed(() => {
 const biometricOptions = computed(() => ({
   responsive: true,
   maintainAspectRatio: false,
+  animation: { duration: 900, easing: 'easeOutQuart' },
   interaction: { intersect: false, mode: 'index' },
   plugins: {
     legend: {
@@ -184,12 +198,12 @@ const biometricOptions = computed(() => ({
         pointStyle: 'circle',
         boxWidth: 8,
         padding: 16,
-        color: '#64748b',
+        color: KL.muted,
         font: { ...chartFont(), size: 11, weight: '600' },
       },
     },
     tooltip: {
-      backgroundColor: '#0f172a',
+      backgroundColor: KL.navy,
       titleColor: '#f8fafc',
       bodyColor: '#e2e8f0',
       padding: 12,
@@ -201,13 +215,13 @@ const biometricOptions = computed(() => ({
   scales: {
     y: {
       grid: { color: '#f1f5f9', lineWidth: 1 },
-      ticks: { color: '#64748b', font: chartFont() },
+      ticks: { color: KL.muted, font: chartFont() },
       border: { display: false },
     },
     x: {
       grid: { display: false },
       ticks: {
-        color: '#64748b',
+        color: KL.muted,
         font: { ...chartFont(), size: 10 },
         maxRotation: 35,
         minRotation: 35,
@@ -245,9 +259,9 @@ const stabilityData = computed(() => {
       {
         label: t('monitoring.ccStability'),
         data: scores,
-        borderColor: '#0d9488',
-        backgroundColor: 'rgba(13, 148, 136, 0.18)',
-        pointBackgroundColor: '#0d9488',
+        borderColor: KL.teal,
+        backgroundColor: 'rgba(13, 148, 136, 0.2)',
+        pointBackgroundColor: KL.teal,
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#0f766e',
         borderWidth: 2,
@@ -259,10 +273,11 @@ const stabilityData = computed(() => {
 const radarOptions = computed(() => ({
   responsive: true,
   maintainAspectRatio: false,
+  animation: { duration: 900, easing: 'easeOutQuart' },
   plugins: {
     legend: { display: false },
     tooltip: {
-      backgroundColor: '#0f172a',
+      backgroundColor: KL.navy,
       titleColor: '#f8fafc',
       bodyColor: '#e2e8f0',
       padding: 12,
@@ -301,10 +316,10 @@ const efficiencyData = computed(() => {
         backgroundColor: (ctx) => {
           const chart = ctx.chart;
           const { ctx: c, chartArea } = chart;
-          if (!chartArea) return '#0d9488';
+          if (!chartArea) return KL.teal;
           const g = c.createLinearGradient(chartArea.left, 0, chartArea.right, 0);
-          g.addColorStop(0, '#0d9488');
-          g.addColorStop(1, '#1e40af');
+          g.addColorStop(0, KL.teal);
+          g.addColorStop(1, KL.navyMid);
           return g;
         },
         borderRadius: 8,
@@ -318,10 +333,11 @@ const barOptions = computed(() => ({
   indexAxis: 'y',
   responsive: true,
   maintainAspectRatio: false,
+  animation: { duration: 900, easing: 'easeOutQuart' },
   plugins: {
     legend: { display: false },
     tooltip: {
-      backgroundColor: '#0f172a',
+      backgroundColor: KL.navy,
       titleColor: '#f8fafc',
       bodyColor: '#e2e8f0',
       padding: 12,
@@ -358,7 +374,7 @@ const businessData = computed(() => {
     datasets: [
       {
         data: other ? [active, pending, expired, other] : [active, pending, expired],
-        backgroundColor: ['#1e40af', '#f59e0b', '#ef4444', '#94a3b8'],
+        backgroundColor: [KL.navy, KL.orange, '#ef4444', '#94a3b8'],
         borderWidth: 0,
         cutout: '72%',
         spacing: 2,
@@ -370,6 +386,7 @@ const businessData = computed(() => {
 const doughnutOptions = computed(() => ({
   responsive: true,
   maintainAspectRatio: false,
+  animation: { duration: 900, easing: 'easeOutQuart' },
   plugins: {
     legend: {
       display: true,
@@ -379,12 +396,12 @@ const doughnutOptions = computed(() => ({
         pointStyle: 'circle',
         boxWidth: 8,
         padding: 12,
-        color: '#64748b',
+        color: KL.muted,
         font: { ...chartFont(), size: 11 },
       },
     },
     tooltip: {
-      backgroundColor: '#0f172a',
+      backgroundColor: KL.navy,
       titleColor: '#f8fafc',
       bodyColor: '#e2e8f0',
       padding: 12,
@@ -400,36 +417,38 @@ const kpiCards = computed(() => [
   { key: 'est', icon: 'pi pi-building', value: String(kpis.value.establishments), label: t('monitoring.ccKpiEst'), variant: 'slate' },
   { key: 'trans', icon: 'pi pi-truck', value: String(kpis.value.transports), label: t('monitoring.ccKpiTransports'), variant: 'slate' },
   { key: 'ops', icon: 'pi pi-users', value: String(kpis.value.operators), label: t('monitoring.ccKpiOperators'), variant: 'slate' },
-  { key: 'temp', icon: 'pi pi-chart-line', value: kpis.value.avgTemp, label: t('monitoring.ccKpiAvgTemp'), variant: 'teal' },
+  { key: 'temp', icon: 'pi pi-chart-line', value: kpis.value.avgTemp, label: t('monitoring.ccKpiAvgTemp'), variant: 'accent' },
   { key: 'doors', icon: 'pi pi-lock-open', value: String(kpis.value.openDoors), label: t('monitoring.ccKpiOpenDoors'), variant: kpis.value.openDoors > 0 ? 'amber' : 'slate' },
 ]);
 </script>
 
 <template>
   <div v-if="db" class="control-panel" :class="{ 'control-panel--embedded': embedded }">
-    <header class="panel-header est-flow-head est-flow-head--row control-panel__head">
-      <div class="est-flow-head__text header-info">
-        <h2 class="est-flow-title panel-title">{{ t('monitoring.ccTitle') }}</h2>
-        <p class="est-flow-subtitle panel-subtitle">{{ t('monitoring.ccSubtitle') }}</p>
-        <p class="panel-meta">
+    <header class="cc-hero">
+      <div class="cc-hero__main">
+        <p class="cc-hero__eyebrow">KairoLabs · IoT</p>
+        <h2 class="cc-hero__title">{{ t('monitoring.ccTitle') }}</h2>
+        <p class="cc-hero__subtitle">{{ t('monitoring.ccSubtitle') }}</p>
+        <p class="cc-hero__meta">
           <i class="pi pi-clock" aria-hidden="true"></i>
-          {{ t('monitoring.ccSync') }}: <strong>{{ lastSyncLabel }}</strong>
+          <span>{{ t('monitoring.ccSync') }}: <strong>{{ lastSyncLabel }}</strong></span>
         </p>
       </div>
-      <div class="est-flow-stats header-status">
-        <span class="est-flow-stat est-flow-stat--teal status-badge">
+      <div class="cc-hero__status">
+        <span class="cc-hero__badge">
           <span class="pulse-indicator" aria-hidden="true"></span>
-          <span class="est-flow-stat__value" style="font-size: 0.75rem; font-weight: 600">{{ t('monitoring.ccOnline') }}</span>
+          {{ t('monitoring.ccOnline') }}
         </span>
       </div>
     </header>
 
     <section class="kpi-strip" aria-label="KPI">
       <article
-          v-for="card in kpiCards"
+          v-for="(card, idx) in kpiCards"
           :key="card.key"
           class="kpi-card"
           :class="[`kpi-card--${card.variant}`]"
+          :style="{ animationDelay: `${0.04 + idx * 0.05}s` }"
       >
         <div class="kpi-card__icon" aria-hidden="true">
           <i :class="card.icon"></i>
@@ -452,7 +471,7 @@ const kpiCards = computed(() => [
     </div>
 
     <div class="bento-grid">
-      <div class="bento-card span-2 main-chart">
+      <div class="bento-card main-chart" style="animation-delay: 0.22s">
         <div class="card-header">
           <h3>{{ t('monitoring.ccBiometric') }}</h3>
           <p>{{ t('monitoring.ccBiometricHint') }}</p>
@@ -462,7 +481,7 @@ const kpiCards = computed(() => [
         </div>
       </div>
 
-      <div class="bento-card stability-chart">
+      <div class="bento-card stability-chart" style="animation-delay: 0.28s">
         <div class="card-header">
           <h3>{{ t('monitoring.ccStability') }}</h3>
           <p>{{ t('monitoring.ccStabilityHint') }}</p>
@@ -472,7 +491,7 @@ const kpiCards = computed(() => [
         </div>
       </div>
 
-      <div class="bento-card efficiency-chart">
+      <div class="bento-card efficiency-chart" style="animation-delay: 0.34s">
         <div class="card-header">
           <h3>{{ t('monitoring.ccEfficiency') }}</h3>
           <p>{{ t('monitoring.ccEfficiencyHint') }}</p>
@@ -482,7 +501,7 @@ const kpiCards = computed(() => [
         </div>
       </div>
 
-      <div class="bento-card business-chart">
+      <div class="bento-card business-chart" style="animation-delay: 0.4s">
         <div class="card-header">
           <h3>{{ t('monitoring.ccSubscriptions') }}</h3>
           <p>{{ t('monitoring.ccSubscriptionsHint') }}</p>
@@ -510,15 +529,94 @@ const kpiCards = computed(() => [
 <style scoped>
 .control-panel {
   margin-top: 0;
+  width: 100%;
 }
 
-.control-panel--embedded .control-panel__head {
-  margin-bottom: 1.1rem;
-  padding-bottom: 1rem;
+.cc-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1.1rem;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 18px;
+  border: 1px solid rgba(17, 36, 51, 0.1);
+  background:
+    linear-gradient(135deg, rgba(243, 112, 33, 0.12) 0%, transparent 42%),
+    linear-gradient(120deg, #163247 0%, #112433 100%);
+  color: #fff;
+  box-shadow: 0 12px 32px rgba(17, 36, 51, 0.14);
+  animation: cc-rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-.control-panel--embedded .control-panel__head.est-flow-head--row {
-  border-bottom: 1px solid var(--mt-border);
+.cc-hero__main {
+  min-width: 0;
+  flex: 1;
+}
+
+.cc-hero__eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cc-hero__title {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: #fff;
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+.cc-hero__subtitle {
+  margin: 0.45rem 0 0;
+  max-width: 42rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.cc-hero__meta {
+  margin: 0.7rem 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cc-hero__meta strong {
+  color: #ffd2b0;
+  font-weight: 700;
+}
+
+.cc-hero__status {
+  display: flex;
+  align-items: flex-start;
+}
+
+.cc-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.control-panel--embedded .cc-hero {
+  margin-bottom: 1.15rem;
 }
 
 .panel-header {
@@ -526,15 +624,16 @@ const kpiCards = computed(() => [
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   padding: 0;
+  animation: cc-rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .panel-title {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 800;
-  color: var(--mt-heading, #0f172a);
+  color: var(--mt-heading, #112433);
   letter-spacing: -0.03em;
   line-height: 1.2;
 }
@@ -544,7 +643,7 @@ const kpiCards = computed(() => [
   color: var(--mt-text-muted, #64748b);
   font-size: 0.875rem;
   line-height: 1.45;
-  max-width: 42rem;
+  max-width: 48rem;
 }
 
 .panel-meta {
@@ -575,84 +674,81 @@ const kpiCards = computed(() => [
 .pulse-indicator {
   width: 7px;
   height: 7px;
-  background: #10b981;
+  background: #34d399;
   border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.45);
+  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.45);
   animation: pulse 2s ease-out infinite;
 }
 
 @keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.45);
-  }
-  70% {
-    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
-  }
+  0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.45); }
+  70% { box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+}
+
+@keyframes cc-rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .kpi-strip {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.1rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.15rem;
 }
 
 .kpi-card {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  min-height: 5.75rem;
-  padding: 1.1rem 1.2rem;
+  gap: 0.95rem;
+  min-height: 5.6rem;
+  padding: 1.05rem 1.1rem;
   background: #fff;
   border: 1px solid #e2e8f0;
   border-radius: 16px;
   box-shadow:
-      0 1px 2px rgba(15, 23, 42, 0.04),
-      0 8px 24px -8px rgba(15, 23, 42, 0.08);
-  transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease,
-      border-color 0.2s ease;
+      0 1px 2px rgba(17, 36, 51, 0.04),
+      0 8px 24px -8px rgba(17, 36, 51, 0.08);
+  animation: cc-rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .kpi-card:hover {
   transform: translateY(-3px);
   box-shadow:
-      0 4px 6px rgba(15, 23, 42, 0.05),
-      0 16px 32px -12px rgba(15, 23, 42, 0.12);
+      0 4px 6px rgba(17, 36, 51, 0.05),
+      0 16px 32px -12px rgba(17, 36, 51, 0.12);
   border-color: #cbd5e1;
 }
 
 .kpi-card__icon {
   flex-shrink: 0;
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3.1rem;
+  height: 3.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 }
 
 .kpi-card--slate .kpi-card__icon {
   background: linear-gradient(145deg, #f1f5f9 0%, #e2e8f0 100%);
-  color: #334155;
+  color: #112433;
   border: 1px solid rgba(148, 163, 184, 0.35);
 }
 
-.kpi-card--teal {
-  border-color: rgba(13, 148, 136, 0.35);
-  background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 55%, #ffffff 100%);
+.kpi-card--accent {
+  border-color: rgba(243, 112, 33, 0.35);
+  background: linear-gradient(135deg, #fff7f0 0%, #ffffff 55%, #ffffff 100%);
 }
 
-.kpi-card--teal .kpi-card__icon {
-  background: linear-gradient(145deg, #14b8a6 0%, #0d9488 100%);
+.kpi-card--accent .kpi-card__icon {
+  background: linear-gradient(145deg, #f37021 0%, #e05f12 100%);
   color: #fff;
   border: none;
-  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.35);
+  box-shadow: 0 6px 16px rgba(243, 112, 33, 0.35);
 }
 
 .kpi-card--amber {
@@ -677,53 +773,33 @@ const kpiCards = computed(() => [
 }
 
 .kpi-card__value {
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   font-weight: 800;
-  color: #0f172a;
+  color: #112433;
   letter-spacing: -0.04em;
   line-height: 1;
 }
 
 .kpi-card__label {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   color: #64748b;
   line-height: 1.2;
-}
-
-@media (max-width: 640px) {
-  .kpi-strip {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .kpi-card {
-    min-height: 5.25rem;
-    padding: 0.95rem 1rem;
-  }
-
-  .kpi-card__value {
-    font-size: 1.4rem;
-  }
-
-  .kpi-card__icon {
-    width: 2.85rem;
-    height: 2.85rem;
-    font-size: 1.15rem;
-  }
 }
 
 .plans-strip {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem 0.75rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 0.65rem;
+  gap: 0.55rem 0.85rem;
+  margin-bottom: 1.15rem;
+  padding: 0.7rem 0.9rem;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
+  border-radius: 14px;
+  animation: cc-rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
 }
 
 .plans-strip-title {
@@ -737,103 +813,69 @@ const kpiCards = computed(() => [
 .plans-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.4rem;
 }
 
 .pill {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 0.25rem 0.55rem;
+  padding: 0.3rem 0.65rem;
   border-radius: 999px;
   color: #fff;
 }
 
-.pill--b {
-  background: #475569;
-}
-.pill--p {
-  background: #ea580c;
-}
-.pill--e {
-  background: #1e3a8a;
-}
-.pill--o {
-  background: #94a3b8;
-}
+.pill--b { background: #475569; }
+.pill--p { background: #f37021; }
+.pill--e { background: #112433; }
+.pill--o { background: #94a3b8; }
 
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(160px, auto);
-  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .bento-card {
   background: #fff;
   border: 1px solid var(--mt-border, #e2e8f0);
-  border-radius: 14px;
-  padding: 1rem 1.1rem;
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 16px;
+  padding: 1.15rem 1.2rem;
+  box-shadow: 0 1px 3px rgba(17, 36, 51, 0.06);
+  animation: cc-rise 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .bento-card:hover {
   border-color: #cbd5e1;
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.07);
+  box-shadow: 0 8px 28px rgba(17, 36, 51, 0.08);
+  transform: translateY(-2px);
 }
 
-.span-2 {
-  grid-column: span 7;
-  grid-row: span 2;
-}
-
-.stability-chart {
-  grid-column: span 5;
-}
-
-.efficiency-chart {
-  grid-column: span 7;
-}
-
-.business-chart {
-  grid-column: span 5;
-}
-
-.card-header {
-  margin-bottom: 0.65rem;
-}
+.card-header { margin-bottom: 0.7rem; }
 
 .card-header h3 {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: var(--mt-heading, #0f172a);
+  color: var(--mt-heading, #112433);
   letter-spacing: -0.02em;
 }
 
 .card-header p {
-  margin: 0.2rem 0 0;
-  font-size: 0.75rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.78rem;
   color: var(--mt-text-muted, #64748b);
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 .chart-wrapper {
-  height: 200px;
+  height: 220px;
   position: relative;
 }
 
-.line-chart {
-  height: min(320px, 34vh);
-}
-
-.bar-wrap {
-  height: 220px;
-}
-
-.dough-wrap {
-  height: 200px;
-}
+.line-chart { height: min(300px, 36vh); }
+.bar-wrap { height: 240px; }
+.dough-wrap { height: 220px; }
 
 .doughnut-container {
   position: relative;
@@ -859,9 +901,9 @@ const kpiCards = computed(() => [
 }
 
 .center-value {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-weight: 800;
-  color: var(--mt-heading, #0f172a);
+  color: var(--mt-heading, #112433);
   letter-spacing: -0.03em;
 }
 
@@ -877,13 +919,9 @@ const kpiCards = computed(() => [
   margin-top: 0;
 }
 
-.panel-loading--embedded {
-  min-height: 12rem;
-}
+.panel-loading--embedded { min-height: 12rem; }
 
-.loader-content {
-  color: var(--mt-text-muted, #64748b);
-}
+.loader-content { color: var(--mt-text-muted, #64748b); }
 
 .loader-content p {
   margin-top: 0.75rem;
@@ -891,40 +929,27 @@ const kpiCards = computed(() => [
   font-size: 0.9rem;
 }
 
-@media (max-width: 1100px) {
-  .bento-grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .span-2 {
-    grid-column: span 6;
-    grid-row: span 1;
-  }
-  .stability-chart {
-    grid-column: span 6;
-  }
-  .efficiency-chart {
-    grid-column: span 6;
-  }
-  .business-chart {
-    grid-column: span 6;
-  }
-  .line-chart {
-    height: 260px;
-  }
+@media (max-width: 1200px) {
+  .kpi-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .bento-grid { grid-template-columns: 1fr; }
+  .line-chart { height: 260px; }
 }
 
 @media (max-width: 640px) {
-  .panel-header {
-    flex-direction: column;
+  .panel-header { flex-direction: column; }
+  .kpi-strip { grid-template-columns: 1fr 1fr; }
+  .kpi-card {
+    min-height: 5.1rem;
+    padding: 0.9rem 0.95rem;
   }
-  .bento-grid {
-    grid-template-columns: 1fr;
-  }
-  .span-2,
-  .stability-chart,
-  .efficiency-chart,
-  .business-chart {
-    grid-column: span 1;
+  .kpi-card__value { font-size: 1.35rem; }
+  .kpi-card__icon {
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.1rem;
   }
 }
 </style>

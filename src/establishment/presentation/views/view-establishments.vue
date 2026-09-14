@@ -3,6 +3,7 @@ import { ref, onMounted, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import useEstablishmentStore from '../../application/establishment.store.js';
+import EstablishmentInspectFlow from '../components/establishment-inspect-flow.vue';
 
 const establishmentStore = useEstablishmentStore();
 const router = useRouter();
@@ -11,6 +12,7 @@ const { t } = useI18n();
 const establishments = ref([]);
 const isLoading = ref(true);
 const searchQuery = ref('');
+const inspectRef = ref(null);
 
 const loadData = async () => {
   isLoading.value = true;
@@ -68,10 +70,7 @@ function formatType(type) {
 onMounted(loadData);
 
 const viewDetails = (id) => {
-  router.push({
-    name: 'establishment-detail',
-    params: { establishmentId: String(id) },
-  });
+  inspectRef.value?.openDetail(id);
 };
 
 const goHome = () => router.push({ name: 'home-health-entity' });
@@ -94,18 +93,22 @@ const goHome = () => router.push({ name: 'home-health-entity' });
         </div>
         <div class="est-flow-stats">
           <div class="est-flow-stat">
+            <span class="est-flow-stat__icon" aria-hidden="true"><i class="pi pi-list"></i></span>
             <span class="est-flow-stat__label">{{ t('establishment.statTotal') }}</span>
             <span class="est-flow-stat__value">{{ stats.total }}</span>
           </div>
-          <div class="est-flow-stat est-flow-stat--blue">
+          <div class="est-flow-stat est-flow-stat--navy">
+            <span class="est-flow-stat__icon" aria-hidden="true"><i class="pi pi-building"></i></span>
             <span class="est-flow-stat__label">{{ t('establishment.statHospitals') }}</span>
             <span class="est-flow-stat__value">{{ stats.hospitals }}</span>
           </div>
-          <div class="est-flow-stat est-flow-stat--teal">
+          <div class="est-flow-stat est-flow-stat--orange">
+            <span class="est-flow-stat__icon" aria-hidden="true"><i class="pi pi-box"></i></span>
             <span class="est-flow-stat__label">{{ t('establishment.statWarehouses') }}</span>
             <span class="est-flow-stat__value">{{ stats.warehouses }}</span>
           </div>
           <div v-if="stats.others > 0" class="est-flow-stat">
+            <span class="est-flow-stat__icon" aria-hidden="true"><i class="pi pi-sitemap"></i></span>
             <span class="est-flow-stat__label">{{ t('establishment.statOthers') }}</span>
             <span class="est-flow-stat__value">{{ stats.others }}</span>
           </div>
@@ -176,5 +179,7 @@ const goHome = () => router.push({ name: 'home-health-entity' });
         </table>
       </div>
     </div>
+
+    <EstablishmentInspectFlow ref="inspectRef" />
   </div>
 </template>

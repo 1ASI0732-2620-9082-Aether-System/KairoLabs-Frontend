@@ -8,7 +8,11 @@ import {
     addMockEstablishment,
     addMockOperator,
     addMockTransport,
+    addMockUser,
+    authenticateMockUser,
     cloneMockList,
+    deleteMockOperator,
+    findMockAdminByEntityCode,
     mockDb,
     updateMockOperator,
 } from './mock-database.js';
@@ -27,4 +31,21 @@ export const MockApi = {
     createTransport: (resource) => withMockDelay(mockOk(addMockTransport(resource))),
     createOperator: (resource) => withMockDelay(mockOk(addMockOperator(resource))),
     updateOperator: (id, resource) => withMockDelay(mockOk(updateMockOperator(id, resource))),
+    deleteOperator: (id) => withMockDelay(mockOk(deleteMockOperator(id))),
+
+    async signIn(email, password) {
+        await withMockDelay(null, 320);
+        return mockOk(authenticateMockUser(email, password));
+    },
+
+    async createUser(resource) {
+        await withMockDelay(null, 420);
+        const created = addMockUser(resource);
+        return mockOk(created.user);
+    },
+
+    async findAdminByEntityCode(code) {
+        await withMockDelay(null, 200);
+        return mockOk(findMockAdminByEntityCode(code));
+    },
 };

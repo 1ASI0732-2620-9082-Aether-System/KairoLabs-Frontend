@@ -3,11 +3,19 @@
     "home": "Inicio"
   },
   "login": {
-    "selectUserType": "Selecciona tu tipo de usuario",
-    "brandMark": "◆ MEDITRACK SENSOR",
-    "brandTitle": "Operaciones Clínicas con Contexto Unificado",
-    "brandTagline": "Monitoreo avanzado y gestión inteligente para entidades de salud modernas.",
-    "cardSubtitle": "Plataforma de monitoreo"
+    "selectUserType": "Elige tu perfil para entrar a la plataforma",
+    "brandMark": "Conservación farmacéutica · IoT",
+    "brandTitle": "Almacenes más inteligentes. Conservación más segura.",
+    "brandTagline": "Temperatura, humedad y luz bajo control para hospitales, farmacias y distribución.",
+    "cardSubtitle": "Plataforma de monitoreo IoT",
+    "welcomeTitle": "Inicia sesión en KairoLabs",
+    "welcomeBack": "Bienvenido de nuevo",
+    "signInSubtitle": "Inicia sesión para monitorear temperatura, humedad, luz y alertas de tu almacén.",
+    "newHere": "¿Nuevo en KairoLabs?",
+    "createAccount": "Crea una cuenta",
+    "headlineTemp": "Temperatura, humedad y luz en una sola vista para actuar a tiempo.",
+    "headlineAlerts": "Alertas en tiempo real antes de que un lote se convierta en merma.",
+    "headlineTrace": "Históricos auditables para DIGEMID y MINSA, sede por sede."
   },
   "establishment": {
     "establishments": "Ver Establecimientos",
@@ -61,7 +69,7 @@
     "fieldExactLocation": "Ubicación exacta del dispositivo",
     "fieldMedicationType": "Tipo de medicamento / producto",
     "sensorReadings": "Lecturas de sensores",
-    "sensorLiveHint": "Lecturas en tiempo real. Si un valor supera el umbral permitido, aparece el icono de ayuda (corazón): al regularizar, la lectura vuelve al rango seguro y se muestra la marca de verificación.",
+    "sensorLiveHint": "Lecturas en tiempo real. Si un valor supera el umbral, aparece el botón de regularizar: al confirmar, la lectura vuelve al rango seguro.",
     "regularize": "Regularizar",
     "regularizeMetric": "Regularizar lectura fuera de rango",
     "regularizeAria": "Regularizar {metric}",
@@ -69,6 +77,8 @@
     "sensorStatus_warning": "Advertencia: cerca del límite",
     "sensorStatus_critical": "Fuera de rango",
     "sensorStatus_unknown": "Sin dato",
+    "statusBadgeWarn": "Atención",
+    "statusBadgeCritical": "Crítico",
     "sensorTemp": "Temperatura (°C)",
     "sensorHumidity": "Humedad (% HR)",
     "sensorLight": "Intensidad lumínica (LUX)",
@@ -239,7 +249,7 @@
     "createSuccess": "Dispositivo registrado correctamente",
     "createError": "No se pudo registrar el dispositivo",
     "sensorReadings": "Lecturas de sensores",
-    "sensorLiveHint": "Lecturas en tiempo real. Si un valor supera el umbral permitido, aparece el icono de ayuda (corazón): al regularizar, la lectura vuelve al rango seguro y se muestra la marca de verificación.",
+    "sensorLiveHint": "Lecturas en tiempo real. Si un valor supera el umbral, aparece el botón de regularizar: al confirmar, la lectura vuelve al rango seguro.",
     "regularize": "Regularizar",
     "regularizeMetric": "Regularizar lectura fuera de rango",
     "regularizeAria": "Regularizar {metric}",
@@ -253,6 +263,8 @@
     "sensorStatus_warning": "Advertencia: cerca del límite",
     "sensorStatus_critical": "Fuera de rango",
     "sensorStatus_unknown": "Sin dato",
+    "statusBadgeWarn": "Atención",
+    "statusBadgeCritical": "Crítico",
     "noSensorData": "Sin lecturas configuradas para este dispositivo.",
     "sensorTemp": "Temperatura (°C)",
     "sensorHumidity": "Humedad (% HR)",
@@ -289,6 +301,11 @@
     "loadingTransports": "Cargando transportes…",
     "emptySearch": "No se encontraron transportes.",
     "viewDetail": "Ver detalle",
+    "deleteTransport": "Eliminar transporte",
+    "deleteConfirmTitle": "¿Eliminar transporte?",
+    "deleteConfirmMessage": "Esta acción no se puede deshacer. Se eliminará la unidad de la flota.",
+    "deleteSuccess": "Transporte eliminado correctamente",
+    "deleteError": "No se pudo eliminar el transporte",
     "detailLoading": "Cargando…",
     "transportNotFound": "Transporte no encontrado.",
     "transportInfo": "Información del transporte",
@@ -304,7 +321,7 @@
     "createSuccess": "Transporte registrado correctamente",
     "createError": "No se pudo registrar el transporte",
     "sensorReadings": "Lecturas de sensores",
-    "sensorLiveHint": "Lecturas en tiempo real. Si un valor supera el umbral permitido, aparece el icono de ayuda (corazón): al regularizar, la lectura vuelve al rango seguro y se muestra la marca de verificación.",
+    "sensorLiveHint": "Lecturas en tiempo real. Si un valor supera el umbral, aparece el botón de regularizar: al confirmar, la lectura vuelve al rango seguro.",
     "regularize": "Regularizar",
     "regularizeMetric": "Regularizar lectura fuera de rango",
     "regularizeAria": "Regularizar {metric}",
@@ -312,6 +329,8 @@
     "sensorStatus_warning": "Advertencia: cerca del límite",
     "sensorStatus_critical": "Fuera de rango",
     "sensorStatus_unknown": "Sin dato",
+    "statusBadgeWarn": "Atención",
+    "statusBadgeCritical": "Crítico",
     "noSensorData": "Sin lecturas configuradas para este transporte.",
     "sensorTemp": "Temperatura (°C)",
     "sensorHumidity": "Humedad (% HR)",
@@ -339,6 +358,7 @@
   },
   "homeHealth": {
     "title": "Panel de entidad de salud",
+    "welcomeName": "¡Bienvenido, {name}!",
     "greetingHello": "Hola,",
     "subtitle": "Gestiona tus establecimientos y personal operativo con herramientas de monitoreo en tiempo real.",
     "actionEstDesc": "Visualiza y gestiona todos los establecimientos de salud.",
@@ -348,6 +368,7 @@
   },
   "homeOperational": {
     "title": "Panel operativo",
+    "welcomeName": "¡Bienvenido, {name}!",
     "greetingHello": "Hola,",
     "atEstablishment": "en {place}",
     "subtitle": "Monitoreo crítico de dispositivos y transportes asignados a tu unidad operativa.",
@@ -357,8 +378,8 @@
     "alertsAnswered": "Alertas resueltas"
   },
   "common": {
-    "brandName": "MediTrack Sensor",
-    "logoAlt": "MediTrack Sensor",
+    "brandName": "KairoLabs",
+    "logoAlt": "KairoLabs",
     "welcome": "Bienvenido",
     "pageNotFound": "Página no encontrada",
     "goHome": "Ir al Inicio",
@@ -368,28 +389,34 @@
     "cancel": "Cancelar"
   },
   "layout": {
-    "appTitle": "Sistema de gestión de monitoreo",
+    "appTitle": "Monitoreo de conservación farmacéutica",
     "goToProfile": "Ir a perfil",
     "showSidebar": "Mostrar menú",
     "hideSidebar": "Ocultar menú",
     "collapseSidebar": "Contraer menú",
     "searchNav": "Buscar módulo…",
-    "guestUser": "Usuario"
+    "guestUser": "Usuario",
+    "brandTag": "IoT Pharma",
+    "sectionControl": "Control general",
+    "sectionModules": "Módulos",
+    "notifications": "Notificaciones",
+    "fullscreen": "Pantalla completa",
+    "systemActive": "Sistema activo"
   },
   "iam": {
     "profile": "Perfil",
     "logout": "Cerrar Sesión",
-    "healthEntity": { "badge": "Entidad de salud" },
-    "operational": { "badge": "Personal operativo" },
+    "healthEntity": { "badge": "Gestor de farmacia" },
+    "operational": { "badge": "Personal de almacén" },
     "login": {
-      "welcome": "Iniciar sesión",
-      "submit": "Ingresar",
+      "welcome": "Bienvenido de nuevo",
+      "submit": "Iniciar sesión",
       "signUp": "Regístrate",
       "loading": "Ingresando…",
       "noAccount": "¿No tienes cuenta?",
-      "credentialsHint": "Usa el correo y contraseña registrados en la plataforma.",
-      "successTitle": "Sesión iniciada",
-      "successDetail": "Acceso concedido correctamente.",
+      "credentialsHint": "Usa el correo y la contraseña de tu cuenta KairoLabs.",
+      "successTitle": "¡Bienvenido de nuevo!",
+      "successDetail": "Te estamos llevando a tu panel KairoLabs.",
       "pendingAssignmentTitle": "Sin sede asignada",
       "pendingAssignmentDetail": "Contacta al administrador: {admin}"
     },
@@ -400,16 +427,17 @@
       "backLogin": "Volver al inicio de sesión"
     },
     "register": {
-      "getStarted": "Comienza ahora",
+      "getStarted": "Crea tu cuenta",
+      "chooseRoleHint": "Elige tu perfil y completa los datos. El gestor de farmacia elige plan después.",
       "viewPlans": "Ver planes",
       "createAccount": "Crear cuenta",
       "hasAccount": "¿Ya tienes cuenta?",
       "signIn": "Inicia sesión",
-      "operatorCodeHint": "Solo el código que te dio tu entidad de salud.",
-      "healthEntityHint": "Luego elegirás plan y pago.",
+      "operatorCodeHint": "Usa el código que te dio el gestor de tu farmacia o almacén.",
+      "healthEntityHint": "Crea la cuenta de tu entidad y luego elige el plan de monitoreo.",
       "entityCodeExamplesShort": "Ej.: CSG-2024, LSS-2024",
-      "operatorSuccessTitle": "Cuenta creada",
-      "operatorSuccessDetail": "Vinculado a {entity}. Inicia sesión con tu correo."
+      "operatorSuccessTitle": "¡Cuenta lista!",
+      "operatorSuccessDetail": "Ya estás vinculado a {entity}. Entra con tu correo."
     },
     "fields": {
       "name": "Nombre",
@@ -426,19 +454,19 @@
       "entityName": "Nombre de la organización"
     },
     "errors": {
-      "title": "Error",
-      "required": "Completa los campos obligatorios.",
-      "requiredField": "Requerido",
-      "weakPassword": "Mínimo 6 caracteres.",
-      "network": "Error de conexión.",
-      "emailExists": "Correo ya registrado. Inicia sesión con ese correo.",
-      "invalidEntityCode": "Código de entidad inválido.",
-      "invalidCredentials": "Correo o contraseña incorrectos.",
+      "title": "No pudimos continuar",
+      "required": "Hay campos vacíos. Complétalos para seguir.",
+      "requiredField": "Este campo es obligatorio",
+      "weakPassword": "La contraseña debe tener al menos 6 caracteres.",
+      "network": "No pudimos conectar. Revisa tu internet e inténtalo de nuevo.",
+      "emailExists": "Ese correo ya tiene una cuenta. Prueba iniciar sesión.",
+      "invalidEntityCode": "Ese código de entidad no es válido.",
+      "invalidCredentials": "El correo o la contraseña no coinciden. Inténtalo otra vez.",
       "entityCodeRequired": "El código es obligatorio.",
       "missingRegistration": "Completa el registro antes de elegir plan.",
       "missingPlan": "Selecciona un plan.",
       "registrationFailed": "No se pudo completar el registro. Intenta con otro correo.",
-      "serverError": "Error en el servidor. Espera unos minutos e intenta con un correo nuevo."
+      "serverError": "El servidor no respondió. Espera un momento e inténtalo con un correo nuevo."
     },
     "payment": {
       "title": "Información de facturación",
@@ -456,7 +484,12 @@
       "invalidCardNumber": "Número de tarjeta inválido.",
       "invalidExpiry": "Fecha inválida (MM/AA).",
       "expiredCard": "Tarjeta vencida.",
-      "invalidCvv": "CVV inválido."
+      "invalidCvv": "CVV inválido.",
+      "secureNote": "Pago simulado y cifrado. No se realiza ningún cobro real.",
+      "processingTitle": "Procesando tu pago",
+      "processingHint": "Estamos confirmando con la pasarela demo.",
+      "successHeadline": "Pago aprobado",
+      "successBody": "Tu cuenta ya está lista. Te llevamos a iniciar sesión."
     }
   },
   "profileView": {
@@ -571,10 +604,10 @@
     "author": "por el Equipo de Desarrollo de {brand}"
   },
   "roles": {
-    "healthEntity": "Entidad de Salud",
-    "healthEntityDesc": "Gestiona establecimientos y operaciones",
-    "operationalStaff": "Personal Operativo",
-    "operationalStaffDesc": "Monitorea dispositivos y transportes"
+    "healthEntity": "Gestor de farmacia",
+    "healthEntityDesc": "Supervisa sedes, evidencia y cumplimiento DIGEMID/MINSA",
+    "operationalStaff": "Personal de almacén",
+    "operationalStaffDesc": "Monitorea temperatura, humedad y luz en el día a día"
   },
   "profileView": {
     "loading": "Cargando perfil…",

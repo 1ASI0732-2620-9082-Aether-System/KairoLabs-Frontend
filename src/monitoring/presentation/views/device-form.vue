@@ -6,6 +6,15 @@ import { useToast } from 'primevue/usetoast';
 import useMonitoringStore from '../../application/monitoring.store.js';
 import { readAuthSession } from '../../../iam/infrastructure/auth-session.js';
 
+const props = defineProps({
+  embedded: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const emit = defineEmits(['saved', 'cancel']);
+
 const monitoringStore = useMonitoringStore();
 const router = useRouter();
 const { t } = useI18n();
@@ -48,22 +57,24 @@ onMounted(async () => {
   previewId.value = String(max + 1);
 });
 
-// Backend enum values (PascalCase, JsonStringEnumConverter)
 const medicationOptions = computed(() => [
-  { value: 'Refrigerated', label: t('monitoring.medicationVaccines') },
-  { value: 'Biological', label: t('monitoring.medicationPills') },
-  { value: 'Controlled', label: t('monitoring.medicationCreams') },
-  { value: 'General', label: t('monitoring.medicationSyrup') },
+  { value: 'Refrigerated', label: t('monitoring.medicationVaccines'), icon: 'pi pi-shield' },
+  { value: 'Biological', label: t('monitoring.medicationPills'), icon: 'pi pi-circle' },
+  { value: 'Controlled', label: t('monitoring.medicationCreams'), icon: 'pi pi-box' },
+  { value: 'General', label: t('monitoring.medicationSyrup'), icon: 'pi pi-filter' },
 ]);
 
-function randomIn(min, max, decimals = 1) {
-  const v = min + Math.random() * (max - min);
-  return Number(v.toFixed(decimals));
-}
+const selectPt = {
+  root: { class: 'kl-select' },
+  overlay: { class: 'kl-select-overlay' },
+};
+
+const selectedMedication = computed(() =>
+  medicationOptions.value.find((o) => o.value === form.value.type_of_medication) ?? null,
+);
 
 function buildPayload() {
   const session = readAuthSession();
-  // Operator's establishmentId from session; fall back to 1 for mock/demo
   const establishmentId = Number(session?.establishmentId) || 1;
 
   return {
@@ -86,8 +97,12 @@ async function handleConfirm() {
       summary: t('monitoring.createSuccess'),
       life: 3000,
     });
-    router.push({ name: 'device-detail', params: { deviceId: String(created.id) } });
-  } catch (e) {
+    if (props.embedded) {
+      emit('saved', created);
+    } else {
+      router.push({ name: 'device-detail', params: { deviceId: String(created.id) } });
+    }
+  } catch {
     toast.add({
       severity: 'error',
       summary: t('monitoring.createError'),
@@ -98,24 +113,26 @@ async function handleConfirm() {
   }
 }
 
-function goList() {
+function goBack() {
+  if (props.embedded) {
+    emit('cancel');
+    return;
+  }
   router.push({ name: 'devices' });
 }
 </script>
 
 <template>
-  <div class="est-flow-page">
-    <pv-toast />
-
-    <nav class="est-flow-back-bar" aria-label="Navegación">
-      <button type="button" class="est-flow-back-btn" @click="goList">
+  <div :class="embedded ? 'device-form-embed' : 'est-flow-page'">
+    <nav v-if="!embedded" class="est-flow-back-bar" aria-label="Navegación">
+      <button type="button" class="est-flow-back-btn" @click="goBack">
         <i class="pi pi-arrow-left" aria-hidden="true"></i>
         <span>{{ t('monitoring.backToDevices') }}</span>
       </button>
     </nav>
 
-    <div class="est-flow-card">
-      <header class="est-flow-head">
+    <div :class="embedded ? 'device-form-embed__body' : 'est-flow-card'">
+      <header v-if="!embedded" class="est-flow-head">
         <h1 class="est-flow-title">{{ t('monitoring.addDeviceTitle') }}</h1>
         <p class="est-flow-subtitle">{{ t('monitoring.addDeviceSubtitle') }}</p>
       </header>
@@ -127,11 +144,28 @@ function goList() {
         </div>
         <div class="est-flow-field">
           <span class="est-flow-field__label">{{ t('monitoring.fieldMedication') }} *</span>
-          <select v-model="form.type_of_medication" class="est-field-select" required>
-            <option v-for="opt in medicationOptions" :key="opt.value" :value="opt.value">
-              {{ opt.label }}
-            </option>
-          </select>
+          <pv-select
+            v-model="form.type_of_medication"
+            :options="medicationOptions"
+            option-label="label"
+            option-value="value"
+            class="kl-select"
+            append-to="body"
+            :pt="selectPt"
+          >
+            <template #value>
+              <span v-if="selectedMedication" class="kl-select-item">
+                <span class="kl-select-item__icon"><i :class="selectedMedication.icon" aria-hidden="true"></i></span>
+                <span class="kl-select-item__text">{{ selectedMedication.label }}</span>
+              </span>
+            </template>
+            <template #option="{ option }">
+              <span class="kl-select-item">
+                <span class="kl-select-item__icon"><i :class="option.icon" aria-hidden="true"></i></span>
+                <span class="kl-select-item__text">{{ option.label }}</span>
+              </span>
+            </template>
+          </pv-select>
         </div>
         <div class="est-flow-field est-flow-field--full">
           <span class="est-flow-field__label">{{ t('monitoring.fieldExactLocation') }} *</span>
@@ -160,9 +194,9 @@ function goList() {
         </div>
 
         <footer class="est-flow-actions" style="border-top: none; padding-top: 0; margin-top: 0.5rem">
-          <button type="button" class="est-flow-btn est-flow-btn--ghost" @click="goList">
-            <i class="pi pi-arrow-left" aria-hidden="true"></i>
-            <span>{{ t('monitoring.back') }}</span>
+          <button type="button" class="est-flow-btn est-flow-btn--ghost" @click="goBack">
+            <i class="pi pi-times" aria-hidden="true"></i>
+            <span>{{ embedded ? t('common.cancel') : t('monitoring.back') }}</span>
           </button>
           <button type="submit" class="est-flow-btn est-flow-btn--accent" :disabled="isSaving">
             <i :class="isSaving ? 'pi pi-spin pi-spinner' : 'pi pi-check'" aria-hidden="true"></i>
@@ -175,34 +209,28 @@ function goList() {
 </template>
 
 <style scoped>
-.est-field-input,
-.est-field-select {
+.device-form-embed__body {
+  padding: 0;
+}
+
+.est-field-input {
   width: 100%;
   margin: 0;
   padding: 0.6rem 0.75rem;
-  border: 1px solid var(--mt-border);
+  border: 1.5px solid rgba(17, 36, 51, 0.16);
   border-radius: 10px;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--mt-heading);
-  background: #fff;
+  color: #112433;
+  background: #f8fafc;
   font-family: inherit;
   box-sizing: border-box;
 }
 
-.est-field-select {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 1rem;
-  padding-right: 2.25rem;
-}
-
-.est-field-input:focus,
-.est-field-select:focus {
+.est-field-input:focus {
   outline: none;
-  border-color: var(--mt-primary);
-  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+  background: #fff;
+  border-color: #f37021;
+  box-shadow: 0 0 0 3px rgba(243, 112, 33, 0.15);
 }
 </style>

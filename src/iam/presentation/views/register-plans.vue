@@ -15,7 +15,7 @@ const iamStore = useIamStore();
 
 onMounted(() => {
   if (!readPendingRegistration()) {
-    router.replace({ name: 'iam-register-health-entity' });
+    router.replace({ name: 'iam-register' });
   }
 });
 
@@ -60,7 +60,7 @@ function selectPlan(plan) {
 }
 
 function goBack() {
-  router.push({ name: 'iam-register-health-entity' });
+  router.push({ name: 'iam-register' });
 }
 </script>
 
@@ -86,7 +86,10 @@ function goBack() {
             <p class="plan-price">{{ plan.price }}</p>
             <p class="plan-desc">{{ plan.desc }}</p>
             <ul class="plan-features">
-              <li v-for="(f, i) in plan.features" :key="i" class="bullet">{{ f }}</li>
+              <li v-for="(f, i) in plan.features" :key="i" class="ok">
+                <i class="pi pi-check" aria-hidden="true"></i>
+                {{ f }}
+              </li>
             </ul>
             <div class="plan-actions">
               <button

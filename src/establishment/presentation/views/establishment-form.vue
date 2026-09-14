@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'primevue/usetoast';
@@ -23,6 +23,21 @@ const newEstablishment = ref({
   district: '',
   address: '',
 });
+
+const typeOptions = computed(() => [
+  { value: 'HOSPITAL', label: t('establishment.typeHospital'), icon: 'pi pi-building' },
+  { value: 'WAREHOUSE', label: t('establishment.typeWarehouse'), icon: 'pi pi-box' },
+  { value: 'CLINIC', label: t('establishment.typeClinic'), icon: 'pi pi-home' },
+]);
+
+const selectPt = {
+  root: { class: 'kl-select' },
+  overlay: { class: 'kl-select-overlay' },
+};
+
+const selectedType = computed(() =>
+  typeOptions.value.find((o) => o.value === newEstablishment.value.establishment_type) ?? null,
+);
 
 const loadData = async () => {
   isLoading.value = true;
@@ -115,8 +130,6 @@ onMounted(() => {
 
 <template>
   <div class="est-page">
-    <pv-toast />
-
     <nav class="est-back-bar" aria-label="Navegación">
       <button type="button" class="est-back-btn" @click="goBack">
         <i class="pi pi-arrow-left" aria-hidden="true"></i>
@@ -149,11 +162,28 @@ onMounted(() => {
             </label>
             <label class="est-field">
               <span class="est-field__label">{{ t('establishment.fieldType') }}</span>
-              <select v-model="newEstablishment.establishment_type">
-                <option value="HOSPITAL">{{ t('establishment.typeHospital') }}</option>
-                <option value="WAREHOUSE">{{ t('establishment.typeWarehouse') }}</option>
-                <option value="CLINIC">{{ t('establishment.typeClinic') }}</option>
-              </select>
+              <pv-select
+                v-model="newEstablishment.establishment_type"
+                :options="typeOptions"
+                option-label="label"
+                option-value="value"
+                class="kl-select"
+                append-to="body"
+                :pt="selectPt"
+              >
+                <template #value>
+                  <span v-if="selectedType" class="kl-select-item">
+                    <span class="kl-select-item__icon"><i :class="selectedType.icon" aria-hidden="true"></i></span>
+                    <span class="kl-select-item__text">{{ selectedType.label }}</span>
+                  </span>
+                </template>
+                <template #option="{ option }">
+                  <span class="kl-select-item">
+                    <span class="kl-select-item__icon"><i :class="option.icon" aria-hidden="true"></i></span>
+                    <span class="kl-select-item__text">{{ option.label }}</span>
+                  </span>
+                </template>
+              </pv-select>
             </label>
             <label class="est-field">
               <span class="est-field__label">{{ t('establishment.fieldCity') }}</span>
@@ -363,40 +393,30 @@ onMounted(() => {
   color: var(--mt-text-muted);
 }
 
-.est-field input,
-.est-field select {
+.est-field input {
   width: 100%;
   margin: 0;
   padding: 0.6rem 0.75rem;
-  border: 1px solid var(--mt-border);
+  border: 1.5px solid rgba(17, 36, 51, 0.16);
   border-radius: 10px;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--mt-heading);
-  background: #fff;
+  color: #112433;
+  background: #f8fafc;
   font-family: inherit;
   box-sizing: border-box;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 .est-field input::placeholder {
   color: #94a3b8;
 }
 
-.est-field input:focus,
-.est-field select:focus {
+.est-field input:focus {
   outline: none;
-  border-color: var(--mt-primary);
-  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
-}
-
-.est-field select {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 1rem;
-  padding-right: 2.25rem;
+  background: #fff;
+  border-color: #f37021;
+  box-shadow: 0 0 0 3px rgba(243, 112, 33, 0.15);
 }
 
 .est-form-actions {
@@ -419,14 +439,15 @@ onMounted(() => {
 }
 
 .est-btn--primary {
-  background: linear-gradient(180deg, #2563eb, var(--mt-primary));
+  background: #f37021;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.22);
+  box-shadow: 0 2px 10px rgba(243, 112, 33, 0.28);
 }
 
 .est-btn--primary:hover:not(:disabled) {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.28);
+  background: #e05a12;
+  box-shadow: 0 4px 14px rgba(243, 112, 33, 0.34);
 }
 
 .est-btn--primary:disabled {

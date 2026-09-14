@@ -118,32 +118,41 @@ const photoUrl = computed(
       </button>
     </div>
 
-    <div v-else class="est-flow-card">
-      <header class="est-flow-head">
-        <h1 class="est-flow-title">{{ t('establishment.operatorInfo') }}</h1>
+    <div v-else class="est-flow-card op-profile">
+      <header class="op-profile__head">
+        <p class="op-profile__eyebrow">{{ t('establishment.operatorInfo') }}</p>
+        <h1 class="op-profile__title">{{ heroName }}</h1>
       </header>
 
-      <div class="est-flow-hero">
-        <div class="est-flow-hero__identity">
+      <div class="op-profile__banner">
+        <div class="op-profile__identity">
           <img
             v-if="photoUrl"
             :src="photoUrl"
             alt=""
-            width="64"
-            height="64"
-            style="border-radius: 50%; object-fit: cover"
+            class="op-profile__avatar-img"
+            width="72"
+            height="72"
           />
-          <span
-            v-else
-            class="mt-user-avatar mt-user-avatar--round mt-user-avatar--lg"
-          >{{ userInitial }}</span>
-          <div>
-            <h2 class="est-flow-hero__name">{{ heroName }}</h2>
-            <p class="est-flow-hero__email">{{ heroEmail }}</p>
+          <span v-else class="op-profile__avatar">{{ userInitial }}</span>
+          <div class="op-profile__meta">
+            <p class="op-profile__role">
+              {{ user?.job_title || user?.jobTitle || t('iam.operational.badge') }}
+            </p>
+            <a
+              v-if="heroEmail && heroEmail !== '—'"
+              class="op-profile__email"
+              :href="`mailto:${heroEmail}`"
+            >{{ heroEmail }}</a>
+            <p v-else class="op-profile__email">{{ heroEmail }}</p>
           </div>
         </div>
-        <aside class="est-flow-schedule" aria-label="schedule">
-          <h3 class="est-flow-schedule__title">{{ t('profileView.scheduleTitle') }}</h3>
+
+        <aside class="op-profile__schedule" aria-label="schedule">
+          <div class="op-profile__schedule-head">
+            <i class="pi pi-clock" aria-hidden="true"></i>
+            <span>{{ t('profileView.scheduleTitle') }}</span>
+          </div>
           <table>
             <thead>
               <tr>
@@ -161,44 +170,62 @@ const photoUrl = computed(
         </aside>
       </div>
 
-      <div class="est-flow-fields">
-        <div class="est-flow-field">
-          <span class="est-flow-field__label">{{ t('establishment.fieldOpName') }}</span>
-          <span class="est-flow-field__value">{{ user?.name || '—' }}</span>
+      <div class="op-profile__stats">
+        <div class="op-profile__stat">
+          <span class="op-profile__stat-label">
+            <i class="pi pi-bell" aria-hidden="true"></i>
+            {{ t('establishment.fieldAlertsAnswered') }}
+          </span>
+          <span class="op-profile__stat-value">{{ operator.alerts_answered ?? 0 }}</span>
         </div>
-        <div class="est-flow-field">
-          <span class="est-flow-field__label">{{ t('establishment.fieldAssignedEst') }}</span>
-          <span class="est-flow-field__value">
+        <div class="op-profile__stat">
+          <span class="op-profile__stat-label">
+            <i class="pi pi-calendar" aria-hidden="true"></i>
+            {{ t('establishment.fieldEntryDate') }}
+          </span>
+          <span class="op-profile__stat-value op-profile__stat-value--sm">{{ entryDate }}</span>
+        </div>
+        <div class="op-profile__stat">
+          <span class="op-profile__stat-label">
+            <i class="pi pi-building" aria-hidden="true"></i>
+            {{ t('establishment.fieldAssignedEst') }}
+          </span>
+          <span class="op-profile__stat-value op-profile__stat-value--sm">
             {{ establishment?.establishment_name || t('establishment.unassignedSite') }}
           </span>
         </div>
-        <div class="est-flow-field">
-          <span class="est-flow-field__label">{{ t('establishment.fieldDni') }}</span>
-          <span class="est-flow-field__value">{{ user?.dni || user?.document || '—' }}</span>
+      </div>
+
+      <div class="op-profile__grid">
+        <div class="op-profile__field">
+          <span class="op-profile__field-label"><i class="pi pi-user" aria-hidden="true"></i> {{ t('establishment.fieldOpName') }}</span>
+          <span class="op-profile__field-value">{{ user?.name || '—' }}</span>
         </div>
-        <div class="est-flow-field">
-          <span class="est-flow-field__label">{{ t('establishment.fieldEntryDate') }}</span>
-          <span class="est-flow-field__value">{{ entryDate }}</span>
+        <div class="op-profile__field">
+          <span class="op-profile__field-label"><i class="pi pi-id-card" aria-hidden="true"></i> {{ t('establishment.fieldDni') }}</span>
+          <span class="op-profile__field-value">{{ user?.dni || user?.document || '—' }}</span>
         </div>
-        <div class="est-flow-field">
-          <span class="est-flow-field__label">{{ t('establishment.fieldEmail') }}</span>
-          <span class="est-flow-field__value">{{ user?.email || '—' }}</span>
+        <div class="op-profile__field">
+          <span class="op-profile__field-label"><i class="pi pi-envelope" aria-hidden="true"></i> {{ t('establishment.fieldEmail') }}</span>
+          <span class="op-profile__field-value">{{ user?.email || '—' }}</span>
         </div>
-        <div class="est-flow-field">
-          <span class="est-flow-field__label">{{ t('establishment.fieldAlertsAnswered') }}</span>
-          <span class="est-flow-field__value">{{ operator.alerts_answered ?? 0 }}</span>
+        <div class="op-profile__field">
+          <span class="op-profile__field-label"><i class="pi pi-phone" aria-hidden="true"></i> {{ t('establishment.fieldPhone') }}</span>
+          <span class="op-profile__field-value">{{ user?.phone || '—' }}</span>
         </div>
-        <div class="est-flow-field">
-          <span class="est-flow-field__label">{{ t('establishment.fieldPhone') }}</span>
-          <span class="est-flow-field__value">{{ user?.phone || '—' }}</span>
+        <div class="op-profile__field">
+          <span class="op-profile__field-label"><i class="pi pi-building" aria-hidden="true"></i> {{ t('establishment.fieldAssignedEst') }}</span>
+          <span class="op-profile__field-value">
+            {{ establishment?.establishment_name || t('establishment.unassignedSite') }}
+          </span>
         </div>
-        <div class="est-flow-field">
-          <span class="est-flow-field__label">{{ t('establishment.fieldJobTitle') }}</span>
-          <span class="est-flow-field__value">{{ user?.job_title || user?.jobTitle || '—' }}</span>
+        <div class="op-profile__field">
+          <span class="op-profile__field-label"><i class="pi pi-briefcase" aria-hidden="true"></i> {{ t('establishment.fieldJobTitle') }}</span>
+          <span class="op-profile__field-value">{{ user?.job_title || user?.jobTitle || '—' }}</span>
         </div>
       </div>
 
-      <footer class="est-flow-actions">
+      <footer class="est-flow-actions" style="margin-top: 1.25rem">
         <button type="button" class="est-flow-btn est-flow-btn--ghost" @click="goList">
           <i class="pi pi-arrow-left" aria-hidden="true"></i>
           <span>{{ t('establishment.back') }}</span>

@@ -7,6 +7,15 @@ import useLogisticsStore from '../../application/logistics.store.js';
 import useEstablishmentStore from '../../../establishment/application/establishment.store.js';
 import { readAuthSession } from '../../../iam/infrastructure/auth-session.js';
 
+const props = defineProps({
+  embedded: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const emit = defineEmits(['saved', 'cancel']);
+
 const logisticsStore = useLogisticsStore();
 const establishmentStore = useEstablishmentStore();
 const router = useRouter();
@@ -70,20 +79,42 @@ onMounted(async () => {
 });
 
 const transportOptions = computed(() => [
-  { value: 'Van', label: t('logistics.transportVan') },
-  { value: 'OffRoad', label: t('logistics.transportOffRoad') },
-  { value: 'Motorcycle', label: t('logistics.transportMotorcycle') },
-  { value: 'Refrigerated', label: t('logistics.transportRefrigerated') },
-  { value: 'ColdChain', label: t('logistics.transportColdChain') },
+  { value: 'Van', label: t('logistics.transportVan'), icon: 'pi pi-car' },
+  { value: 'OffRoad', label: t('logistics.transportOffRoad'), icon: 'pi pi-compass' },
+  { value: 'Motorcycle', label: t('logistics.transportMotorcycle'), icon: 'pi pi-send' },
+  { value: 'Refrigerated', label: t('logistics.transportRefrigerated'), icon: 'pi pi-box' },
+  { value: 'ColdChain', label: t('logistics.transportColdChain'), icon: 'pi pi-link' },
 ]);
 
-// Backend enum values (must match Logistics TypeOfMedication PascalCase)
 const medicationOptions = computed(() => [
-  { value: 'Refrigerated', label: t('logistics.medicationVaccines') },
-  { value: 'Biological', label: t('logistics.medicationPills') },
-  { value: 'Controlled', label: t('logistics.medicationCreams') },
-  { value: 'General', label: t('logistics.medicationSyrup') },
+  { value: 'Refrigerated', label: t('logistics.medicationVaccines'), icon: 'pi pi-shield' },
+  { value: 'Biological', label: t('logistics.medicationPills'), icon: 'pi pi-circle' },
+  { value: 'Controlled', label: t('logistics.medicationCreams'), icon: 'pi pi-box' },
+  { value: 'General', label: t('logistics.medicationSyrup'), icon: 'pi pi-filter' },
 ]);
+
+const establishmentSelectOptions = computed(() =>
+  establishmentOptions.value.map((est) => ({
+    value: est.id,
+    label: est.establishment_name,
+    icon: 'pi pi-building',
+  })),
+);
+
+const selectPt = {
+  root: { class: 'kl-select' },
+  overlay: { class: 'kl-select-overlay' },
+};
+
+const selectedTransport = computed(() =>
+  transportOptions.value.find((o) => o.value === form.value.type_of_transport) ?? null,
+);
+const selectedMedication = computed(() =>
+  medicationOptions.value.find((o) => o.value === form.value.type_of_medication) ?? null,
+);
+const selectedEstablishment = computed(() =>
+  establishmentSelectOptions.value.find((o) => o.value === selectedEstablishmentId.value) ?? null,
+);
 
 function buildPayload() {
   const establishmentId = Number(selectedEstablishmentId.value);
@@ -117,7 +148,11 @@ async function handleConfirm() {
       summary: t('logistics.createSuccess'),
       life: 3000,
     });
-    router.push({ name: 'transport-detail', params: { transportId: String(created.id) } });
+    if (props.embedded) {
+      emit('saved', created);
+    } else {
+      router.push({ name: 'transport-detail', params: { transportId: String(created.id) } });
+    }
   } catch (e) {
     const detail = e?.message === 'noEstablishment'
       ? t('logistics.noEstablishmentForTransport')
@@ -133,24 +168,26 @@ async function handleConfirm() {
   }
 }
 
-function goList() {
+function goBack() {
+  if (props.embedded) {
+    emit('cancel');
+    return;
+  }
   router.push({ name: 'transports' });
 }
 </script>
 
 <template>
-  <div class="est-flow-page">
-    <pv-toast />
-
-    <nav class="est-flow-back-bar" aria-label="Navegación">
-      <button type="button" class="est-flow-back-btn" @click="goList">
+  <div :class="embedded ? 'transport-form-embed' : 'est-flow-page'">
+    <nav v-if="!embedded" class="est-flow-back-bar" aria-label="Navegación">
+      <button type="button" class="est-flow-back-btn" @click="goBack">
         <i class="pi pi-arrow-left" aria-hidden="true"></i>
         <span>{{ t('logistics.backToTransports') }}</span>
       </button>
     </nav>
 
-    <div class="est-flow-card">
-      <header class="est-flow-head">
+    <div :class="embedded ? 'transport-form-embed__body' : 'est-flow-card'">
+      <header v-if="!embedded" class="est-flow-head">
         <h1 class="est-flow-title">{{ t('logistics.addTransportTitle') }}</h1>
         <p class="est-flow-subtitle">{{ t('logistics.addTransportSubtitle') }}</p>
       </header>
@@ -162,33 +199,80 @@ function goList() {
         </div>
         <div class="est-flow-field">
           <span class="est-flow-field__label">{{ t('logistics.fieldTransportType') }} *</span>
-          <select v-model="form.type_of_transport" class="log-field-select" required>
-            <option v-for="opt in transportOptions" :key="opt.value" :value="opt.value">
-              {{ opt.label }}
-            </option>
-          </select>
+          <pv-select
+            v-model="form.type_of_transport"
+            :options="transportOptions"
+            option-label="label"
+            option-value="value"
+            class="kl-select"
+            append-to="body"
+            :pt="selectPt"
+          >
+            <template #value>
+              <span v-if="selectedTransport" class="kl-select-item">
+                <span class="kl-select-item__icon"><i :class="selectedTransport.icon" aria-hidden="true"></i></span>
+                <span class="kl-select-item__text">{{ selectedTransport.label }}</span>
+              </span>
+            </template>
+            <template #option="{ option }">
+              <span class="kl-select-item">
+                <span class="kl-select-item__icon"><i :class="option.icon" aria-hidden="true"></i></span>
+                <span class="kl-select-item__text">{{ option.label }}</span>
+              </span>
+            </template>
+          </pv-select>
         </div>
         <div class="est-flow-field est-flow-field--full">
           <span class="est-flow-field__label">{{ t('logistics.fieldMedication') }} *</span>
-          <select v-model="form.type_of_medication" class="log-field-select" required>
-            <option v-for="opt in medicationOptions" :key="opt.value" :value="opt.value">
-              {{ opt.label }}
-            </option>
-          </select>
+          <pv-select
+            v-model="form.type_of_medication"
+            :options="medicationOptions"
+            option-label="label"
+            option-value="value"
+            class="kl-select"
+            append-to="body"
+            :pt="selectPt"
+          >
+            <template #value>
+              <span v-if="selectedMedication" class="kl-select-item">
+                <span class="kl-select-item__icon"><i :class="selectedMedication.icon" aria-hidden="true"></i></span>
+                <span class="kl-select-item__text">{{ selectedMedication.label }}</span>
+              </span>
+            </template>
+            <template #option="{ option }">
+              <span class="kl-select-item">
+                <span class="kl-select-item__icon"><i :class="option.icon" aria-hidden="true"></i></span>
+                <span class="kl-select-item__text">{{ option.label }}</span>
+              </span>
+            </template>
+          </pv-select>
         </div>
 
         <div class="est-flow-field est-flow-field--full">
           <span class="est-flow-field__label">{{ t('logistics.fieldEstablishment') }} *</span>
-          <select
-            v-if="establishmentOptions.length"
+          <pv-select
+            v-if="establishmentSelectOptions.length"
             v-model="selectedEstablishmentId"
-            class="log-field-select"
-            required
+            :options="establishmentSelectOptions"
+            option-label="label"
+            option-value="value"
+            class="kl-select"
+            append-to="body"
+            :pt="selectPt"
           >
-            <option v-for="est in establishmentOptions" :key="est.id" :value="est.id">
-              {{ est.establishment_name }}
-            </option>
-          </select>
+            <template #value>
+              <span v-if="selectedEstablishment" class="kl-select-item">
+                <span class="kl-select-item__icon"><i :class="selectedEstablishment.icon" aria-hidden="true"></i></span>
+                <span class="kl-select-item__text">{{ selectedEstablishment.label }}</span>
+              </span>
+            </template>
+            <template #option="{ option }">
+              <span class="kl-select-item">
+                <span class="kl-select-item__icon"><i :class="option.icon" aria-hidden="true"></i></span>
+                <span class="kl-select-item__text">{{ option.label }}</span>
+              </span>
+            </template>
+          </pv-select>
           <p v-else class="mon-hint mon-hint--warn">{{ t('logistics.noEstablishmentForTransport') }}</p>
         </div>
 
@@ -204,11 +288,11 @@ function goList() {
         </div>
 
         <footer class="est-flow-actions" style="border-top: none; padding-top: 0; margin-top: 0.5rem">
-          <button type="button" class="est-flow-btn est-flow-btn--ghost" @click="goList">
-            <i class="pi pi-arrow-left" aria-hidden="true"></i>
-            <span>{{ t('logistics.back') }}</span>
+          <button type="button" class="est-flow-btn est-flow-btn--ghost" @click="goBack">
+            <i class="pi pi-times" aria-hidden="true"></i>
+            <span>{{ embedded ? t('common.cancel') : t('logistics.back') }}</span>
           </button>
-          <button type="submit" class="est-flow-btn est-flow-btn--accent" :disabled="isSaving">
+          <button type="submit" class="est-flow-btn est-flow-btn--accent" :disabled="isSaving || noEstablishment">
             <i :class="isSaving ? 'pi pi-spin pi-spinner' : 'pi pi-check'" aria-hidden="true"></i>
             <span>{{ isSaving ? t('logistics.saving') : t('logistics.confirm') }}</span>
           </button>
@@ -219,34 +303,8 @@ function goList() {
 </template>
 
 <style scoped>
-.log-field-select {
-  width: 100%;
-  margin: 0;
-  padding: 0.6rem 0.75rem;
-  border: 1px solid var(--mt-border);
-  border-radius: 10px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--mt-heading);
-  background: #fff;
-  font-family: inherit;
-  box-sizing: border-box;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 1rem;
-  padding-right: 2.25rem;
-}
-
 .mon-hint--warn {
   color: #b45309;
   font-weight: 600;
-}
-
-.log-field-select:focus {
-  outline: none;
-  border-color: var(--mt-primary);
-  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
 }
 </style>

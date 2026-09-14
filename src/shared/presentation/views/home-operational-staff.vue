@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router';
 import { readAuthSession } from '../../../iam/infrastructure/auth-session.js';
 import useEstablishmentStore from '../../../establishment/application/establishment.store.js';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const router = useRouter();
 const establishmentStore = useEstablishmentStore();
 
@@ -13,6 +13,18 @@ const session = readAuthSession();
 const userName = computed(() => session?.name ?? t('layout.guestUser'));
 const establishmentName = ref('—');
 const alertsAnswered = ref(null);
+const todayLabel = computed(() => {
+  try {
+    return new Date().toLocaleDateString(locale.value === 'es' ? 'es-PE' : 'en-US', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+  } catch {
+    return '';
+  }
+});
 
 onMounted(async () => {
   try {
@@ -63,25 +75,41 @@ const navigateTo = (path) => {
 
 <template>
   <div class="home-dash-page">
-    <section class="est-flow-card home-hero-card">
-      <div class="home-hero-card__inner">
-        <p class="home-eyebrow">{{ t('common.welcome') }}</p>
-        <h1 class="home-title">{{ t('homeOperational.title') }}</h1>
-        <p class="home-greeting">
-          {{ t('homeOperational.greetingHello') }}
-          <strong>{{ userName }}</strong>
-          <span class="home-greeting-place">
-            {{ t('homeOperational.atEstablishment', { place: establishmentName }) }}
-          </span>
-        </p>
-        <p class="home-subtitle">{{ t('homeOperational.subtitle') }}</p>
-      </div>
-      <div v-if="alertsAnswered !== null" class="home-alerts-stat">
-        <i class="pi pi-check-circle home-alerts-stat__icon" aria-hidden="true"></i>
+    <section class="home-hero-banner">
+      <div class="home-hero-banner__top">
         <div>
-          <span class="home-alerts-stat__count">{{ alertsAnswered }}</span>
-          <span class="home-alerts-stat__label">{{ t('homeOperational.alertsAnswered') }}</span>
+          <h1 class="home-hero-banner__title">
+            {{ t('homeOperational.welcomeName', { name: userName }) }}
+          </h1>
+          <p class="home-hero-banner__subtitle">
+            {{ t('homeOperational.subtitle') }}
+            <span v-if="establishmentName !== '—'">
+              {{ t('homeOperational.atEstablishment', { place: establishmentName }) }}
+            </span>
+          </p>
         </div>
+        <span class="home-hero-banner__status">
+          <i class="home-hero-banner__dot" aria-hidden="true"></i>
+          {{ t('layout.systemActive') }}
+        </span>
+      </div>
+      <div class="home-hero-banner__chips">
+        <span class="home-hero-chip">
+          <i class="pi pi-desktop" aria-hidden="true"></i>
+          {{ t('homeOperational.title') }}
+        </span>
+        <span class="home-hero-chip">
+          <i class="pi pi-user" aria-hidden="true"></i>
+          {{ t('iam.operational.badge') }}
+        </span>
+        <span class="home-hero-chip">
+          <i class="pi pi-calendar" aria-hidden="true"></i>
+          {{ todayLabel }}
+        </span>
+        <span v-if="alertsAnswered !== null" class="home-hero-chip">
+          <i class="pi pi-check-circle" aria-hidden="true"></i>
+          {{ alertsAnswered }} {{ t('homeOperational.alertsAnswered') }}
+        </span>
       </div>
     </section>
 
@@ -109,43 +137,3 @@ const navigateTo = (path) => {
     </div>
   </div>
 </template>
-
-<style scoped>
-.home-hero-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.home-alerts-stat {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
-  border-radius: 14px;
-  padding: 0.85rem 1.25rem;
-  min-width: 160px;
-}
-.home-alerts-stat__icon {
-  font-size: 1.6rem;
-  color: #16a34a;
-}
-.home-alerts-stat__count {
-  display: block;
-  font-size: 1.75rem;
-  font-weight: 800;
-  color: #15803d;
-  line-height: 1;
-}
-.home-alerts-stat__label {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #166534;
-  margin-top: 0.2rem;
-}
-</style>

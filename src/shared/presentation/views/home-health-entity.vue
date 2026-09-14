@@ -6,7 +6,7 @@ import { readAuthSession } from '../../../iam/infrastructure/auth-session.js';
 import ControlCenterPanel from '../../../monitoring/presentation/components/control-center-panel.vue';
 import { fetchDashboardPayload as fetchDashboardData } from '../../infrastructure/dashboard-payload.js';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const router = useRouter();
 
 const db = ref(null);
@@ -23,6 +23,18 @@ onMounted(async () => {
 });
 
 const userName = computed(() => readAuthSession()?.name ?? t('layout.guestUser'));
+const todayLabel = computed(() => {
+  try {
+    return new Date().toLocaleDateString(locale.value === 'es' ? 'es-PE' : 'en-US', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+  } catch {
+    return '';
+  }
+});
 
 const quickActions = [
   {
@@ -62,15 +74,32 @@ const navigateTo = (path) => {
 
 <template>
   <div class="home-dash-page">
-    <section class="est-flow-card home-hero-card">
-      <div class="home-hero-card__inner">
-        <p class="home-eyebrow">{{ t('common.welcome') }}</p>
-        <h1 class="home-title">{{ t('homeHealth.title') }}</h1>
-        <p class="home-greeting">
-          {{ t('homeHealth.greetingHello') }}
-          <strong>{{ userName }}</strong>
-        </p>
-        <p class="home-subtitle">{{ t('homeHealth.subtitle') }}</p>
+    <section class="home-hero-banner">
+      <div class="home-hero-banner__top">
+        <div>
+          <h1 class="home-hero-banner__title">
+            {{ t('homeHealth.welcomeName', { name: userName }) }}
+          </h1>
+          <p class="home-hero-banner__subtitle">{{ t('homeHealth.subtitle') }}</p>
+        </div>
+        <span class="home-hero-banner__status">
+          <i class="home-hero-banner__dot" aria-hidden="true"></i>
+          {{ t('layout.systemActive') }}
+        </span>
+      </div>
+      <div class="home-hero-banner__chips">
+        <span class="home-hero-chip">
+          <i class="pi pi-desktop" aria-hidden="true"></i>
+          {{ t('homeHealth.title') }}
+        </span>
+        <span class="home-hero-chip">
+          <i class="pi pi-user" aria-hidden="true"></i>
+          {{ t('iam.healthEntity.badge') }}
+        </span>
+        <span class="home-hero-chip">
+          <i class="pi pi-calendar" aria-hidden="true"></i>
+          {{ todayLabel }}
+        </span>
       </div>
     </section>
 

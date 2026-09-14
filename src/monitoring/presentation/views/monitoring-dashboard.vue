@@ -19,13 +19,19 @@ onMounted(async () => {
 
 <template>
   <div class="est-flow-page control-center-page">
-    <ControlCenterPanel :db="db" :loading="isLoading" />
+    <div class="est-flow-card control-center-shell">
+      <ControlCenterPanel :db="db" :loading="isLoading" />
+    </div>
   </div>
 </template>
 
 <style scoped>
 .control-center-page {
-  max-width: 1200px;
+  max-width: none;
   margin: 0 auto;
+}
+
+.control-center-shell {
+  padding: 1.35rem 1.4rem 1.5rem;
 }
 </style>

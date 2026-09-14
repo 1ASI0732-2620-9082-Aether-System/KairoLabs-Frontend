@@ -115,6 +115,11 @@ const useEstablishmentStore = defineStore('establishment', () => {
         return results;
     }
 
+    async function deleteOperatorAsync(id) {
+        await establishmentApi.deleteOperator(id);
+        operators.value = operators.value.filter((o) => Number(o.id) !== Number(id));
+    }
+
     return {
         establishments,
         operators,
@@ -132,6 +137,7 @@ const useEstablishmentStore = defineStore('establishment', () => {
         getOperatorById,
         createOperatorAsync,
         updateOperatorAsync,
+        deleteOperatorAsync,
         assignOperatorsToEstablishmentAsync,
     };
 });

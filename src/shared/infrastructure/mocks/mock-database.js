@@ -500,6 +500,13 @@ export function updateMockOperator(id, patch) {
     return { ...op };
 }
 
+export function deleteMockOperator(id) {
+    const idx = operators.findIndex((o) => Number(o.id) === Number(id));
+    if (idx === -1) return false;
+    operators.splice(idx, 1);
+    return true;
+}
+
 export function findMockOperatorByUserId(userId) {
     const uidNum = Number(userId);
     return operators.find((o) => Number(o.users_id) === uidNum) ?? null;
@@ -508,4 +515,81 @@ export function findMockOperatorByUserId(userId) {
 export function findMockUserByEmail(email) {
     const normalized = String(email || '').trim().toLowerCase();
     return users.find((u) => u.email.toLowerCase() === normalized) ?? null;
+}
+
+export function findMockAdminByEntityCode(code) {
+    const normalized = String(code || '').trim().toUpperCase();
+    return admins.find((a) => String(a.entity_code || '').toUpperCase() === normalized) ?? null;
+}
+
+export function addMockUser(payload) {
+    const email = String(payload.email || '').trim().toLowerCase();
+    if (findMockUserByEmail(email)) {
+        const err = new Error('Email already exists');
+        err.response = { status: 400, data: { error: 'Email already exists' } };
+        throw err;
+    }
+
+    const roleRaw = String(payload.role || 'Operator');
+    const isAdmin = roleRaw.toLowerCase() === 'admin';
+    const user = {
+        id: uid(),
+        name: payload.name || '',
+        dni: payload.dni || '00000000',
+        email,
+        phone: payload.phone || '',
+        job_title: payload.job_title || (isAdmin ? 'Administrador' : 'Operador'),
+        entry_date: payload.entry_date || new Date().toISOString().slice(0, 10),
+        role: isAdmin ? 'ADMIN' : 'OPERATOR',
+        password: payload.password || 'demo123',
+        photo: payload.photo || '',
+        created_at: new Date().toISOString(),
+        entity_code: payload.entity_code || null,
+    };
+    users.push(user);
+
+    if (isAdmin) {
+        const entityCode =
+            payload.entity_code ||
+            `KL-${String(user.id).padStart(4, '0')}`;
+        const admin = {
+            id: uid(),
+            entity_name: payload.entity_name || 'Entidad KairoLabs',
+            entity_code: entityCode,
+            schedule: 'Lun-Vie 08:00-18:00',
+            users_id: user.id,
+            user_id: user.id,
+        };
+        admins.push(admin);
+        user.entity_code = entityCode;
+        return { user: { ...user }, admin: { ...admin } };
+    }
+
+    const operator = {
+        id: uid(),
+        alerts_answered: 0,
+        schedule: 'Mañana 06:00-14:00',
+        establishment_id: null,
+        users_id: user.id,
+    };
+    operators.push(operator);
+    return { user: { ...user }, operator: { ...operator } };
+}
+
+export function authenticateMockUser(email, password) {
+    const user = findMockUserByEmail(email);
+    if (!user || String(user.password) !== String(password)) {
+        const err = new Error('Invalid credentials');
+        err.response = { status: 401, data: { error: 'Invalid credentials' } };
+        throw err;
+    }
+    return {
+        user: {
+            id: user.id,
+            email: user.email,
+            name: user.name,
+            role: String(user.role).toLowerCase() === 'admin' ? 'admin' : 'operator',
+        },
+        token: `mock-token-${user.id}-${Date.now()}`,
+    };
 }

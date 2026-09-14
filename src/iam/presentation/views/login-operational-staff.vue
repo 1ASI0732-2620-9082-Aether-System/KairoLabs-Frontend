@@ -63,7 +63,10 @@ async function onSubmit() {
   <auth-panel show-back @back="router.push({ name: 'login' })">
     <div class="reg-compact">
       <header class="reg-compact__head">
-        <img src="/logo.png" :alt="t('common.logoAlt')" class="reg-compact__logo" />
+        <div class="reg-compact__brand">
+          <img src="/logo.png" :alt="t('common.logoAlt')" class="reg-compact__logo" />
+          <strong>{{ t('common.brandName') }}</strong>
+        </div>
         <p class="reg-compact__badge">{{ t('iam.operational.badge') }}</p>
         <h1 class="reg-compact__title">{{ t('iam.login.welcome') }}</h1>
         <p class="reg-compact__hint">{{ t('iam.login.credentialsHint') }}</p>

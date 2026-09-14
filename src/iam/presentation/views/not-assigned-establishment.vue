@@ -9,7 +9,7 @@ const router = useRouter();
 const session = computed(() => readAuthSession());
 
 function goLogin() {
-  router.push({ name: 'iam-login-operational-staff' });
+  router.push({ name: 'login' });
 }
 </script>
 

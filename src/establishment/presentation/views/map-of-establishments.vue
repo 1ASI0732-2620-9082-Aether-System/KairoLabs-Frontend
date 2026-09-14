@@ -3,6 +3,7 @@ import { ref, onMounted, onBeforeUnmount, computed, nextTick, watch } from 'vue'
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { fetchDashboardPayload } from '../../../shared/infrastructure/dashboard-payload.js';
+import EstablishmentInspectFlow from '../components/establishment-inspect-flow.vue';
 
 const router = useRouter();
 const { t } = useI18n();
@@ -16,6 +17,7 @@ const statusFilter = ref('all');
 const typeFilter = ref('all');
 const regionFilter = ref('all');
 const mapContainerRef = ref(null);
+const inspectRef = ref(null);
 
 let map = null;
 let markers = [];
@@ -116,6 +118,37 @@ const regionOptions = computed(() => {
   return regions.sort((a, b) => String(a).localeCompare(String(b)));
 });
 
+const statusSelectOptions = computed(() => [
+  { label: t('establishment.mapFilterAllStatus'), value: 'all', icon: 'pi pi-filter' },
+  { label: t('establishment.mapStatusOperational'), value: 'operational', icon: 'pi pi-check-circle' },
+  { label: t('establishment.mapStatusMaintenance'), value: 'maintenance', icon: 'pi pi-cog' },
+]);
+
+const typeSelectOptions = computed(() => [
+  { label: t('establishment.mapFilterAllTypes'), value: 'all', icon: 'pi pi-list' },
+  { label: t('establishment.typeHospital'), value: 'HOSPITAL', icon: 'pi pi-building' },
+  { label: t('establishment.typeClinic'), value: 'CLINIC', icon: 'pi pi-home' },
+  { label: t('establishment.typeWarehouse'), value: 'WAREHOUSE', icon: 'pi pi-box' },
+]);
+
+const regionSelectOptions = computed(() => [
+  { label: t('establishment.mapFilterAllRegions'), value: 'all', icon: 'pi pi-globe' },
+  ...regionOptions.value.map((region) => ({ label: region, value: region, icon: 'pi pi-map-marker' })),
+]);
+
+const selectPt = {
+  root: { class: 'map-pv-select kl-select' },
+  label: { class: 'map-pv-select__label' },
+  dropdown: { class: 'map-pv-select__trigger' },
+  overlay: { class: 'map-pv-select__overlay kl-select-overlay' },
+  list: { class: 'map-pv-select__list' },
+  option: { class: 'map-pv-select__option' },
+};
+
+function findSelectOption(options, value) {
+  return options.find((o) => o.value === value) ?? null;
+}
+
 watch(filteredEstablishments, () => {
   updateMarkers();
 });
@@ -166,7 +199,7 @@ const updateMarkers = () => {
   markers.forEach((m) => map.removeLayer(m));
   markers = [];
 
-  const blueIcon = L.divIcon({ className: 'custom-pin blue' });
+  const blueIcon = L.divIcon({ className: 'custom-pin navy' });
   const orangeIcon = L.divIcon({ className: 'custom-pin orange' });
 
   establishments.value.forEach((est) => {
@@ -229,10 +262,7 @@ function goHome() {
 
 function manageSite() {
   if (!selectedEst.value) return;
-  router.push({
-    name: 'establishment-detail',
-    params: { establishmentId: String(selectedEst.value.id) },
-  });
+  inspectRef.value?.openDetail(selectedEst.value.id);
 }
 
 onMounted(() => {
@@ -279,7 +309,8 @@ onBeforeUnmount(() => {
           <p class="est-flow-subtitle">{{ t('establishment.mapPageSubtitle') }}</p>
         </div>
         <div class="est-flow-stats">
-          <div class="est-flow-stat est-flow-stat--blue">
+          <div class="est-flow-stat">
+            <span class="est-flow-stat__icon" aria-hidden="true"><i class="pi pi-map-marker"></i></span>
             <span class="est-flow-stat__label">{{ t('establishment.mapSitesLabel') }}</span>
             <span class="est-flow-stat__value">{{ establishments.length }}</span>
           </div>
@@ -313,21 +344,78 @@ onBeforeUnmount(() => {
           </div>
 
           <div class="map-sidebar__filters">
-            <select v-model="statusFilter" class="map-filter-select" :aria-label="t('establishment.mapFilterStatus')">
-              <option value="all">{{ t('establishment.mapFilterAllStatus') }}</option>
-              <option value="operational">{{ t('establishment.mapStatusOperational') }}</option>
-              <option value="maintenance">{{ t('establishment.mapStatusMaintenance') }}</option>
-            </select>
-            <select v-model="typeFilter" class="map-filter-select" :aria-label="t('establishment.mapFilterType')">
-              <option value="all">{{ t('establishment.mapFilterAllTypes') }}</option>
-              <option value="HOSPITAL">{{ t('establishment.typeHospital') }}</option>
-              <option value="CLINIC">{{ t('establishment.typeClinic') }}</option>
-              <option value="WAREHOUSE">{{ t('establishment.typeWarehouse') }}</option>
-            </select>
-            <select v-model="regionFilter" class="map-filter-select" :aria-label="t('establishment.mapFilterRegion')">
-              <option value="all">{{ t('establishment.mapFilterAllRegions') }}</option>
-              <option v-for="region in regionOptions" :key="region" :value="region">{{ region }}</option>
-            </select>
+            <pv-select
+              v-model="statusFilter"
+              :options="statusSelectOptions"
+              option-label="label"
+              option-value="value"
+              append-to="body"
+              :aria-label="t('establishment.mapFilterStatus')"
+              :pt="selectPt"
+            >
+              <template #value>
+                <span v-if="findSelectOption(statusSelectOptions, statusFilter)" class="kl-select-item">
+                  <span class="kl-select-item__icon">
+                    <i :class="findSelectOption(statusSelectOptions, statusFilter).icon" aria-hidden="true"></i>
+                  </span>
+                  <span class="kl-select-item__text">{{ findSelectOption(statusSelectOptions, statusFilter).label }}</span>
+                </span>
+              </template>
+              <template #option="{ option }">
+                <span class="kl-select-item">
+                  <span class="kl-select-item__icon"><i :class="option.icon" aria-hidden="true"></i></span>
+                  <span class="kl-select-item__text">{{ option.label }}</span>
+                </span>
+              </template>
+            </pv-select>
+            <pv-select
+              v-model="typeFilter"
+              :options="typeSelectOptions"
+              option-label="label"
+              option-value="value"
+              append-to="body"
+              :aria-label="t('establishment.mapFilterType')"
+              :pt="selectPt"
+            >
+              <template #value>
+                <span v-if="findSelectOption(typeSelectOptions, typeFilter)" class="kl-select-item">
+                  <span class="kl-select-item__icon">
+                    <i :class="findSelectOption(typeSelectOptions, typeFilter).icon" aria-hidden="true"></i>
+                  </span>
+                  <span class="kl-select-item__text">{{ findSelectOption(typeSelectOptions, typeFilter).label }}</span>
+                </span>
+              </template>
+              <template #option="{ option }">
+                <span class="kl-select-item">
+                  <span class="kl-select-item__icon"><i :class="option.icon" aria-hidden="true"></i></span>
+                  <span class="kl-select-item__text">{{ option.label }}</span>
+                </span>
+              </template>
+            </pv-select>
+            <pv-select
+              v-model="regionFilter"
+              :options="regionSelectOptions"
+              option-label="label"
+              option-value="value"
+              append-to="body"
+              :aria-label="t('establishment.mapFilterRegion')"
+              :pt="selectPt"
+            >
+              <template #value>
+                <span v-if="findSelectOption(regionSelectOptions, regionFilter)" class="kl-select-item">
+                  <span class="kl-select-item__icon">
+                    <i :class="findSelectOption(regionSelectOptions, regionFilter).icon" aria-hidden="true"></i>
+                  </span>
+                  <span class="kl-select-item__text">{{ findSelectOption(regionSelectOptions, regionFilter).label }}</span>
+                </span>
+              </template>
+              <template #option="{ option }">
+                <span class="kl-select-item">
+                  <span class="kl-select-item__icon"><i :class="option.icon" aria-hidden="true"></i></span>
+                  <span class="kl-select-item__text">{{ option.label }}</span>
+                </span>
+              </template>
+            </pv-select>
           </div>
 
           <div class="map-sidebar__list">
@@ -346,9 +434,13 @@ onBeforeUnmount(() => {
                 :class="est.status === 'operational' ? 'map-sidebar__dot--ok' : 'map-sidebar__dot--warn'"
                 aria-hidden="true"
               ></span>
-              <div>
+              <div class="map-sidebar__item-body">
                 <span class="map-sidebar__item-name">{{ est.establishment_name }}</span>
-                <span class="map-sidebar__item-region">{{ est.city_region }}</span>
+                <span class="map-sidebar__item-region">
+                  <i class="pi pi-map-marker" aria-hidden="true"></i>
+                  {{ est.city_region }}
+                </span>
+                <span class="map-sidebar__item-type">{{ formatType(est.establishment_type) }}</span>
               </div>
             </div>
           </div>
@@ -367,7 +459,7 @@ onBeforeUnmount(() => {
                   :aria-label="t('establishment.back')"
                   @click="selectedId = null"
                 >
-                  ×
+                  <i class="pi pi-times" aria-hidden="true"></i>
                 </button>
               </div>
               <h3 class="map-detail__name">{{ selectedEst.establishment_name }}</h3>
@@ -375,31 +467,36 @@ onBeforeUnmount(() => {
                 <i class="pi pi-map-marker" aria-hidden="true"></i>
                 <span>{{ selectedEst.address }}, {{ selectedEst.district }}</span>
               </p>
-              <div class="map-detail__stats">
-                <div>
+              <div class="map-detail__meta">
+                <div class="map-detail__meta-card">
                   <span class="map-detail__stat-label">{{ t('establishment.mapStateLabel') }}</span>
                   <span
-                    class="map-detail__stat-value"
+                    class="map-detail__pill"
                     :class="
                       selectedEst.status === 'operational'
-                        ? 'map-detail__stat-value--ok'
-                        : 'map-detail__stat-value--warn'
+                        ? 'map-detail__pill--ok'
+                        : 'map-detail__pill--warn'
                     "
                   >
+                    <i
+                      :class="selectedEst.status === 'operational' ? 'pi pi-check-circle' : 'pi pi-exclamation-circle'"
+                      aria-hidden="true"
+                    ></i>
                     {{ statusLabel(selectedEst.status) }}
                   </span>
                 </div>
-                <div>
+                <div class="map-detail__meta-card">
                   <span class="map-detail__stat-label">{{ t('establishment.mapStaffLabel') }}</span>
                   <span
-                    class="map-detail__stat-value"
-                    :class="{ 'map-detail__stat-value--muted': selectedOperatorCount === 0 }"
+                    class="map-detail__staff"
+                    :class="{ 'map-detail__staff--empty': selectedOperatorCount === 0 }"
                   >
+                    <i class="pi pi-users" aria-hidden="true"></i>
                     {{ personnelLabel(selectedOperatorCount) }}
                   </span>
                 </div>
               </div>
-              <button type="button" class="est-flow-btn est-flow-btn--primary est-flow-btn--block" @click="manageSite">
+              <button type="button" class="est-flow-btn est-flow-btn--accent est-flow-btn--block" @click="manageSite">
                 <i class="pi pi-eye" aria-hidden="true"></i>
                 <span>{{ t('establishment.mapManageSite') }}</span>
               </button>
@@ -425,6 +522,8 @@ onBeforeUnmount(() => {
         </main>
       </div>
     </div>
+
+    <EstablishmentInspectFlow ref="inspectRef" />
   </div>
 </template>
 
@@ -437,7 +536,7 @@ onBeforeUnmount(() => {
   margin-left: -9px;
   margin-top: -9px;
   border: 2px solid white;
-  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.25);
+  box-shadow: 0 3px 8px rgba(17, 36, 51, 0.28);
 }
 
 .custom-pin::after {
@@ -450,12 +549,13 @@ onBeforeUnmount(() => {
   border-radius: 50%;
 }
 
+.custom-pin.navy,
 .custom-pin.blue {
-  background: var(--mt-primary, #1e3a8a);
+  background: #112433;
 }
 
 .custom-pin.orange {
-  background: #d97706;
+  background: #f37021;
 }
 
 .leaflet-div-icon {
@@ -466,7 +566,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .est-flow-page--map {
-  max-width: 1200px;
+  max-width: 1360px;
 }
 
 .est-flow-card--map {
@@ -490,48 +590,57 @@ onBeforeUnmount(() => {
 
 .map-layout {
   display: flex;
-  min-height: min(72vh, 720px);
-  border: 1px solid var(--mt-border);
-  border-radius: 16px;
+  min-height: min(78vh, 760px);
+  border: 1px solid rgba(17, 36, 51, 0.12);
+  border-radius: 18px;
   overflow: hidden;
   background: #fff;
 }
 
 .map-sidebar {
-  width: min(100%, 300px);
+  width: min(100%, 320px);
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--mt-border);
-  background: #fafbfc;
+  border-right: 1px solid rgba(17, 36, 51, 0.1);
+  background: linear-gradient(180deg, #f7f8fa 0%, #f3f5f7 100%);
 }
 
 .map-sidebar__head {
-  padding: 1rem 1rem 0.75rem;
+  padding: 1rem 1rem 0.85rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  border-bottom: 1px solid var(--mt-border);
+  border-bottom: 1px solid rgba(17, 36, 51, 0.08);
 }
 
 .map-sidebar__title {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--mt-primary);
+  color: #112433;
+}
+
+.map-sidebar__head .est-flow-stat {
+  background: #112433;
+  border-color: #112433;
+}
+
+.map-sidebar__head .est-flow-stat__value {
+  color: #fff;
 }
 
 .map-sidebar__search {
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1rem 0.55rem;
   position: relative;
 }
 
 .map-sidebar__search i {
   position: absolute;
-  left: 1.6rem;
+  left: 1.65rem;
   top: 50%;
   transform: translateY(-50%);
   color: #94a3b8;
@@ -542,98 +651,168 @@ onBeforeUnmount(() => {
 .map-sidebar__search input {
   width: 100%;
   box-sizing: border-box;
-  padding: 0.55rem 0.75rem 0.55rem 2.25rem;
-  border: 1px solid var(--mt-border);
-  border-radius: 10px;
+  padding: 0.6rem 0.75rem 0.6rem 2.25rem;
+  border: 1px solid rgba(17, 36, 51, 0.12);
+  border-radius: 12px;
   font-size: 0.8125rem;
   font-family: inherit;
-  color: var(--mt-heading);
+  color: #112433;
   background: #fff;
 }
 
 .map-sidebar__search input:focus {
   outline: none;
-  border-color: var(--mt-primary);
-  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+  border-color: #f37021;
+  box-shadow: 0 0 0 3px rgba(243, 112, 33, 0.15);
 }
 
 .map-sidebar__filters {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.45rem;
-  padding: 0 1rem 0.75rem;
+  gap: 0.5rem;
+  padding: 0 1rem 0.85rem;
 }
 
-.map-filter-select {
+.map-sidebar__filters :deep(.map-pv-select),
+.map-sidebar__filters :deep(.p-select) {
   width: 100%;
-  padding: 0.5rem 0.65rem;
-  border: 1px solid var(--mt-border);
-  border-radius: 10px;
-  font-size: 0.75rem;
+  border: 1.5px solid rgba(17, 36, 51, 0.2) !important;
+  border-radius: 12px !important;
+  background: #fff !important;
+  min-height: 2.45rem;
+  box-shadow: 0 1px 2px rgba(17, 36, 51, 0.04) !important;
   font-family: inherit;
-  color: var(--mt-heading);
-  background: #fff;
+}
+
+.map-sidebar__filters :deep(.p-select:not(.p-disabled):hover),
+.map-sidebar__filters :deep(.map-pv-select:hover) {
+  border-color: rgba(243, 112, 33, 0.45) !important;
+}
+
+.map-sidebar__filters :deep(.p-select.p-focus),
+.map-sidebar__filters :deep(.map-pv-select.p-focus) {
+  border-color: #f37021 !important;
+  box-shadow: 0 0 0 3px rgba(243, 112, 33, 0.14) !important;
+}
+
+.map-sidebar__filters :deep(.p-select-label),
+.map-sidebar__filters :deep(.map-pv-select__label) {
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  color: #112433 !important;
+  padding: 0.55rem 0.75rem !important;
+}
+
+.map-sidebar__filters :deep(.p-select-dropdown) {
+  width: 2.2rem !important;
+  color: #64748b !important;
 }
 
 .map-sidebar__list {
   flex: 1;
   overflow-y: auto;
-  padding: 0.35rem 0.5rem 0.75rem;
+  padding: 0.35rem 0.55rem 0.85rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(17, 36, 51, 0.25) transparent;
+}
+
+.map-sidebar__list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.map-sidebar__list::-webkit-scrollbar-thumb {
+  background: rgba(17, 36, 51, 0.22);
+  border-radius: 999px;
 }
 
 .map-sidebar__item {
   display: flex;
   align-items: flex-start;
-  gap: 0.6rem;
-  padding: 0.6rem 0.65rem;
-  border-radius: 10px;
+  gap: 0.65rem;
+  padding: 0.75rem 0.7rem;
+  border-radius: 12px;
   cursor: pointer;
   border: 1px solid transparent;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
 
 .map-sidebar__item:hover {
   background: #fff;
-  border-color: var(--mt-border);
+  border-color: rgba(17, 36, 51, 0.1);
 }
 
 .map-sidebar__item--active {
-  background: var(--mt-primary-soft);
-  border-color: rgba(30, 58, 138, 0.2);
+  background: #fff;
+  border-color: rgba(243, 112, 33, 0.45);
+  box-shadow: 0 4px 14px rgba(17, 36, 51, 0.06);
 }
 
 .map-sidebar__dot {
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  margin-top: 0.35rem;
+  margin-top: 0.4rem;
   flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
 }
 
-.map-sidebar__dot--ok { background: #10b981; }
-.map-sidebar__dot--warn { background: #d97706; }
+.map-sidebar__dot--ok {
+  background: #10b981;
+}
+
+.map-sidebar__dot--warn {
+  background: #f37021;
+  box-shadow: 0 0 0 3px rgba(243, 112, 33, 0.16);
+}
+
+.map-sidebar__item-body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
 
 .map-sidebar__item-name {
   display: block;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--mt-heading);
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #112433;
   line-height: 1.3;
 }
 
 .map-sidebar__item-region {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
   font-size: 0.72rem;
-  color: var(--mt-text-muted);
-  margin-top: 0.1rem;
+  color: #64748b;
+}
+
+.map-sidebar__item-region i {
+  color: #f37021;
+  font-size: 0.65rem;
+}
+
+.map-sidebar__item-type {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 0.15rem;
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(17, 36, 51, 0.06);
+  color: #415a77;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .map-canvas {
   flex: 1;
   position: relative;
   min-width: 0;
-  min-height: 480px;
-  height: 100%;
+  min-height: 560px;
+  align-self: stretch;
 }
 
 .map-canvas__el {
@@ -641,9 +820,9 @@ onBeforeUnmount(() => {
   inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 480px;
+  min-height: 560px;
   z-index: 1;
-  background: #e8eef4;
+  background: #e7edf2;
 }
 
 .map-canvas__el.leaflet-container {
@@ -656,12 +835,12 @@ onBeforeUnmount(() => {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  width: min(100% - 2rem, 300px);
+  width: min(100% - 2rem, 310px);
   background: #fff;
-  border: 1px solid var(--mt-border);
+  border: 1px solid rgba(17, 36, 51, 0.1);
   border-radius: 16px;
   padding: 1.1rem 1.15rem;
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 16px 36px rgba(17, 36, 51, 0.14);
   z-index: 1000;
 }
 
@@ -678,51 +857,75 @@ onBeforeUnmount(() => {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.2rem 0.5rem;
-  border-radius: 6px;
-  background: var(--mt-primary-soft);
-  color: var(--mt-primary);
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(243, 112, 33, 0.12);
+  color: #e05a12;
 }
 
 .map-detail__close {
-  border: none;
-  background: transparent;
-  color: var(--mt-text-muted);
-  font-size: 1.25rem;
+  border: 1px solid rgba(17, 36, 51, 0.1);
+  background: #fff;
+  color: #64748b;
+  font-size: 0.85rem;
   line-height: 1;
   cursor: pointer;
-  padding: 0.15rem 0.35rem;
-  border-radius: 6px;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .map-detail__close:hover {
-  background: #f1f5f9;
-  color: var(--mt-heading);
+  background: #112433;
+  border-color: #112433;
+  color: #fff;
 }
 
 .map-detail__name {
   margin: 0 0 0.4rem;
   font-size: 1rem;
-  font-weight: 700;
-  color: var(--mt-heading);
+  font-weight: 800;
+  color: #112433;
   line-height: 1.3;
 }
 
 .map-detail__address {
   margin: 0 0 0.85rem;
   font-size: 0.78rem;
-  color: var(--mt-text-muted);
+  color: #64748b;
   display: flex;
   align-items: flex-start;
   gap: 0.35rem;
   line-height: 1.4;
 }
 
+.map-detail__address i {
+  color: #f37021;
+  margin-top: 0.1rem;
+}
+
 .map-detail__stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.65rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.9rem;
+}
+
+.map-detail__meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+  margin-bottom: 0.95rem;
+}
+
+.map-detail__meta-card {
+  padding: 0.7rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(17, 36, 51, 0.08);
+  background: #f8fafc;
 }
 
 .map-detail__stat-label {
@@ -731,14 +934,59 @@ onBeforeUnmount(() => {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--mt-text-muted);
-  margin-bottom: 0.15rem;
+  color: #64748b;
+  margin-bottom: 0.35rem;
 }
 
-.map-detail__stat-value { font-size: 0.8125rem; font-weight: 600; color: var(--mt-heading); }
+.map-detail__stat-value {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #112433;
+}
+
 .map-detail__stat-value--ok { color: #059669; }
-.map-detail__stat-value--warn { color: #d97706; }
-.map-detail__stat-value--muted { color: var(--mt-text-muted); font-weight: 500; }
+.map-detail__stat-value--warn { color: #f37021; }
+.map-detail__stat-value--muted { color: #64748b; font-weight: 500; }
+
+.map-detail__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.map-detail__pill--ok {
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+}
+
+.map-detail__pill--warn {
+  background: rgba(243, 112, 33, 0.14);
+  color: #c2410c;
+}
+
+.map-detail__staff {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #112433;
+  line-height: 1.35;
+}
+
+.map-detail__staff i {
+  color: #f37021;
+  margin-top: 0.1rem;
+}
+
+.map-detail__staff--empty {
+  color: #64748b;
+  font-weight: 500;
+}
 
 .map-tools {
   position: absolute;
@@ -752,27 +1000,33 @@ onBeforeUnmount(() => {
 .map-tools button {
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid var(--mt-border);
-  border-radius: 10px;
+  border: 1px solid rgba(17, 36, 51, 0.12);
+  border-radius: 12px;
   background: #fff;
-  color: var(--mt-text-muted);
+  color: #415a77;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
-  transition: background 0.15s ease, color 0.15s ease;
+  box-shadow: 0 4px 12px rgba(17, 36, 51, 0.08);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
 .map-tools button:hover {
-  background: var(--mt-primary-soft);
-  color: var(--mt-primary);
+  background: #112433;
+  border-color: #112433;
+  color: #fff;
 }
 
 .map-tools button.map-tools__primary {
-  background: linear-gradient(180deg, #2563eb, var(--mt-primary));
+  background: #f37021;
   color: #fff;
-  border-color: var(--mt-primary);
+  border-color: #f37021;
+}
+
+.map-tools button.map-tools__primary:hover {
+  background: #e05a12;
+  border-color: #e05a12;
 }
 
 .map-loader {
@@ -780,15 +1034,15 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: center;
   min-height: 320px;
-  color: var(--mt-text-muted);
+  color: #64748b;
   font-size: 0.875rem;
   gap: 0.65rem;
 }
 
 @media (max-width: 900px) {
   .map-layout { flex-direction: column; min-height: auto; }
-  .map-sidebar { width: 100%; max-height: 240px; border-right: none; border-bottom: 1px solid var(--mt-border); }
-  .map-canvas { min-height: 360px; }
+  .map-sidebar { width: 100%; max-height: 260px; border-right: none; border-bottom: 1px solid rgba(17, 36, 51, 0.1); }
+  .map-canvas { min-height: 400px; }
   .map-detail { left: 1rem; right: 1rem; width: auto; }
 }
 </style>

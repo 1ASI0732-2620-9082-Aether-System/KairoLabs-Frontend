@@ -1,7 +1,3 @@
-const loginHealthEntity = () => import('./views/login-health-entity.vue');
-const loginOperationalStaff = () => import('./views/login-operational-staff.vue');
-const registerHealthEntity = () => import('./views/register-health-entity.vue');
-const registerOperationalStaff = () => import('./views/register-operational-staff.vue');
 const registerPlans = () => import('./views/register-plans.vue');
 const billingCheckout = () => import('./views/billing-checkout.vue');
 
@@ -10,25 +6,25 @@ const iamAuthRoutes = [
     {
         path: 'login-health-entity',
         name: 'iam-login-health-entity',
-        component: loginHealthEntity,
+        redirect: { name: 'login' },
         meta: { title: 'Login', requiresAuth: false },
     },
     {
         path: 'login-operational-staff',
         name: 'iam-login-operational-staff',
-        component: loginOperationalStaff,
+        redirect: { name: 'login' },
         meta: { title: 'Login', requiresAuth: false },
     },
     {
         path: 'register-health-entity',
         name: 'iam-register-health-entity',
-        component: registerHealthEntity,
+        redirect: { name: 'iam-register', query: { role: 'health-entity' } },
         meta: { title: 'Register', requiresAuth: false },
     },
     {
         path: 'register-operational-staff',
         name: 'iam-register-operational-staff',
-        component: registerOperationalStaff,
+        redirect: { name: 'iam-register', query: { role: 'operational-staff' } },
         meta: { title: 'Register', requiresAuth: false },
     },
     {

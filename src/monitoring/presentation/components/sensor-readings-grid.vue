@@ -108,10 +108,17 @@ const dialogMeta = computed(() => {
 });
 
 function iconClass(st) {
-  if (st === 'ok') return 'pi pi-check est-flow-metric__icon--ok';
-  if (st === 'warning') return 'pi pi-exclamation-triangle est-flow-metric__icon--warn';
-  if (st === 'critical') return 'pi pi-times-circle est-flow-metric__icon--critical';
-  return 'pi pi-minus est-flow-metric__icon--unknown';
+  if (st === 'ok') return 'pi pi-check-circle sensor-card__icon--ok';
+  if (st === 'warning') return 'pi pi-exclamation-triangle sensor-card__icon--warn';
+  if (st === 'critical') return 'pi pi-times-circle sensor-card__icon--critical';
+  return 'pi pi-minus-circle sensor-card__icon--unknown';
+}
+
+function statusBadge(st) {
+  if (st === 'ok') return 'OK';
+  if (st === 'warning') return t(`${props.labelPrefix}.statusBadgeWarn`);
+  if (st === 'critical') return t(`${props.labelPrefix}.statusBadgeCritical`);
+  return '—';
 }
 
 function openRegularizeDialog(metric) { pendingMetric.value = metric; dialogOpen.value = true; }
@@ -135,42 +142,50 @@ async function confirmRegularize() {
 </script>
 
 <template>
-  <div class="est-flow-fields sensor-readings-grid">
-    <div
+  <div class="sensor-readings-grid">
+    <article
       v-for="m in metrics"
       :key="m.key"
-      class="est-flow-metric"
-      :class="{ 'est-flow-metric--alert': m.outOfRange && m.needsRegularize }"
+      class="sensor-card"
+      :class="{
+        'sensor-card--ok': m.displayStatus === 'ok',
+        'sensor-card--warn': m.displayStatus === 'warning',
+        'sensor-card--critical': m.displayStatus === 'critical',
+        'sensor-card--alert': m.outOfRange && m.needsRegularize,
+      }"
     >
-      <span class="est-flow-field__label">{{ m.label }}</span>
-      <div
-        class="est-flow-metric__body"
-        :class="{
-          'est-flow-metric__body--warn': m.displayStatus === 'warning',
-          'est-flow-metric__body--critical': m.displayStatus === 'critical',
-        }"
-      >
+      <div class="sensor-card__top">
+        <span class="sensor-card__label">{{ m.label }}</span>
         <span
-          class="est-flow-metric__value"
-          :class="{ 'est-flow-metric__value--pulse': m.outOfRange && m.needsRegularize }"
+          class="sensor-card__badge"
+          :class="{
+            'sensor-card__badge--ok': m.displayStatus === 'ok',
+            'sensor-card__badge--warn': m.displayStatus === 'warning',
+            'sensor-card__badge--critical': m.displayStatus === 'critical',
+          }"
+        >{{ statusBadge(m.displayStatus) }}</span>
+      </div>
+
+      <div class="sensor-card__row">
+        <span
+          class="sensor-card__value"
+          :class="{ 'sensor-card__value--pulse': m.outOfRange && m.needsRegularize }"
         >{{ m.text }}</span>
-        <div class="est-flow-metric__status">
-          <template v-if="m.needsRegularize">
-            <i :class="iconClass(m.displayStatus)" aria-hidden="true"></i>
-            <button
-              type="button"
-              class="est-flow-metric__regularize"
-              :title="t('monitoring.regularizeMetric')"
-              :aria-label="t('monitoring.regularizeAria', { metric: m.label })"
-              @click="openRegularizeDialog(m)"
-            >
-              <i class="pi pi-heart-fill" aria-hidden="true"></i>
-            </button>
-          </template>
-          <i v-else :class="iconClass(m.displayStatus)" aria-hidden="true"></i>
+        <div class="sensor-card__actions">
+          <i :class="iconClass(m.displayStatus)" aria-hidden="true"></i>
+          <button
+            v-if="m.needsRegularize"
+            type="button"
+            class="sensor-card__fix"
+            :title="t('monitoring.regularizeMetric')"
+            :aria-label="t('monitoring.regularizeAria', { metric: m.label })"
+            @click="openRegularizeDialog(m)"
+          >
+            <i class="pi pi-replay" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
-    </div>
+    </article>
   </div>
 
   <MtConfirmDialog
@@ -183,7 +198,7 @@ async function confirmRegularize() {
     :confirm-label="t('monitoring.regularize')"
     :cancel-label="t('monitoring.regularizeCancel')"
     confirm-tone="accent"
-    confirm-icon="pi pi-heart-fill"
+    confirm-icon="pi pi-replay"
     :close-aria-label="t('monitoring.regularizeClose')"
     @confirm="confirmRegularize"
     @cancel="closeDialog"

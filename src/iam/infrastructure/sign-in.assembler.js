@@ -34,15 +34,21 @@ export class SignInAssembler {
         const { user, token } = resource;
         const backendRole = String(user.role ?? '').toLowerCase(); // 'admin' | 'operator'
 
-        if (segment === 'health-entity' && backendRole !== 'admin') return null;
-        if (segment === 'operational-staff' && backendRole !== 'operator') return null;
+        const inferredSegment =
+            backendRole === 'admin'
+                ? 'health-entity'
+                : backendRole === 'operator'
+                    ? 'operational-staff'
+                    : null;
+        if (!inferredSegment) return null;
+        if (segment && segment !== inferredSegment) return null;
 
         return {
             userId: user.id,
             email: user.email,
             name: user.name,
             role: backendRole.toUpperCase(),
-            segment,
+            segment: inferredSegment,
             token,
             adminId: null,
             entityCode: null,

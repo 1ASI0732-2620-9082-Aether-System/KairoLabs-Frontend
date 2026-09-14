@@ -1,5 +1,7 @@
 import { BaseApi } from '../../shared/infrastructure/base-api.js';
 import { BaseEndpoint } from '../../shared/infrastructure/base-endpoint.js';
+import { isMockMode } from '../../shared/infrastructure/mocks/mock-config.js';
+import { MockApi } from '../../shared/infrastructure/mocks/mock-api.service.js';
 
 const usersEndpointPath = import.meta.env.VITE_USERS_ENDPOINT_PATH || '/users';
 const adminsEndpointPath = import.meta.env.VITE_ADMINS_ENDPOINT_PATH || '/admins';
@@ -30,6 +32,9 @@ export class IamApi extends BaseApi {
      * @returns {Promise<import('axios').AxiosResponse<Object>>} HTTP response with `{ user, token }`.
      */
     signIn(signInCommand) {
+        if (isMockMode()) {
+            return MockApi.signIn(signInCommand.email, signInCommand.password);
+        }
         return this.http.post(signInEndpointPath, {
             email: signInCommand.email,
             password: signInCommand.password,
@@ -37,14 +42,22 @@ export class IamApi extends BaseApi {
     }
 
     getUsers() {
+        if (isMockMode()) return MockApi.getUsers();
         return this.#usersEndpoint.getAll();
     }
 
     getUserById(id) {
+        if (isMockMode()) {
+            return MockApi.getUsers().then((res) => ({
+                ...res,
+                data: (res.data ?? []).find((u) => Number(u.id) === Number(id)) ?? null,
+            }));
+        }
         return this.#usersEndpoint.getById(id);
     }
 
     createUser(resource) {
+        if (isMockMode()) return MockApi.createUser(resource);
         return this.#usersEndpoint.create(resource);
     }
 
@@ -57,6 +70,7 @@ export class IamApi extends BaseApi {
     }
 
     getAdmins() {
+        if (isMockMode()) return MockApi.getAdmins();
         return this.#adminsEndpoint.getAll();
     }
 
@@ -77,6 +91,7 @@ export class IamApi extends BaseApi {
     }
 
     getOperators() {
+        if (isMockMode()) return MockApi.getOperators();
         return this.#operatorsEndpoint.getAll();
     }
 }

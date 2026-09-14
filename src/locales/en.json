@@ -3,11 +3,19 @@
     "home": "Home"
   },
   "login": {
-    "selectUserType": "Select your user type",
-    "brandMark": "◆ MEDITRACK SENSOR",
-    "brandTitle": "Clinical Operations with Unified Context",
-    "brandTagline": "Advanced monitoring and intelligent management for modern health organizations.",
-    "cardSubtitle": "Monitoring platform"
+    "selectUserType": "Choose your profile to enter the platform",
+    "brandMark": "Pharmaceutical conservation · IoT",
+    "brandTitle": "Smarter warehouses. Safer conservation.",
+    "brandTagline": "Temperature, humidity and light under control for hospitals, pharmacies and distribution.",
+    "cardSubtitle": "IoT monitoring platform",
+    "welcomeTitle": "Sign in to KairoLabs",
+    "welcomeBack": "Welcome back",
+    "signInSubtitle": "Sign in to monitor temperature, humidity, light and alerts in your warehouse.",
+    "newHere": "New to KairoLabs?",
+    "createAccount": "Create an account",
+    "headlineTemp": "Temperature, humidity and light in one view so you can act in time.",
+    "headlineAlerts": "Real-time alerts before a batch turns into loss.",
+    "headlineTrace": "Auditable histories for DIGEMID and MINSA, site by site."
   },
   "establishment": {
     "establishments": "View Establishments",
@@ -61,7 +69,7 @@
     "fieldExactLocation": "Exact location of device",
     "fieldMedicationType": "Medication / product type",
     "sensorReadings": "Sensor readings",
-    "sensorLiveHint": "Live readings. If a value exceeds the allowed threshold, a heart help icon appears; regularizing returns it to a safe range and shows a check mark.",
+    "sensorLiveHint": "Live readings. If a value exceeds the threshold, a regularize button appears; confirming returns it to a safe range.",
     "regularize": "Regularize",
     "regularizeMetric": "Regularize out-of-range reading",
     "regularizeAria": "Regularize {metric}",
@@ -69,6 +77,8 @@
     "sensorStatus_warning": "Warning: near limit",
     "sensorStatus_critical": "Out of range",
     "sensorStatus_unknown": "No data",
+    "statusBadgeWarn": "Warning",
+    "statusBadgeCritical": "Critical",
     "sensorTemp": "Temperature (°C)",
     "sensorHumidity": "Humidity (% RH)",
     "sensorLight": "Light intensity (LUX)",
@@ -239,7 +249,7 @@
     "createSuccess": "Device registered successfully",
     "createError": "Could not register the device",
     "sensorReadings": "Sensor readings",
-    "sensorLiveHint": "Live readings. If a value exceeds the allowed threshold, a heart help icon appears; regularizing returns it to a safe range and shows a check mark.",
+    "sensorLiveHint": "Live readings. If a value exceeds the threshold, a regularize button appears; confirming returns it to a safe range.",
     "regularize": "Regularize",
     "regularizeMetric": "Regularize out-of-range reading",
     "regularizeAria": "Regularize {metric}",
@@ -253,6 +263,8 @@
     "sensorStatus_warning": "Warning: near limit",
     "sensorStatus_critical": "Out of range",
     "sensorStatus_unknown": "No data",
+    "statusBadgeWarn": "Warning",
+    "statusBadgeCritical": "Critical",
     "noSensorData": "No sensor readings configured for this device.",
     "sensorTemp": "Temperature (°C)",
     "sensorHumidity": "Humidity (% RH)",
@@ -289,6 +301,11 @@
     "loadingTransports": "Loading transports…",
     "emptySearch": "No transports found.",
     "viewDetail": "View detail",
+    "deleteTransport": "Delete transport",
+    "deleteConfirmTitle": "Delete transport?",
+    "deleteConfirmMessage": "This action cannot be undone. The unit will be removed from the fleet.",
+    "deleteSuccess": "Transport deleted successfully",
+    "deleteError": "Could not delete the transport",
     "detailLoading": "Loading…",
     "transportNotFound": "Transport not found.",
     "transportInfo": "Transport information",
@@ -304,7 +321,7 @@
     "createSuccess": "Transport registered successfully",
     "createError": "Could not register the transport",
     "sensorReadings": "Sensor readings",
-    "sensorLiveHint": "Live readings. If a value exceeds the allowed threshold, a heart help icon appears; regularizing returns it to a safe range and shows a check mark.",
+    "sensorLiveHint": "Live readings. If a value exceeds the threshold, a regularize button appears; confirming returns it to a safe range.",
     "regularize": "Regularize",
     "regularizeMetric": "Regularize out-of-range reading",
     "regularizeAria": "Regularize {metric}",
@@ -312,6 +329,8 @@
     "sensorStatus_warning": "Warning: near limit",
     "sensorStatus_critical": "Out of range",
     "sensorStatus_unknown": "No data",
+    "statusBadgeWarn": "Warning",
+    "statusBadgeCritical": "Critical",
     "noSensorData": "No sensor readings configured for this transport.",
     "sensorTemp": "Temperature (°C)",
     "sensorHumidity": "Humidity (% RH)",
@@ -339,6 +358,7 @@
   },
   "homeHealth": {
     "title": "Health entity dashboard",
+    "welcomeName": "Welcome, {name}!",
     "greetingHello": "Hello,",
     "subtitle": "Manage your sites and operational staff with real-time monitoring tools.",
     "actionEstDesc": "View and manage all health establishments.",
@@ -348,6 +368,7 @@
   },
   "homeOperational": {
     "title": "Operational dashboard",
+    "welcomeName": "Welcome, {name}!",
     "greetingHello": "Hello,",
     "atEstablishment": "at {place}",
     "subtitle": "Critical monitoring of devices and transports assigned to your unit.",
@@ -357,8 +378,8 @@
     "alertsAnswered": "Alerts resolved"
   },
   "common": {
-    "brandName": "MediTrack Sensor",
-    "logoAlt": "MediTrack Sensor",
+    "brandName": "KairoLabs",
+    "logoAlt": "KairoLabs",
     "welcome": "Welcome",
     "pageNotFound": "Page Not Found",
     "goHome": "Go Home",
@@ -368,28 +389,34 @@
     "cancel": "Cancel"
   },
   "layout": {
-    "appTitle": "Monitoring management system",
+    "appTitle": "Pharmaceutical conservation monitoring",
     "goToProfile": "Go to profile",
     "showSidebar": "Show menu",
     "hideSidebar": "Hide menu",
     "collapseSidebar": "Collapse menu",
     "searchNav": "Search module…",
-    "guestUser": "User"
+    "guestUser": "User",
+    "brandTag": "IoT Pharma",
+    "sectionControl": "General control",
+    "sectionModules": "Modules",
+    "notifications": "Notifications",
+    "fullscreen": "Fullscreen",
+    "systemActive": "System active"
   },
   "iam": {
     "profile": "Profile",
     "logout": "Logout",
-    "healthEntity": { "badge": "Health entity" },
-    "operational": { "badge": "Operational staff" },
+    "healthEntity": { "badge": "Pharmacy manager" },
+    "operational": { "badge": "Warehouse staff" },
     "login": {
-      "welcome": "Sign in",
+      "welcome": "Welcome back",
       "submit": "Sign in",
       "signUp": "Sign up",
       "loading": "Signing in…",
       "noAccount": "Don't have an account?",
-      "credentialsHint": "Use the email and password registered on the platform.",
-      "successTitle": "Signed in",
-      "successDetail": "You have been authenticated successfully.",
+      "credentialsHint": "Use the email and password of your KairoLabs account.",
+      "successTitle": "Welcome back!",
+      "successDetail": "Taking you to your KairoLabs dashboard.",
       "pendingAssignmentTitle": "No site assigned",
       "pendingAssignmentDetail": "Contact your administrator: {admin}"
     },
@@ -400,15 +427,16 @@
       "backLogin": "Back to sign in"
     },
     "register": {
-      "getStarted": "Get started now",
+      "getStarted": "Create your account",
+      "chooseRoleHint": "Choose your profile and complete your details. Pharmacy managers pick a plan next.",
       "viewPlans": "View plans",
       "createAccount": "Create account",
       "hasAccount": "Already have an account?",
       "signIn": "Sign in",
-      "operatorCodeHint": "Use only the code from your health entity.",
-      "healthEntityHint": "Next you will choose plan and payment.",
+      "operatorCodeHint": "Use the code provided by your pharmacy or warehouse manager.",
+      "healthEntityHint": "Create your organization account, then choose a monitoring plan.",
       "entityCodeExamplesShort": "e.g. CSG-2024, LSS-2024",
-      "operatorSuccessTitle": "Account created",
+      "operatorSuccessTitle": "You're all set!",
       "operatorSuccessDetail": "Linked to {entity}. Sign in with your email."
     },
     "fields": {
@@ -426,19 +454,19 @@
       "entityName": "Organization name"
     },
     "errors": {
-      "title": "Error",
-      "required": "Please fill in all required fields.",
-      "requiredField": "Required",
-      "weakPassword": "At least 6 characters.",
-      "network": "Connection error.",
-      "emailExists": "Email already registered. Sign in with that email.",
-      "invalidEntityCode": "Invalid entity code.",
-      "invalidCredentials": "Invalid email or password.",
+      "title": "We couldn’t continue",
+      "required": "Some fields are still empty. Fill them in to continue.",
+      "requiredField": "This field is required",
+      "weakPassword": "Use at least 6 characters for your password.",
+      "network": "We couldn’t connect. Check your internet and try again.",
+      "emailExists": "That email already has an account. Try signing in.",
+      "invalidEntityCode": "That entity code isn’t valid.",
+      "invalidCredentials": "That email or password doesn’t match. Please try again.",
       "entityCodeRequired": "Entity code is required.",
       "missingRegistration": "Complete registration before choosing a plan.",
       "missingPlan": "Please select a plan.",
       "registrationFailed": "Registration could not be completed. Try with a different email.",
-      "serverError": "Server error. Wait a few minutes and try with a new email."
+      "serverError": "The server didn’t respond. Wait a moment and try with a new email."
     },
     "payment": {
       "title": "Billing information",
@@ -456,7 +484,12 @@
       "invalidCardNumber": "Invalid card number.",
       "invalidExpiry": "Invalid date (MM/YY).",
       "expiredCard": "Card expired.",
-      "invalidCvv": "Invalid CVV."
+      "invalidCvv": "Invalid CVV.",
+      "secureNote": "Simulated encrypted payment. No real charge is made.",
+      "processingTitle": "Processing your payment",
+      "processingHint": "Confirming with the demo gateway.",
+      "successHeadline": "Payment approved",
+      "successBody": "Your account is ready. Taking you to sign in."
     }
   },
   "profileView": {
@@ -571,10 +604,10 @@
     "author": "by {brand} Developer Team"
   },
   "roles": {
-    "healthEntity": "Health Entity",
-    "healthEntityDesc": "Manage establishments and operations",
-    "operationalStaff": "Operational Staff",
-    "operationalStaffDesc": "Monitor devices and transports"
+    "healthEntity": "Pharmacy manager",
+    "healthEntityDesc": "Oversee sites, evidence and DIGEMID/MINSA compliance",
+    "operationalStaff": "Warehouse staff",
+    "operationalStaffDesc": "Monitor temperature, humidity and light day to day"
   },
   "profileView": {
     "loading": "Loading profile…",

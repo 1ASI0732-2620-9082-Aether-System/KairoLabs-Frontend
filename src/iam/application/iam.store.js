@@ -169,6 +169,36 @@ const useIamStore = defineStore('iam', () => {
     // ─── Authentication use cases ─────────────────────────────────────────────────
 
     /**
+     * Signs in without choosing a portal first; the backend role decides the home.
+     * @param {string} email
+     * @param {string} password
+     * @returns {Promise<Object>} Result with session and destination route name.
+     */
+    async function login(email, password) {
+        const command = new SignInCommand({ email, password, segment: null });
+        if (!command.email || !command.password) {
+            return { ok: false, error: 'invalidCredentials' };
+        }
+
+        try {
+            const result = await signInReal(command);
+            if (!result.ok) return result;
+            const isAdmin = result.session.role === 'ADMIN';
+            localStorage.setItem('userRole', isAdmin ? 'health-entity' : 'operational-staff');
+            return {
+                ok: true,
+                session: result.session,
+                notAssigned: result.session.notAssigned,
+                home: isAdmin ? 'home-health-entity' : 'home-operational-staff',
+            };
+        } catch (err) {
+            const status = err?.response?.status;
+            if (status === 401 || status === 400) return { ok: false, error: 'invalidCredentials' };
+            return { ok: false, error: 'network' };
+        }
+    }
+
+    /**
      * Signs a health-entity administrator in.
      * @param {string} email
      * @param {string} password
@@ -318,7 +348,9 @@ const useIamStore = defineStore('iam', () => {
 
         try {
             const admins = (await iamApi.getAdmins()).data ?? [];
-            const matchedAdmin = admins.find((a) => a.entity_code === command.entityCode);
+            const matchedAdmin = admins.find(
+                (a) => String(a.entity_code || '').toUpperCase() === command.entityCode.toUpperCase(),
+            );
             if (!matchedAdmin) return { ok: false, error: 'invalidEntityCode' };
 
             const today = new Date().toISOString().split('T')[0];
@@ -332,6 +364,7 @@ const useIamStore = defineStore('iam', () => {
                 role: 'Operator',
                 password: command.password,
                 photo: '',
+                entity_code: matchedAdmin.entity_code,
             });
 
             return { ok: true, entityName: matchedAdmin.entity_name };
@@ -369,6 +402,7 @@ const useIamStore = defineStore('iam', () => {
         loadProfileFromSession,
         getUserById,
         getAdminById,
+        login,
         loginHealthEntity,
         loginOperationalStaff,
         startHealthEntityRegistration,

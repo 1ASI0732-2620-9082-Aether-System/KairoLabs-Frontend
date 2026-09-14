@@ -3,7 +3,7 @@
  * @module demo-payment.gateway
  */
 
-const PROCESSING_MS = 1200;
+const PROCESSING_MS = 1700;
 
 function hasText(value) {
     return String(value ?? '').trim().length > 0;

@@ -12,13 +12,32 @@ import { authenticationGuard } from "./iam/infrastructure/authentication.guard.j
 
 const pageNotFound = () => import('./shared/presentation/views/page-not-found.vue');
 const iamAuthLayout = () => import('./iam/presentation/views/auth-layout.vue');
+const authSessionLayout = () => import('./iam/presentation/views/auth-session-layout.vue');
+const register = () => import('./iam/presentation/views/register.vue');
 
 const routes = [
     {
-        path: '/login',
-        name: 'login',
-        component: Login,
-        meta: { title: 'Login', requiresAuth: false }
+        path: '/',
+        component: authSessionLayout,
+        meta: { requiresAuth: false },
+        children: [
+            {
+                path: '',
+                redirect: { name: 'login' },
+            },
+            {
+                path: 'login',
+                name: 'login',
+                component: Login,
+                meta: { title: 'Login', requiresAuth: false },
+            },
+            {
+                path: 'iam/auth/register',
+                name: 'iam-register',
+                component: register,
+                meta: { title: 'Register', requiresAuth: false },
+            },
+        ],
     },
     {
         path: '/iam/auth',
@@ -60,7 +79,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from) => {
-    let baseTitle = 'MediTrack Sensor';
+    let baseTitle = 'KairoLabs';
     document.title = `${baseTitle} - ${to.meta['title']}`;
     return authenticationGuard(to, from);
 });

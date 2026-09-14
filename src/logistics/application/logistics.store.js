@@ -62,6 +62,11 @@ const useLogisticsStore = defineStore('logistics', () => {
         return entity;
     }
 
+    async function deleteTransportAsync(transport) {
+        await logisticsApi.deleteTransport(transport.id, transport.establishment_id);
+        transports.value = transports.value.filter((t) => t.id !== transport.id);
+    }
+
     async function pushSimulatedReadings() {
         if (!transports.value.length) return;
         await Promise.allSettled(
@@ -98,6 +103,7 @@ const useLogisticsStore = defineStore('logistics', () => {
         fetchTransportsAsync,
         getTransportById,
         createTransportAsync,
+        deleteTransportAsync,
         pushSimulatedReadings,
         startSimulation,
         stopSimulation,

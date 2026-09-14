@@ -149,8 +149,6 @@ function goBack() {
 
 <template>
   <div class="est-flow-page">
-    <pv-toast />
-
     <nav class="est-flow-back-bar" aria-label="Navegación">
       <button type="button" class="est-flow-back-btn" @click="goBack">
         <i class="pi pi-arrow-left" aria-hidden="true"></i>

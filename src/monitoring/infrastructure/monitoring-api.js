@@ -1,5 +1,7 @@
 import { BaseApi } from '../../shared/infrastructure/base-api.js';
 import { BaseEndpoint } from '../../shared/infrastructure/base-endpoint.js';
+import { isMockMode } from '../../shared/infrastructure/mocks/mock-config.js';
+import { MockApi } from '../../shared/infrastructure/mocks/mock-api.service.js';
 
 const devicesEndpointPath =
     import.meta.env.VITE_MONITORING_ENDPOINT_PATH || '/devices';
@@ -19,14 +21,22 @@ export class MonitoringApi extends BaseApi {
     }
 
     getDevices() {
+        if (isMockMode()) return MockApi.getDevices();
         return this.#devicesEndpoint.getAll();
     }
 
     getDeviceById(id) {
+        if (isMockMode()) {
+            return MockApi.getDevices().then((res) => ({
+                ...res,
+                data: (res.data ?? []).find((d) => Number(d.id) === Number(id)) ?? null,
+            }));
+        }
         return this.#devicesEndpoint.getById(id);
     }
 
     createDevice(resource) {
+        if (isMockMode()) return MockApi.createDevice(resource);
         const establishmentId = resource.establishment_id;
         const { establishment_id: _estId, ...body } = resource;
         return this.http.post(`/establishments/${establishmentId}/devices`, body);
@@ -37,6 +47,9 @@ export class MonitoringApi extends BaseApi {
     }
 
     updateSensorData(id, sensorData, establishmentId) {
+        if (isMockMode()) {
+            return Promise.resolve({ status: 200, statusText: 'OK', data: { id, ...sensorData } });
+        }
         if (establishmentId) {
             return this.http.put(`/establishments/${establishmentId}/devices/${id}/sensor-data`, sensorData);
         }
@@ -44,6 +57,9 @@ export class MonitoringApi extends BaseApi {
     }
 
     deleteDevice(id, establishmentId) {
+        if (isMockMode()) {
+            return Promise.resolve({ status: 200, statusText: 'OK', data: null });
+        }
         if (establishmentId) {
             return this.http.delete(`/establishments/${establishmentId}/devices/${id}`);
         }

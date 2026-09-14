@@ -1,5 +1,7 @@
 import { BaseApi } from '../../shared/infrastructure/base-api.js';
 import { BaseEndpoint } from '../../shared/infrastructure/base-endpoint.js';
+import { isMockMode } from '../../shared/infrastructure/mocks/mock-config.js';
+import { MockApi } from '../../shared/infrastructure/mocks/mock-api.service.js';
 
 const subscriptionsEndpointPath =
     import.meta.env.VITE_SUBSCRIPTIONS_ENDPOINT_PATH || '/subscriptions';
@@ -18,44 +20,45 @@ export class SubscriptionsApi extends BaseApi {
         this.#subscriptionsEndpoint = new BaseEndpoint(this, subscriptionsEndpointPath);
     }
 
-    /**
-     * @returns {Promise<import('axios').AxiosResponse<Array<Object>|Object>>}
-     */
     getSubscriptions() {
+        if (isMockMode()) return MockApi.getSubscriptions();
         return this.#subscriptionsEndpoint.getAll();
     }
 
-    /**
-     * @param {number|string} id
-     * @returns {Promise<import('axios').AxiosResponse<Object>>}
-     */
     getSubscriptionById(id) {
+        if (isMockMode()) {
+            return MockApi.getSubscriptions().then((res) => ({
+                ...res,
+                data: (res.data ?? []).find((s) => Number(s.id) === Number(id)) ?? null,
+            }));
+        }
         return this.#subscriptionsEndpoint.getById(id);
     }
 
-    /**
-     * @param {Object} resource
-     * @returns {Promise<import('axios').AxiosResponse<Object>>}
-     */
     createSubscription(resource) {
+        if (isMockMode()) {
+            return Promise.resolve({
+                status: 200,
+                statusText: 'OK',
+                data: { id: Date.now(), ...resource, status: 'ACTIVE' },
+            });
+        }
         const adminId = resource.admin_id;
         const { admin_id: _adminId, ...body } = resource;
         return this.http.post(`/admins/${adminId}/subscriptions`, body);
     }
 
-    /**
-     * @param {Object} resource
-     * @returns {Promise<import('axios').AxiosResponse<Object>>}
-     */
     updateSubscription(resource) {
+        if (isMockMode()) {
+            return Promise.resolve({ status: 200, statusText: 'OK', data: resource });
+        }
         return this.#subscriptionsEndpoint.update(resource.id, resource);
     }
 
-    /**
-     * @param {number|string} id
-     * @returns {Promise<import('axios').AxiosResponse<void>>}
-     */
     deleteSubscription(id) {
+        if (isMockMode()) {
+            return Promise.resolve({ status: 200, statusText: 'OK', data: null });
+        }
         return this.#subscriptionsEndpoint.delete(id);
     }
 }
