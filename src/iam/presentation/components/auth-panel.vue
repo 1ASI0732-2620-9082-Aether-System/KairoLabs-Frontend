@@ -524,12 +524,22 @@ onUnmounted(() => {
 
 @media (max-width: 780px) {
   .auth-shell {
-    padding: 0.85rem;
+    padding: 0.65rem;
+    padding-bottom: max(0.65rem, env(safe-area-inset-bottom));
   }
 
   .auth-stage {
     grid-template-columns: 1fr;
     grid-template-rows: minmax(0, 1fr);
+    border-radius: 22px;
+    max-width: 100%;
+  }
+
+  .auth-shell--signup .auth-stage,
+  .auth-shell--single .auth-stage,
+  .auth-shell--wide .auth-stage {
+    max-width: 100%;
+    grid-template-columns: 1fr;
   }
 
   .auth-story {
@@ -537,12 +547,50 @@ onUnmounted(() => {
   }
 
   .auth-panel {
-    padding: 2.25rem 1.35rem 1.75rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3.35rem 1.15rem 1.35rem;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  .auth-shell--compact .auth-panel,
+  .auth-shell--signup .auth-panel,
+  .auth-shell--wide .auth-panel {
+    align-items: flex-start;
+    padding: 3.35rem 1.15rem 1.5rem;
+  }
+
+  .auth-card {
+    max-width: none;
+    overflow: visible;
   }
 
   .auth-lang {
-    top: 1rem;
-    right: 1rem;
+    top: 1.05rem;
+    right: 1.05rem;
+  }
+
+  .auth-back {
+    top: 0.85rem;
+    left: 0.85rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth-shell {
+    padding: 0.4rem;
+  }
+
+  .auth-stage {
+    border-radius: 18px;
+  }
+
+  .auth-panel,
+  .auth-shell--compact .auth-panel,
+  .auth-shell--signup .auth-panel,
+  .auth-shell--wide .auth-panel {
+    padding: 3.1rem 0.95rem 1.15rem;
   }
 }
 </style>

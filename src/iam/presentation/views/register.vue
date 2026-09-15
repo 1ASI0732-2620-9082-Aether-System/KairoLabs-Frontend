@@ -269,4 +269,27 @@ async function onSubmit() {
     transition: none;
   }
 }
+
+@media (max-width: 420px) {
+  .role-toggle {
+    border-radius: 16px;
+  }
+
+  .role-toggle__glider {
+    border-radius: 12px;
+  }
+
+  .role-toggle__btn {
+    flex-direction: column;
+    gap: 0.2rem;
+    min-height: 3rem;
+    font-size: 0.68rem;
+    border-radius: 12px;
+    padding: 0.35rem 0.4rem;
+  }
+
+  .role-toggle__btn i {
+    font-size: 0.85rem;
+  }
+}
 </style>

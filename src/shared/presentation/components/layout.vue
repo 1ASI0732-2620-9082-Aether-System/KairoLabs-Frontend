@@ -650,5 +650,24 @@ onBeforeUnmount(() => {
   .topbar-end {
     gap: 0.4rem;
   }
+
+  .main-content {
+    padding: 0.85rem 0.75rem 1.5rem;
+  }
+
+  .app-topbar {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar-title-wrap h1 {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    padding: 0.7rem 0.55rem 1.25rem;
+  }
 }
 </style>

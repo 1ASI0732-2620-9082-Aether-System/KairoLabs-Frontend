@@ -194,12 +194,35 @@
   min-width: 0;
 }
 
+.reg-compact__form--signup .reg-compact__field,
+.reg-compact__form--signup .reg-compact__swap {
+  min-width: 0;
+}
+
 @media (max-width: 600px) {
+  .reg-compact__title {
+    font-size: 1.25rem;
+  }
+
+  .reg-compact__hint {
+    font-size: 0.8rem;
+    margin-bottom: 0.65rem;
+  }
+
   .reg-compact__form--signup {
     grid-template-columns: 1fr;
+    row-gap: 0.65rem;
   }
 
   .reg-compact__row {
     grid-template-columns: 1fr;
+  }
+
+  .reg-compact__field input,
+  .reg-compact input[type='email'],
+  .reg-compact input[type='password'],
+  .reg-compact input[type='text'] {
+    height: 44px;
+    font-size: 16px; /* evita zoom iOS */
   }
 }
