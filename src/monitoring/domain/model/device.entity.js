@@ -71,6 +71,7 @@ export class Device {
     // ── Helpers ───────────────────────────────────────────────────────────────
 
     static toNum(v) {
+        if (v == null || (typeof v === 'string' && v.trim() === '')) return null;
         const n = Number(v);
         return Number.isFinite(n) ? n : null;
     }
