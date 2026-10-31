@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:unit": "node --test --test-reporter=spec tests/unit/core-entities.test.mjs",
+    "test:unit:tap": "node --test --test-reporter=tap tests/unit/core-entities.test.mjs"
   },
   "dependencies": {
     "@primeuix/themes": "^2.0.3",
