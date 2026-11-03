@@ -9,6 +9,6 @@ writeFileSync('evidence/quality/report.html',`<!doctype html><meta charset="utf-
 const browser=await chromium.launch();
 try {
  for(const [file,out]of [['evidence/quality/report.html','evidence/quality/quality-summary.png'],['evidence/bdd/cucumber-desktop.html','evidence/bdd/cucumber-desktop.png'],['evidence/bdd/cucumber-mobile.html','evidence/bdd/cucumber-mobile.png']]) {
- const page=await browser.newPage({viewport:{width:1440,height:1080}});await page.goto(pathToFileURL(resolve(file)).href);await page.waitForTimeout(1500);console.log(file,(await page.locator('body').innerText()).slice(0,250));await page.screenshot({path:out,fullPage:false});await page.close();
+ const page=await browser.newPage({viewport:{width:1440,height:1080}});await page.goto(pathToFileURL(resolve(file)).href);await page.waitForTimeout(1500);if(file.includes('cucumber'))await page.getByText('bdd\\core.feature',{exact:true}).click();console.log(file,(await page.locator('body').innerText()).slice(0,250));await page.screenshot({path:out,fullPage:false});await page.close();
  }
 }finally{await browser.close();}

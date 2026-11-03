@@ -14,6 +14,7 @@ Before(async function() {
  this.page.on('response',r=>{if(r.url().startsWith('http://127.0.0.1:5187/'))this.traffic.push({url:r.url(),status:r.status()});});
  await this.page.goto('http://localhost:5173/login');
  await this.page.locator('input[type=email]').waitFor();
+ await this.page.locator('.page-loader').waitFor({state:'hidden'});
 });
 Given('que existe una entidad con sede y dispositivo de prueba en la API real',function(){assert.ok(seed.siteName && seed.deviceName);});
 async function login(world,password) {
@@ -33,6 +34,7 @@ Then('el dispositivo persistido se muestra en pantalla',async function(){await t
 After(async function({pickle,result}) {
  const slug=pickle.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-');
  try {
+  await this.page.locator('.page-loader').waitFor({state:'hidden'});
   const image=await this.page.screenshot({path:`evidence/bdd/${viewport}-${slug}.png`,fullPage:true});
   await this.attach(image,'image/png');
   assert.equal(this.externalApi.length,0,'Se intentó consultar una API externa; petición bloqueada.');
