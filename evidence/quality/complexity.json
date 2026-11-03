@@ -1,0 +1,4640 @@
+[
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 9,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 16,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 20,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 24,
+    "complexity": 2,
+    "message": "Async function 'fetchEstablishmentsAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 36,
+    "complexity": 1,
+    "message": "Function 'fetchEstablishments' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 40,
+    "complexity": 2,
+    "message": "Async function 'fetchOperatorsAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 52,
+    "complexity": 1,
+    "message": "Function 'fetchOperators' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 56,
+    "complexity": 1,
+    "message": "Async function 'createEstablishmentAsync' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 64,
+    "complexity": 1,
+    "message": "Function 'getEstablishmentById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 66,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 69,
+    "complexity": 1,
+    "message": "Function 'getOperatorById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 71,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 74,
+    "complexity": 1,
+    "message": "Async function 'createOperatorAsync' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 82,
+    "complexity": 2,
+    "message": "Async function 'updateOperatorAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 85,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 90,
+    "complexity": 3,
+    "message": "Async function 'assignOperatorsToEstablishmentAsync' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 95,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 118,
+    "complexity": 1,
+    "message": "Async function 'deleteOperatorAsync' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/application/establishment.store.js",
+    "line": 120,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/establishment.entity.js",
+    "line": 10,
+    "complexity": 16,
+    "message": "Constructor has a complexity of 16. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 7,
+    "complexity": 7,
+    "message": "Constructor has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 22,
+    "complexity": 4,
+    "message": "Static method 'normalizeId' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 32,
+    "complexity": 4,
+    "message": "Static method 'getPendingUsers' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 36,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 36,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 38,
+    "complexity": 5,
+    "message": "Arrow function has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 49,
+    "complexity": 5,
+    "message": "Static method 'getAssignedForAdmin' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 54,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 55,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 57,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/domain/model/operator.entity.js",
+    "line": 63,
+    "complexity": 22,
+    "message": "Static method 'formatSchedule' has a complexity of 22. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 20,
+    "complexity": 1,
+    "message": "Constructor has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 26,
+    "complexity": 2,
+    "message": "Method 'getEstablishments' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 31,
+    "complexity": 2,
+    "message": "Method 'getEstablishmentById' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 33,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 35,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 41,
+    "complexity": 2,
+    "message": "Method 'createEstablishment' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 48,
+    "complexity": 1,
+    "message": "Method 'updateEstablishment' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 52,
+    "complexity": 1,
+    "message": "Method 'deleteEstablishment' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 56,
+    "complexity": 2,
+    "message": "Method 'getOperators' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 61,
+    "complexity": 2,
+    "message": "Method 'getOperatorById' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 63,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 65,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 71,
+    "complexity": 2,
+    "message": "Method 'createOperator' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 81,
+    "complexity": 2,
+    "message": "Method 'updateOperator' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 89,
+    "complexity": 1,
+    "message": "Method 'incrementOperatorAlert' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment-api.js",
+    "line": 93,
+    "complexity": 2,
+    "message": "Method 'deleteOperator' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment.assembler.js",
+    "line": 9,
+    "complexity": 1,
+    "message": "Static method 'toEntityFromResource' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment.assembler.js",
+    "line": 13,
+    "complexity": 7,
+    "message": "Static method 'toEntitiesFromResponse' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/establishment.assembler.js",
+    "line": 21,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/operator.assembler.js",
+    "line": 9,
+    "complexity": 1,
+    "message": "Static method 'toEntityFromResource' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/operator.assembler.js",
+    "line": 13,
+    "complexity": 7,
+    "message": "Static method 'toEntitiesFromResponse' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/infrastructure/operator.assembler.js",
+    "line": 21,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 48,
+    "complexity": 2,
+    "message": "Function 'sameId' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 52,
+    "complexity": 2,
+    "message": "Async function 'ensurePayload' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 63,
+    "complexity": 1,
+    "message": "Async function 'openDetail' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 75,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 76,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 84,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 87,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 90,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 92,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 95,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 97,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 100,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 102,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 105,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 107,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 110,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 116,
+    "complexity": 2,
+    "message": "Function 'personnel' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 117,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 120,
+    "complexity": 7,
+    "message": "Function 'deviceLabel' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 127,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 137,
+    "complexity": 5,
+    "message": "Arrow function has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 141,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 146,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 148,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 151,
+    "complexity": 5,
+    "message": "Arrow function has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 155,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 160,
+    "complexity": 7,
+    "message": "Arrow function has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 173,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 176,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 184,
+    "complexity": 12,
+    "message": "Arrow function has a complexity of 12. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 194,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 195,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 196,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 201,
+    "complexity": 7,
+    "message": "Arrow function has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 204,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 220,
+    "complexity": 1,
+    "message": "Function 'closeDetail' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 228,
+    "complexity": 1,
+    "message": "Function 'openTeam' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 234,
+    "complexity": 1,
+    "message": "Function 'openOperator' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/components/establishment-inspect-flow.vue",
+    "line": 239,
+    "complexity": 1,
+    "message": "Function 'openDevice' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 2,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 3,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 4,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 5,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 6,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 7,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 8,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 9,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 10,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/establishment/presentation/establishment-routes.js",
+    "line": 11,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 26,
+    "complexity": 5,
+    "message": "Async arrow function has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 41,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 44,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 47,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 49,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 57,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 63,
+    "complexity": 3,
+    "message": "Function 'getOperatorForUser' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 65,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 68,
+    "complexity": 5,
+    "message": "Function 'establishmentNameForUser' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 72,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 77,
+    "complexity": 1,
+    "message": "Function 'isUserSelected' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 81,
+    "complexity": 2,
+    "message": "Function 'toggleUser' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 89,
+    "complexity": 1,
+    "message": "Function 'selectEstablishment' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 93,
+    "complexity": 1,
+    "message": "Function 'isEstablishmentSelected' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 98,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 101,
+    "complexity": 6,
+    "message": "Async function 'confirmAssignment' has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 113,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/assign-operator.vue",
+    "line": 143,
+    "complexity": 2,
+    "message": "Function 'goBack' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/establishment-form.vue",
+    "line": 27,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/establishment-form.vue",
+    "line": 38,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/establishment-form.vue",
+    "line": 39,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/establishment-form.vue",
+    "line": 42,
+    "complexity": 2,
+    "message": "Async arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/establishment-form.vue",
+    "line": 53,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/establishment-form.vue",
+    "line": 57,
+    "complexity": 8,
+    "message": "Async arrow function has a complexity of 8. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/establishment-form.vue",
+    "line": 69,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/establishment-form.vue",
+    "line": 126,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 37,
+    "complexity": 15,
+    "message": "Function 'resolveCoords' has a complexity of 15. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 57,
+    "complexity": 4,
+    "message": "Async arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 61,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 79,
+    "complexity": 4,
+    "message": "Function 'destroyMap' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 80,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 98,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 100,
+    "complexity": 15,
+    "message": "Arrow function has a complexity of 15. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 116,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 117,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 118,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 121,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 127,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 134,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 136,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 148,
+    "complexity": 2,
+    "message": "Function 'findSelectOption' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 149,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 152,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 156,
+    "complexity": 4,
+    "message": "Async function 'initMap' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 158,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 166,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 190,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 193,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 196,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 199,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 205,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 206,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 209,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 216,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 217,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 220,
+    "complexity": 5,
+    "message": "Function 'countOperatorsForEstablishment' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 224,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 227,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 231,
+    "complexity": 3,
+    "message": "Function 'personnelLabel' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 237,
+    "complexity": 2,
+    "message": "Function 'statusLabel' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 243,
+    "complexity": 6,
+    "message": "Function 'formatType' has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 251,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 253,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 259,
+    "complexity": 1,
+    "message": "Function 'goHome' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 263,
+    "complexity": 3,
+    "message": "Function 'manageSite' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 268,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/map-of-establishments.vue",
+    "line": 291,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 16,
+    "complexity": 2,
+    "message": "Function 'sameEst' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 20,
+    "complexity": 5,
+    "message": "Async function 'load' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 25,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 26,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 27,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 37,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 39,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 49,
+    "complexity": 1,
+    "message": "Function 'goList' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-detail.vue",
+    "line": 53,
+    "complexity": 1,
+    "message": "Function 'goTeam' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-device-detail.vue",
+    "line": 17,
+    "complexity": 2,
+    "message": "Function 'sameEst' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-device-detail.vue",
+    "line": 21,
+    "complexity": 5,
+    "message": "Async function 'load' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-device-detail.vue",
+    "line": 27,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-device-detail.vue",
+    "line": 30,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-device-detail.vue",
+    "line": 41,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-device-detail.vue",
+    "line": 43,
+    "complexity": 1,
+    "message": "Function 'goTeam' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-device-detail.vue",
+    "line": 50,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 16,
+    "complexity": 2,
+    "message": "Function 'sameEst' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 20,
+    "complexity": 9,
+    "message": "Async function 'load' has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 26,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 30,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 32,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 43,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 45,
+    "complexity": 7,
+    "message": "Arrow function has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 58,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 61,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 69,
+    "complexity": 12,
+    "message": "Arrow function has a complexity of 12. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 79,
+    "complexity": 1,
+    "message": "Function 'goTeam' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 86,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 87,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 88,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-operator-detail.vue",
+    "line": 93,
+    "complexity": 7,
+    "message": "Arrow function has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 18,
+    "complexity": 2,
+    "message": "Function 'sameEst' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 22,
+    "complexity": 2,
+    "message": "Function 'personnel' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 24,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 27,
+    "complexity": 7,
+    "message": "Function 'deviceLabel' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 34,
+    "complexity": 7,
+    "message": "Async function 'load' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 39,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 42,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 43,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 53,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 55,
+    "complexity": 1,
+    "message": "Function 'goDetail' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 62,
+    "complexity": 1,
+    "message": "Function 'openOperator' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 72,
+    "complexity": 1,
+    "message": "Function 'openDevice' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishment-team.vue",
+    "line": 83,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 17,
+    "complexity": 2,
+    "message": "Async arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 28,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 32,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 39,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 42,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 44,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 57,
+    "complexity": 2,
+    "message": "Function 'formatLocation' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 62,
+    "complexity": 6,
+    "message": "Function 'formatType' has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 72,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-establishments.vue",
+    "line": 76,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 17,
+    "complexity": 2,
+    "message": "Function 'sameId' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 21,
+    "complexity": 12,
+    "message": "Async function 'load' has a complexity of 12. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 28,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 30,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 34,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 49,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 51,
+    "complexity": 7,
+    "message": "Arrow function has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 64,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 67,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 75,
+    "complexity": 12,
+    "message": "Arrow function has a complexity of 12. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 85,
+    "complexity": 1,
+    "message": "Function 'goList' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 89,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 90,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 91,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operator-detail.vue",
+    "line": 96,
+    "complexity": 7,
+    "message": "Arrow function has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 41,
+    "complexity": 2,
+    "message": "Async arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 55,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 64,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 74,
+    "complexity": 2,
+    "message": "Function 'getUserById' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 76,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 79,
+    "complexity": 4,
+    "message": "Function 'getEstablishmentName' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 81,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 85,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 86,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 99,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 112,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 115,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 118,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 121,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 127,
+    "complexity": 8,
+    "message": "Arrow function has a complexity of 8. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 140,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 143,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 151,
+    "complexity": 14,
+    "message": "Arrow function has a complexity of 14. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 161,
+    "complexity": 5,
+    "message": "Arrow function has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 166,
+    "complexity": 8,
+    "message": "Arrow function has a complexity of 8. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 171,
+    "complexity": 1,
+    "message": "Function 'goHome' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 175,
+    "complexity": 1,
+    "message": "Function 'viewOperator' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 180,
+    "complexity": 1,
+    "message": "Function 'goAssign' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 184,
+    "complexity": 1,
+    "message": "Function 'askDelete' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 189,
+    "complexity": 7,
+    "message": "Async function 'confirmDelete' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/establishment/presentation/views/view-operators.vue",
+    "line": 194,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 40,
+    "complexity": 11,
+    "message": "Async function 'signInReal' has a complexity of 11. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 51,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 65,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 80,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 93,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 94,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 98,
+    "complexity": 2,
+    "message": "Async function 'fetchUsersAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 110,
+    "complexity": 1,
+    "message": "Function 'fetchUsers' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 114,
+    "complexity": 2,
+    "message": "Async function 'fetchAdminsAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 126,
+    "complexity": 1,
+    "message": "Function 'fetchAdmins' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 130,
+    "complexity": 21,
+    "message": "Async function 'loadProfileFromSession' has a complexity of 21. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 135,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 136,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 137,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 144,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 145,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 159,
+    "complexity": 1,
+    "message": "Function 'getUserById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 161,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 164,
+    "complexity": 1,
+    "message": "Function 'getAdminById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 166,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 177,
+    "complexity": 11,
+    "message": "Async function 'login' has a complexity of 11. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 207,
+    "complexity": 9,
+    "message": "Async function 'loginHealthEntity' has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 231,
+    "complexity": 9,
+    "message": "Async function 'loginOperationalStaff' has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 254,
+    "complexity": 3,
+    "message": "Async function 'startHealthEntityRegistration' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 273,
+    "complexity": 1,
+    "message": "Function 'saveRegistrationPlan' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 286,
+    "complexity": 25,
+    "message": "Async function 'completeHealthEntityRegistration' has a complexity of 25. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 342,
+    "complexity": 15,
+    "message": "Async function 'registerOperationalStaff' has a complexity of 15. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 352,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+    "line": 379,
+    "complexity": 1,
+    "message": "Function 'logout' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/domain/model/admin.entity.js",
+    "line": 16,
+    "complexity": 9,
+    "message": "Constructor has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/domain/model/user.entity.js",
+    "line": 23,
+    "complexity": 14,
+    "message": "Constructor has a complexity of 14. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/domain/register-health-entity.command.js",
+    "line": 15,
+    "complexity": 1,
+    "message": "Constructor has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/domain/register-health-entity.command.js",
+    "line": 23,
+    "complexity": 4,
+    "message": "Method 'isComplete' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/domain/register-operational-staff.command.js",
+    "line": 18,
+    "complexity": 5,
+    "message": "Constructor has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/domain/sign-in.command.js",
+    "line": 14,
+    "complexity": 2,
+    "message": "Constructor has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/admin.assembler.js",
+    "line": 13,
+    "complexity": 1,
+    "message": "Static method 'toEntityFromResource' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/admin.assembler.js",
+    "line": 21,
+    "complexity": 7,
+    "message": "Static method 'toEntitiesFromResponse' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/admin.assembler.js",
+    "line": 29,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/auth-session.js",
+    "line": 10,
+    "complexity": 3,
+    "message": "Function 'readAuthSession' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/auth-session.js",
+    "line": 19,
+    "complexity": 2,
+    "message": "Function 'writeAuthSession' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/auth-session.js",
+    "line": 27,
+    "complexity": 3,
+    "message": "Function 'readPendingRegistration' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/auth-session.js",
+    "line": 36,
+    "complexity": 2,
+    "message": "Function 'writePendingRegistration' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/auth-session.js",
+    "line": 44,
+    "complexity": 3,
+    "message": "Function 'readPendingPlan' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/auth-session.js",
+    "line": 53,
+    "complexity": 2,
+    "message": "Function 'writePendingPlan' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/auth-session.js",
+    "line": 61,
+    "complexity": 1,
+    "message": "Function 'clearRegistrationFlow' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/authentication.guard.js",
+    "line": 11,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/authentication.guard.js",
+    "line": 12,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 22,
+    "complexity": 1,
+    "message": "Constructor has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 34,
+    "complexity": 2,
+    "message": "Method 'signIn' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 44,
+    "complexity": 2,
+    "message": "Method 'getUsers' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 49,
+    "complexity": 2,
+    "message": "Method 'getUserById' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 51,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 53,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 59,
+    "complexity": 2,
+    "message": "Method 'createUser' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 64,
+    "complexity": 1,
+    "message": "Method 'updateUser' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 68,
+    "complexity": 1,
+    "message": "Method 'deleteUser' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 72,
+    "complexity": 2,
+    "message": "Method 'getAdmins' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 77,
+    "complexity": 1,
+    "message": "Method 'getAdminById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 81,
+    "complexity": 1,
+    "message": "Method 'createAdmin' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 85,
+    "complexity": 1,
+    "message": "Method 'updateAdmin' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 89,
+    "complexity": 1,
+    "message": "Method 'deleteAdmin' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam-api.js",
+    "line": 93,
+    "complexity": 2,
+    "message": "Method 'getOperators' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/iam.interceptor.js",
+    "line": 11,
+    "complexity": 5,
+    "message": "Arrow function has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/sign-in.assembler.js",
+    "line": 14,
+    "complexity": 2,
+    "message": "Static method 'toResourceFromResponse' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/sign-in.assembler.js",
+    "line": 30,
+    "complexity": 9,
+    "message": "Static method 'toSessionFromResponse' has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/sign-in.resource.js",
+    "line": 13,
+    "complexity": 3,
+    "message": "Constructor has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/user.assembler.js",
+    "line": 13,
+    "complexity": 3,
+    "message": "Static method 'toEntityFromResource' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/user.assembler.js",
+    "line": 22,
+    "complexity": 7,
+    "message": "Static method 'toEntitiesFromResponse' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/infrastructure/user.assembler.js",
+    "line": 30,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 33,
+    "complexity": 1,
+    "message": "Function 'startCarousel' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 35,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 40,
+    "complexity": 2,
+    "message": "Function 'stopCarousel' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 47,
+    "complexity": 1,
+    "message": "Function 'selectSlide' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 52,
+    "complexity": 2,
+    "message": "Function 'clearTypeTimer' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 59,
+    "complexity": 1,
+    "message": "Function 'typeIn' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 61,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 71,
+    "complexity": 1,
+    "message": "Function 'deleteAllThen' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 72,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 85,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 92,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 97,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/components/auth-panel.vue",
+    "line": 102,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/presentation/iam-auth-routes.js",
+    "line": 1,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/presentation/iam-auth-routes.js",
+    "line": 2,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/presentation/iam-routes.js",
+    "line": 2,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/presentation/iam-routes.js",
+    "line": 3,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/presentation/iam-routes.js",
+    "line": 4,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/iam/presentation/iam-routes.js",
+    "line": 5,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/auth-session-layout.vue",
+    "line": 7,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/auth-session-layout.vue",
+    "line": 11,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/auth-session-layout.vue",
+    "line": 12,
+    "complexity": 5,
+    "message": "Arrow function has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 22,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 23,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 24,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 25,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 27,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 28,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 32,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 33,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 41,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 45,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 51,
+    "complexity": 2,
+    "message": "Function 'goBack' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 56,
+    "complexity": 1,
+    "message": "Function 'onCardNumberInput' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 61,
+    "complexity": 2,
+    "message": "Function 'onExpiryInput' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 66,
+    "complexity": 1,
+    "message": "Function 'onCvvInput' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 70,
+    "complexity": 1,
+    "message": "Function 'wait' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 71,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 74,
+    "complexity": 3,
+    "message": "Async function 'finishAndGoLogin' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/billing-checkout.vue",
+    "line": 87,
+    "complexity": 13,
+    "message": "Async function 'onSubmit' has a complexity of 13. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/login-health-entity.vue",
+    "line": 20,
+    "complexity": 5,
+    "message": "Async function 'onSubmit' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/login-operational-staff.vue",
+    "line": 20,
+    "complexity": 6,
+    "message": "Async function 'onSubmit' has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/login.vue",
+    "line": 19,
+    "complexity": 9,
+    "message": "Async function 'onSubmit' has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/not-assigned-establishment.vue",
+    "line": 9,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/not-assigned-establishment.vue",
+    "line": 11,
+    "complexity": 1,
+    "message": "Function 'goLogin' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 33,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 45,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 46,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 47,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 49,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 55,
+    "complexity": 11,
+    "message": "Function 'syncFormFromUser' has a complexity of 11. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 71,
+    "complexity": 2,
+    "message": "Async function 'loadProfile' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 91,
+    "complexity": 3,
+    "message": "Function 'goHome' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 98,
+    "complexity": 3,
+    "message": "Function 'goPlans' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 110,
+    "complexity": 1,
+    "message": "Function 'startEdit' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 115,
+    "complexity": 1,
+    "message": "Function 'cancelEdit' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/profile.vue",
+    "line": 120,
+    "complexity": 3,
+    "message": "Function 'saveEdit' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register-health-entity.vue",
+    "line": 18,
+    "complexity": 7,
+    "message": "Async function 'onSubmit' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register-operational-staff.vue",
+    "line": 19,
+    "complexity": 11,
+    "message": "Async function 'onSubmit' has a complexity of 11. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register-plans.vue",
+    "line": 16,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register-plans.vue",
+    "line": 22,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register-plans.vue",
+    "line": 23,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register-plans.vue",
+    "line": 48,
+    "complexity": 2,
+    "message": "Function 'selectPlan' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register-plans.vue",
+    "line": 62,
+    "complexity": 1,
+    "message": "Function 'goBack' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register.vue",
+    "line": 28,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register.vue",
+    "line": 30,
+    "complexity": 1,
+    "message": "Function 'selectRole' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/iam/presentation/views/register.vue",
+    "line": 35,
+    "complexity": 16,
+    "message": "Async function 'onSubmit' has a complexity of 16. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 14,
+    "complexity": 5,
+    "message": "Function 'generateSensorReading' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 15,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 29,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 35,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 37,
+    "complexity": 2,
+    "message": "Async function 'fetchTransportsAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 49,
+    "complexity": 1,
+    "message": "Function 'fetchTransports' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 53,
+    "complexity": 1,
+    "message": "Function 'getTransportById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 55,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 58,
+    "complexity": 1,
+    "message": "Async function 'createTransportAsync' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 65,
+    "complexity": 1,
+    "message": "Async function 'deleteTransportAsync' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 67,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 70,
+    "complexity": 2,
+    "message": "Async function 'pushSimulatedReadings' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 73,
+    "complexity": 3,
+    "message": "Async arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 77,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 84,
+    "complexity": 3,
+    "message": "Function 'startSimulation' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/application/logistics.store.js",
+    "line": 90,
+    "complexity": 2,
+    "message": "Function 'stopSimulation' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/domain/model/transport.entity.js",
+    "line": 10,
+    "complexity": 22,
+    "message": "Constructor has a complexity of 22. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 18,
+    "complexity": 1,
+    "message": "Constructor has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 23,
+    "complexity": 2,
+    "message": "Method 'getTransports' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 28,
+    "complexity": 2,
+    "message": "Method 'getTransportById' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 30,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 32,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 38,
+    "complexity": 2,
+    "message": "Method 'createTransport' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 45,
+    "complexity": 1,
+    "message": "Method 'updateTransport' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 49,
+    "complexity": 3,
+    "message": "Method 'updateSensorData' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/logistics-api.js",
+    "line": 59,
+    "complexity": 3,
+    "message": "Method 'deleteTransport' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/transport.assembler.js",
+    "line": 9,
+    "complexity": 1,
+    "message": "Static method 'toEntityFromResource' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/transport.assembler.js",
+    "line": 13,
+    "complexity": 7,
+    "message": "Static method 'toEntitiesFromResponse' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/infrastructure/transport.assembler.js",
+    "line": 21,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/presentation/logistics-routes.js",
+    "line": 2,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/presentation/logistics-routes.js",
+    "line": 3,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/logistics/presentation/logistics-routes.js",
+    "line": 4,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 58,
+    "complexity": 7,
+    "message": "Async arrow function has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 65,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 72,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 81,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 89,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 96,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 97,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 109,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 110,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 112,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 113,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 115,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 116,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 119,
+    "complexity": 2,
+    "message": "Function 'buildPayload' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 132,
+    "complexity": 7,
+    "message": "Async function 'handleConfirm' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/transport-form.vue",
+    "line": 171,
+    "complexity": 2,
+    "message": "Function 'goBack' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transport-detail.vue",
+    "line": 16,
+    "complexity": 3,
+    "message": "Async function 'load' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transport-detail.vue",
+    "line": 22,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transport-detail.vue",
+    "line": 32,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transport-detail.vue",
+    "line": 34,
+    "complexity": 1,
+    "message": "Function 'goList' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transport-detail.vue",
+    "line": 38,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transport-detail.vue",
+    "line": 52,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transport-detail.vue",
+    "line": 64,
+    "complexity": 5,
+    "message": "Arrow function has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 38,
+    "complexity": 2,
+    "message": "Async arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 49,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 51,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 55,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 61,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 64,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 69,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 71,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 74,
+    "complexity": 3,
+    "message": "Function 'isDoorOpen' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 79,
+    "complexity": 2,
+    "message": "Function 'hasAlert' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 83,
+    "complexity": 4,
+    "message": "Function 'formatTransportType' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 96,
+    "complexity": 5,
+    "message": "Function 'formatMedication' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 117,
+    "complexity": 2,
+    "message": "Function 'formatDoor' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 122,
+    "complexity": 5,
+    "message": "Function 'transportPlate' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 132,
+    "complexity": 1,
+    "message": "Function 'goHome' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 136,
+    "complexity": 1,
+    "message": "Function 'openAdd' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 140,
+    "complexity": 2,
+    "message": "Async function 'onTransportSaved' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 149,
+    "complexity": 1,
+    "message": "Function 'viewTransport' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 154,
+    "complexity": 1,
+    "message": "Function 'askDelete' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 159,
+    "complexity": 5,
+    "message": "Async function 'confirmDelete' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/logistics/presentation/views/view-transports.vue",
+    "line": 163,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 14,
+    "complexity": 5,
+    "message": "Function 'generateSensorReading' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 15,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 29,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 35,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 37,
+    "complexity": 1,
+    "message": "Function 'fetchDevices' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 41,
+    "complexity": 2,
+    "message": "Async function 'fetchDevicesAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 53,
+    "complexity": 1,
+    "message": "Function 'getDeviceById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 55,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 58,
+    "complexity": 1,
+    "message": "Async function 'createDeviceAsync' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 65,
+    "complexity": 2,
+    "message": "Async function 'deleteDeviceAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 67,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 72,
+    "complexity": 2,
+    "message": "Async function 'pushSimulatedReadings' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 75,
+    "complexity": 3,
+    "message": "Async arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 79,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 86,
+    "complexity": 3,
+    "message": "Function 'startSimulation' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/application/monitoring.store.js",
+    "line": 92,
+    "complexity": 2,
+    "message": "Function 'stopSimulation' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 7,
+    "complexity": 22,
+    "message": "Constructor has a complexity of 22. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 50,
+    "complexity": 1,
+    "message": "Class field initializer has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 61,
+    "complexity": 1,
+    "message": "Class field initializer has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 73,
+    "complexity": 5,
+    "message": "Static method 'toNum' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 79,
+    "complexity": 1,
+    "message": "Static method 'findMetricDef' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 80,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 83,
+    "complexity": 8,
+    "message": "Static method 'readField' has a complexity of 8. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 96,
+    "complexity": 16,
+    "message": "Static method 'evaluateMetric' has a complexity of 16. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 113,
+    "complexity": 2,
+    "message": "Static method 'isOutOfRange' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 118,
+    "complexity": 4,
+    "message": "Static method 'getSafeValue' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 123,
+    "complexity": 7,
+    "message": "Static method 'driftValue' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 136,
+    "complexity": 6,
+    "message": "Static method 'formatMetric' has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 143,
+    "complexity": 2,
+    "message": "Static method 'formatSafeMetric' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 151,
+    "complexity": 11,
+    "message": "Static method 'initLiveSnapshot' has a complexity of 11. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/domain/model/device.entity.js",
+    "line": 169,
+    "complexity": 6,
+    "message": "Static method 'isMetricEnabled' has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/device.assembler.js",
+    "line": 9,
+    "complexity": 1,
+    "message": "Static method 'toEntityFromResource' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/device.assembler.js",
+    "line": 13,
+    "complexity": 7,
+    "message": "Static method 'toEntitiesFromResponse' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/device.assembler.js",
+    "line": 21,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 18,
+    "complexity": 1,
+    "message": "Constructor has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 23,
+    "complexity": 2,
+    "message": "Method 'getDevices' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 28,
+    "complexity": 2,
+    "message": "Method 'getDeviceById' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 30,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 32,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 38,
+    "complexity": 2,
+    "message": "Method 'createDevice' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 45,
+    "complexity": 1,
+    "message": "Method 'updateDevice' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 49,
+    "complexity": 3,
+    "message": "Method 'updateSensorData' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/infrastructure/monitoring-api.js",
+    "line": 59,
+    "complexity": 3,
+    "message": "Method 'deleteDevice' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 51,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 63,
+    "complexity": 2,
+    "message": "Function 'numAvg' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 64,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 64,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 66,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 69,
+    "complexity": 4,
+    "message": "Function 'truncateLabel' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 76,
+    "complexity": 6,
+    "message": "Function 'aggregateAlertsByUser' has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 84,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 87,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 89,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 94,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 95,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 96,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 97,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 98,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 99,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 101,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 103,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 105,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 106,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 115,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 117,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 117,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 118,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 119,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 133,
+    "complexity": 9,
+    "message": "Arrow function has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 146,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 158,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 162,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 173,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 186,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 235,
+    "complexity": 9,
+    "message": "Arrow function has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 242,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 273,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 302,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 311,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 315,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 316,
+    "complexity": 2,
+    "message": "Method 'backgroundColor' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 332,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 361,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 363,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 364,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 365,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 386,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 413,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/control-center-panel.vue",
+    "line": 415,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 28,
+    "complexity": 2,
+    "message": "Function 'resetLive' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 34,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 34,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 36,
+    "complexity": 2,
+    "message": "Function 'isRegularized' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 41,
+    "complexity": 19,
+    "message": "Function 'tick' has a complexity of 19. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 72,
+    "complexity": 2,
+    "message": "Function 'regularize' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 79,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 82,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 83,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 93,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 94,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 101,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 110,
+    "complexity": 4,
+    "message": "Function 'iconClass' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 117,
+    "complexity": 4,
+    "message": "Function 'statusBadge' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 124,
+    "complexity": 1,
+    "message": "Function 'openRegularizeDialog' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 125,
+    "complexity": 1,
+    "message": "Function 'closeDialog' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+    "line": 126,
+    "complexity": 5,
+    "message": "Async function 'confirmRegularize' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/presentation/monitoring-routes.js",
+    "line": 2,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/presentation/monitoring-routes.js",
+    "line": 3,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/presentation/monitoring-routes.js",
+    "line": 4,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/monitoring/presentation/monitoring-routes.js",
+    "line": 5,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/device-form.vue",
+    "line": 53,
+    "complexity": 1,
+    "message": "Async arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/device-form.vue",
+    "line": 56,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/device-form.vue",
+    "line": 60,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/device-form.vue",
+    "line": 72,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/device-form.vue",
+    "line": 73,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/device-form.vue",
+    "line": 76,
+    "complexity": 3,
+    "message": "Function 'buildPayload' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/device-form.vue",
+    "line": 88,
+    "complexity": 5,
+    "message": "Async function 'handleConfirm' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/device-form.vue",
+    "line": 116,
+    "complexity": 2,
+    "message": "Function 'goBack' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/monitoring-dashboard.vue",
+    "line": 9,
+    "complexity": 2,
+    "message": "Async arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-device-detail.vue",
+    "line": 22,
+    "complexity": 3,
+    "message": "Async function 'load' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-device-detail.vue",
+    "line": 28,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-device-detail.vue",
+    "line": 38,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-device-detail.vue",
+    "line": 40,
+    "complexity": 1,
+    "message": "Function 'goList' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-device-detail.vue",
+    "line": 44,
+    "complexity": 3,
+    "message": "Async function 'confirmDelete' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-device-detail.vue",
+    "line": 58,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 39,
+    "complexity": 2,
+    "message": "Async arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 50,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 54,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 58,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 64,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 67,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 72,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 74,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 77,
+    "complexity": 6,
+    "message": "Arrow function has a complexity of 6. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 94,
+    "complexity": 4,
+    "message": "Function 'formatMedication' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 111,
+    "complexity": 2,
+    "message": "Function 'hasAlert' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 115,
+    "complexity": 1,
+    "message": "Function 'goHome' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 119,
+    "complexity": 1,
+    "message": "Function 'openAdd' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 123,
+    "complexity": 2,
+    "message": "Async function 'onDeviceSaved' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 132,
+    "complexity": 1,
+    "message": "Function 'viewDevice' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 137,
+    "complexity": 1,
+    "message": "Function 'askDelete' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 142,
+    "complexity": 5,
+    "message": "Async function 'confirmDelete' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/monitoring/presentation/views/view-devices.vue",
+    "line": 147,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "Exp Software/review/KairoLabs-Frontend/src/router.js",
+    "line": 13,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "Exp Software/review/KairoLabs-Frontend/src/router.js",
+    "line": 14,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "Exp Software/review/KairoLabs-Frontend/src/router.js",
+    "line": 15,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "Exp Software/review/KairoLabs-Frontend/src/router.js",
+    "line": 16,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "Exp Software/review/KairoLabs-Frontend/src/router.js",
+    "line": 55,
+    "complexity": 7,
+    "message": "Method 'redirect' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "Exp Software/review/KairoLabs-Frontend/src/router.js",
+    "line": 81,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/base-api.js",
+    "line": 23,
+    "complexity": 2,
+    "message": "Constructor has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/base-api.js",
+    "line": 42,
+    "complexity": 1,
+    "message": "Getter 'http' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/base-endpoint.js",
+    "line": 12,
+    "complexity": 1,
+    "message": "Constructor has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/base-endpoint.js",
+    "line": 21,
+    "complexity": 1,
+    "message": "Method 'getAll' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/base-endpoint.js",
+    "line": 30,
+    "complexity": 1,
+    "message": "Method 'getById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/base-endpoint.js",
+    "line": 39,
+    "complexity": 1,
+    "message": "Method 'create' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/base-endpoint.js",
+    "line": 49,
+    "complexity": 1,
+    "message": "Method 'update' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/base-endpoint.js",
+    "line": 58,
+    "complexity": 1,
+    "message": "Method 'delete' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/dashboard-payload.js",
+    "line": 13,
+    "complexity": 2,
+    "message": "Function 'entitiesToPlain' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/dashboard-payload.js",
+    "line": 14,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/dashboard-payload.js",
+    "line": 20,
+    "complexity": 1,
+    "message": "Async function 'fetchDashboardPayload' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 21,
+    "complexity": 1,
+    "message": "Method 'getUsers' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 22,
+    "complexity": 1,
+    "message": "Method 'getAdmins' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 23,
+    "complexity": 1,
+    "message": "Method 'getEstablishments' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 24,
+    "complexity": 1,
+    "message": "Method 'getOperators' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 25,
+    "complexity": 1,
+    "message": "Method 'getDevices' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 26,
+    "complexity": 1,
+    "message": "Method 'getTransports' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 27,
+    "complexity": 1,
+    "message": "Method 'getSubscriptions' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 28,
+    "complexity": 1,
+    "message": "Method 'createEstablishment' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 30,
+    "complexity": 1,
+    "message": "Method 'createDevice' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 31,
+    "complexity": 1,
+    "message": "Method 'createTransport' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 32,
+    "complexity": 1,
+    "message": "Method 'createOperator' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 33,
+    "complexity": 1,
+    "message": "Method 'updateOperator' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 34,
+    "complexity": 1,
+    "message": "Method 'deleteOperator' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 36,
+    "complexity": 1,
+    "message": "Async method 'signIn' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 41,
+    "complexity": 1,
+    "message": "Async method 'createUser' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-api.service.js",
+    "line": 47,
+    "complexity": 1,
+    "message": "Async method 'findAdminByEntityCode' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-config.js",
+    "line": 2,
+    "complexity": 1,
+    "message": "Function 'isMockMode' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-config.js",
+    "line": 6,
+    "complexity": 2,
+    "message": "Function 'mockDelay' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-config.js",
+    "line": 7,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-config.js",
+    "line": 10,
+    "complexity": 1,
+    "message": "Async function 'withMockDelay' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-config.js",
+    "line": 15,
+    "complexity": 1,
+    "message": "Function 'mockOk' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 8,
+    "complexity": 1,
+    "message": "Function 'uid' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 431,
+    "complexity": 1,
+    "message": "Function 'cloneMockList' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 432,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 435,
+    "complexity": 9,
+    "message": "Function 'addMockEstablishment' has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 450,
+    "complexity": 2,
+    "message": "Function 'addMockDevice' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 462,
+    "complexity": 1,
+    "message": "Function 'getNextMockDeviceId' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 463,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 467,
+    "complexity": 2,
+    "message": "Function 'addMockTransport' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 479,
+    "complexity": 1,
+    "message": "Function 'getNextMockTransportId' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 480,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 484,
+    "complexity": 1,
+    "message": "Function 'addMockOperator' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 496,
+    "complexity": 2,
+    "message": "Function 'updateMockOperator' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 497,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 503,
+    "complexity": 2,
+    "message": "Function 'deleteMockOperator' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 504,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 510,
+    "complexity": 2,
+    "message": "Function 'findMockOperatorByUserId' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 512,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 515,
+    "complexity": 3,
+    "message": "Function 'findMockUserByEmail' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 517,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 520,
+    "complexity": 3,
+    "message": "Function 'findMockAdminByEntityCode' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 522,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 525,
+    "complexity": 17,
+    "message": "Function 'addMockUser' has a complexity of 17. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/infrastructure/mocks/mock-database.js",
+    "line": 579,
+    "complexity": 4,
+    "message": "Function 'authenticateMockUser' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/profile-demo.facade.js",
+    "line": 17,
+    "complexity": 3,
+    "message": "Function 'pickRandom' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/profile-demo.facade.js",
+    "line": 26,
+    "complexity": 16,
+    "message": "Async function 'fetchProfileDemoFromApis' has a complexity of 16. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/profile-demo.facade.js",
+    "line": 38,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/profile-demo.facade.js",
+    "line": 42,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/profile-demo.facade.js",
+    "line": 45,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/shared/infrastructure/route.helpers.js",
+    "line": 7,
+    "complexity": 5,
+    "message": "Function 'getProfileRoute' has a complexity of 5. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/language-switcher.vue",
+    "line": 11,
+    "complexity": 2,
+    "message": "Function 'toggleLocale' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 23,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 24,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 26,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 27,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 32,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 53,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 54,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 58,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 61,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 61,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 62,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 62,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 66,
+    "complexity": 1,
+    "message": "Function 'pad' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 70,
+    "complexity": 1,
+    "message": "Function 'tickClock' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 75,
+    "complexity": 1,
+    "message": "Function 'toggleSidebar' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 79,
+    "complexity": 1,
+    "message": "Function 'goToProfile' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 83,
+    "complexity": 1,
+    "message": "Function 'handleLogout' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 89,
+    "complexity": 2,
+    "message": "Function 'isActive' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 93,
+    "complexity": 4,
+    "message": "Function 'toggleFullscreen' has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 101,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 110,
+    "complexity": 1,
+    "message": "Function 'onResize' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/layout.vue",
+    "line": 114,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/mt-confirm-dialog.vue",
+    "line": 19,
+    "complexity": 1,
+    "message": "Method 'validator' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/mt-confirm-dialog.vue",
+    "line": 27,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/mt-confirm-dialog.vue",
+    "line": 33,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/mt-confirm-dialog.vue",
+    "line": 45,
+    "complexity": 1,
+    "message": "Function 'close' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/mt-confirm-dialog.vue",
+    "line": 50,
+    "complexity": 1,
+    "message": "Function 'onConfirm' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/page-loader.vue",
+    "line": 8,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/page-loader.vue",
+    "line": 12,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/components/page-loader.vue",
+    "line": 14,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-health-entity.vue",
+    "line": 15,
+    "complexity": 2,
+    "message": "Async arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-health-entity.vue",
+    "line": 25,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-health-entity.vue",
+    "line": 26,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-health-entity.vue",
+    "line": 70,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-operational-staff.vue",
+    "line": 13,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-operational-staff.vue",
+    "line": 16,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-operational-staff.vue",
+    "line": 29,
+    "complexity": 9,
+    "message": "Async arrow function has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-operational-staff.vue",
+    "line": 35,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-operational-staff.vue",
+    "line": 39,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home-operational-staff.vue",
+    "line": 71,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home.vue",
+    "line": 8,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/shared/presentation/views/home.vue",
+    "line": 9,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 15,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 20,
+    "complexity": 2,
+    "message": "Arrow function has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 24,
+    "complexity": 2,
+    "message": "Async function 'fetchSubscriptionsAsync' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 36,
+    "complexity": 1,
+    "message": "Function 'fetchSubscriptions' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 40,
+    "complexity": 1,
+    "message": "Function 'getSubscriptionById' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 42,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 47,
+    "complexity": 3,
+    "message": "Function 'readPlanContext' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 56,
+    "complexity": 1,
+    "message": "Function 'writePlanContext' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/application/subscriptions.store.js",
+    "line": 60,
+    "complexity": 1,
+    "message": "Function 'apiPlanToCatalogId' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/demo-payment.gateway.js",
+    "line": 8,
+    "complexity": 2,
+    "message": "Function 'hasText' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/demo-payment.gateway.js",
+    "line": 17,
+    "complexity": 7,
+    "message": "Function 'validateDemoPayment' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/demo-payment.gateway.js",
+    "line": 26,
+    "complexity": 1,
+    "message": "Function 'simulateDemoPaymentProcessing' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/demo-payment.gateway.js",
+    "line": 27,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/subscription.entity.js",
+    "line": 7,
+    "complexity": 9,
+    "message": "Constructor has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/subscription.entity.js",
+    "line": 27,
+    "complexity": 1,
+    "message": "Class field initializer has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/subscription.entity.js",
+    "line": 29,
+    "complexity": 1,
+    "message": "Class field initializer has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/subscription.entity.js",
+    "line": 53,
+    "complexity": 3,
+    "message": "Static method 'getPlanByCatalogId' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/subscription.entity.js",
+    "line": 58,
+    "complexity": 3,
+    "message": "Static method 'apiPlanToCatalogId' has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/subscription.entity.js",
+    "line": 61,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/domain/model/subscription.entity.js",
+    "line": 66,
+    "complexity": 1,
+    "message": "Static method 'catalogIdToApiPlan' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscription.assembler.js",
+    "line": 13,
+    "complexity": 1,
+    "message": "Static method 'toEntityFromResource' has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscription.assembler.js",
+    "line": 21,
+    "complexity": 7,
+    "message": "Static method 'toEntitiesFromResponse' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscription.assembler.js",
+    "line": 29,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscriptions-api.js",
+    "line": 18,
+    "complexity": 1,
+    "message": "Constructor has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscriptions-api.js",
+    "line": 23,
+    "complexity": 2,
+    "message": "Method 'getSubscriptions' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscriptions-api.js",
+    "line": 28,
+    "complexity": 2,
+    "message": "Method 'getSubscriptionById' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscriptions-api.js",
+    "line": 30,
+    "complexity": 3,
+    "message": "Arrow function has a complexity of 3. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscriptions-api.js",
+    "line": 32,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscriptions-api.js",
+    "line": 38,
+    "complexity": 2,
+    "message": "Method 'createSubscription' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscriptions-api.js",
+    "line": 51,
+    "complexity": 2,
+    "message": "Method 'updateSubscription' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/infrastructure/subscriptions-api.js",
+    "line": 58,
+    "complexity": 2,
+    "message": "Method 'deleteSubscription' has a complexity of 2. Maximum allowed is 0."
+  },
+  {
+    "file": "KairoLabs-Frontend/src/subscriptions/presentation/subscriptions-routes.js",
+    "line": 2,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 27,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 74,
+    "complexity": 7,
+    "message": "Function 'syncFromSession' has a complexity of 7. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 84,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 88,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 92,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 104,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 108,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 110,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 114,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 118,
+    "complexity": 4,
+    "message": "Arrow function has a complexity of 4. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 150,
+    "complexity": 9,
+    "message": "Arrow function has a complexity of 9. Maximum allowed is 0."
+  },
+  {
+    "file": "src/subscriptions/presentation/views/plans-selection.vue",
+    "line": 152,
+    "complexity": 1,
+    "message": "Arrow function has a complexity of 1. Maximum allowed is 0."
+  }
+]

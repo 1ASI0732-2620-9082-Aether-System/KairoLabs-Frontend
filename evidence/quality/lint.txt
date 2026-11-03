@@ -1,0 +1,141 @@
+
+> meditrack-sensor-frontend@0.0.0 lint
+> eslint src
+
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\application\establishment.store.js
+  86:27  warning  Generic Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\domain\model\establishment.entity.js
+  10:5  warning  Constructor has a complexity of 16. Maximum allowed is 15  complexity
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\domain\model\operator.entity.js
+  23:16  warning  Expected '===' and instead saw '=='                                           eqeqeq
+  36:96  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+  50:21  warning  Expected '===' and instead saw '=='                                           eqeqeq
+  63:5   warning  Static method 'formatSchedule' has a complexity of 22. Maximum allowed is 15  complexity
+  64:22  warning  Expected '===' and instead saw '=='                                           eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\presentation\components\establishment-inspect-flow.vue
+   77:12  warning  Expected '!==' and instead saw '!='         eqeqeq
+   86:34  warning  Expected '===' and instead saw '=='         eqeqeq
+   91:43  warning  Expected '===' and instead saw '=='         eqeqeq
+   96:43  warning  Expected '===' and instead saw '=='         eqeqeq
+  101:43  warning  Expected '===' and instead saw '=='         eqeqeq
+  106:43  warning  Expected '===' and instead saw '=='         eqeqeq
+  138:48  warning  Expected '===' and instead saw '=='         eqeqeq
+  152:46  warning  Expected '===' and instead saw '=='         eqeqeq
+  215:15  warning  Variable Assigned to Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\presentation\views\assign-operator.vue
+  43:15  warning  Expected '===' and instead saw '=='  eqeqeq
+  98:73  warning  Expected '!==' and instead saw '!='  eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\presentation\views\map-of-establishments.vue
+  37:29  warning  'index' is defined but never used. Allowed unused args must match /^_/u  no-unused-vars
+  40:11  warning  Expected '!==' and instead saw '!='                                      eqeqeq
+  40:26  warning  Expected '!==' and instead saw '!='                                      eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\presentation\views\view-establishment-device-detail.vue
+  61:15  warning  Variable Assigned to Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\presentation\views\view-operator-detail.vue
+  32:42  warning  Expected '!==' and instead saw '!='  eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\establishment\presentation\views\view-operators.vue
+  80:23  warning  Expected '===' and instead saw '=='  eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\iam\application\iam.store.js
+  130:5  warning  Async function 'loadProfileFromSession' has a complexity of 21. Maximum allowed is 15            complexity
+  286:5  warning  Async function 'completeHealthEntityRegistration' has a complexity of 25. Maximum allowed is 15  complexity
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\iam\infrastructure\authentication.guard.js
+  11:41  warning  'from' is defined but never used. Allowed unused args must match /^_/u  no-unused-vars
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\iam\presentation\views\billing-checkout.vue
+  114:9   warning  Generic Object Injection Sink  security/detect-object-injection
+  114:51  warning  Generic Object Injection Sink  security/detect-object-injection
+  118:36  warning  Generic Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\iam\presentation\views\profile.vue
+  37:21  warning  Generic Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\iam\presentation\views\register.vue
+  35:1  warning  Async function 'onSubmit' has a complexity of 16. Maximum allowed is 15  complexity
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\logistics\application\logistics.store.js
+  78:37  warning  Generic Object Injection Sink  security/detect-object-injection
+  78:66  warning  Generic Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\logistics\domain\model\transport.entity.js
+  10:5  warning  Constructor has a complexity of 22. Maximum allowed is 15  complexity
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\logistics\presentation\views\view-transport-detail.vue
+  48:15  warning  Variable Assigned to Object Injection Sink  security/detect-object-injection
+  60:15  warning  Variable Assigned to Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\logistics\presentation\views\view-transports.vue
+  92:7   warning  Generic Object Injection Sink  security/detect-object-injection
+  92:39  warning  Generic Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\monitoring\application\monitoring.store.js
+  80:37  warning  Generic Object Injection Sink  security/detect-object-injection
+  80:63  warning  Generic Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\monitoring\domain\model\device.entity.js
+    7:5   warning  Constructor has a complexity of 22. Maximum allowed is 15                     complexity
+   74:15  warning  Expected '===' and instead saw '=='                                           eqeqeq
+   86:21  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+   88:23  warning  Variable Assigned to Object Injection Sink                                    security/detect-object-injection
+   89:19  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+   96:5   warning  Static method 'evaluateMetric' has a complexity of 16. Maximum allowed is 15  complexity
+  103:19  warning  Expected '===' and instead saw '=='                                           eqeqeq
+  104:19  warning  Variable Assigned to Object Injection Sink                                    security/detect-object-injection
+  106:19  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+  107:19  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+  108:25  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+  109:25  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+  120:16  warning  Generic Object Injection Sink                                                 security/detect-object-injection
+  124:19  warning  Variable Assigned to Object Injection Sink                                    security/detect-object-injection
+  128:19  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+  129:19  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+  139:19  warning  Expected '===' and instead saw '=='                                           eqeqeq
+  163:35  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+  177:34  warning  Expected '!==' and instead saw '!='                                           eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\monitoring\presentation\components\control-center-panel.vue
+   64:38  warning  Function Call Object Injection Sink  security/detect-object-injection
+   80:13  warning  Expected '===' and instead saw '=='  eqeqeq
+  128:22  warning  Expected '!==' and instead saw '!='  eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\monitoring\presentation\components\sensor-readings-grid.vue
+  37:17  warning  Variable Assigned to Object Injection Sink                     security/detect-object-injection
+  38:16  warning  Expected '!==' and instead saw '!='                            eqeqeq
+  41:1   warning  Function 'tick' has a complexity of 19. Maximum allowed is 15  complexity
+  74:12  warning  Expected '===' and instead saw '=='                            eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\monitoring\presentation\views\view-device-detail.vue
+  72:15  warning  Variable Assigned to Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\monitoring\presentation\views\view-devices.vue
+   90:15  warning  Variable Assigned to Object Injection Sink  security/detect-object-injection
+  107:15  warning  Variable Assigned to Object Injection Sink  security/detect-object-injection
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\router.js
+  82:9  warning  'baseTitle' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\shared\infrastructure\mocks\mock-database.js
+  525:8  warning  Function 'addMockUser' has a complexity of 17. Maximum allowed is 15  complexity
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\shared\infrastructure\profile-demo.facade.js
+  26:8   warning  Async function 'fetchProfileDemoFromApis' has a complexity of 16. Maximum allowed is 15  complexity
+  49:47  warning  Expected '!==' and instead saw '!='                                                      eqeqeq
+  53:50  warning  Expected '!==' and instead saw '!='                                                      eqeqeq
+
+C:\Users\Usuario\Documents\ChatGPT\Exp Software\review\KairoLabs-Frontend\src\subscriptions\domain\model\subscription.entity.js
+  55:16  warning  Generic Object Injection Sink  security/detect-object-injection
+  61:21  warning  Generic Object Injection Sink  security/detect-object-injection
+
+✖ 77 problems (0 errors, 77 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
