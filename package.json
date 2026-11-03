@@ -8,7 +8,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "node --test --test-reporter=spec tests/unit/core-entities.test.mjs",
-    "test:unit:tap": "node --test --test-reporter=tap tests/unit/core-entities.test.mjs"
+    "test:unit:tap": "node --test --test-reporter=tap tests/unit/core-entities.test.mjs",
+    "lint": "eslint src",
+    "quality": "node scripts/analyze-quality.mjs",
+    "test:bdd": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run-bdd.ps1",
+    "test:bdd:desktop": "npm run test:bdd -- -Viewport desktop",
+    "test:bdd:mobile": "npm run test:bdd -- -Viewport mobile",
+    "test:bdd:run": "node bdd/run.mjs"
   },
   "dependencies": {
     "@primeuix/themes": "^2.0.3",
@@ -24,7 +30,15 @@
     "vue-router": "^5.0.6"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@eslint/js": "^10.0.1",
     "@vitejs/plugin-vue": "^6.0.6",
+    "eslint": "^10.14.0",
+    "eslint-plugin-security": "^4.2.1",
+    "eslint-plugin-vue": "^10.12.0",
+    "globals": "^17.14.0",
+    "jscpd": "^5.4.2",
+    "playwright": "^1.64.1",
     "vite": "^8.0.10"
   }
 }
