@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-02",
+  "timezone": "America/Lima",
+  "frontend_source_commit": "7f1d227c1a5ad03a0673de9e4aaa5dccb516d231",
+  "platform_source_commit": "564dcf5132a6d54c0064e57ab1c7a8ba7cca7d51",
+  "files_sha256": {
+    "package-lock.json": "d84a0205cc915febea00a6c40863de00c124d639a8ab92e7f2d01949099dd334",
+    "eslint.config.js": "99728c777e8a6b3cbd224c033c51d810bc89c5c289135e878d317ebd5a9bd2de",
+    "scripts/analyze-quality.mjs": "8e7fea6e049c0b4a37efc21e3f417f004f28b38abcd0ac632bcf01230c557e2e",
+    "bdd/core.feature": "bc5a8941b1753c8696bf298493d7792f0992b0384dc4976aed719e23d7d8787f",
+    "bdd/steps.mjs": "57bbe787a5466fbe328e12f8f3a8b54102f920ef4e6fa6cf09ae8f83d48103e4",
+    "bdd/run.mjs": "cebeef31d7f060574d9ee9f6d37538947c16a92f730069590f5f9bd1779c7e47"
+  }
+}

@@ -2,121 +2,121 @@ TAP version 13
 # Subtest: UT-DEV-01 conserva sede y lectura cero al construir el dispositivo
 ok 1 - UT-DEV-01 conserva sede y lectura cero al construir el dispositivo
   ---
-  duration_ms: 1.1629
+  duration_ms: 1.0586
   type: 'test'
   ...
 # Subtest: UT-DEV-02 interpreta enabled_sensors recibido como JSON
 ok 2 - UT-DEV-02 interpreta enabled_sensors recibido como JSON
   ---
-  duration_ms: 0.8475
+  duration_ms: 0.6976
   type: 'test'
   ...
 # Subtest: UT-DEV-03 tolera JSON incompleto sin interrumpir el dominio
 ok 3 - UT-DEV-03 tolera JSON incompleto sin interrumpir el dominio
   ---
-  duration_ms: 0.2022
+  duration_ms: 0.1727
   type: 'test'
   ...
 # Subtest: UT-DEV-04 clasifica 4.5 grados como ok
 ok 4 - UT-DEV-04 clasifica 4.5 grados como ok
   ---
-  duration_ms: 0.2218
+  duration_ms: 0.205
   type: 'test'
   ...
 # Subtest: UT-DEV-05 clasifica 8.1 grados como critical
 ok 5 - UT-DEV-05 clasifica 8.1 grados como critical
   ---
-  duration_ms: 0.1591
+  duration_ms: 0.1406
   type: 'test'
   ...
 # Subtest: UT-DEV-06 clasifica 1.9 grados como critical
 ok 6 - UT-DEV-06 clasifica 1.9 grados como critical
   ---
-  duration_ms: 0.1031
+  duration_ms: 0.112
   type: 'test'
   ...
 # Subtest: UT-DEV-07 clasifica 7.1 grados como warning
 ok 7 - UT-DEV-07 clasifica 7.1 grados como warning
   ---
-  duration_ms: 0.1107
+  duration_ms: 0.1151
   type: 'test'
   ...
 # Subtest: UT-DEV-08 distingue los limites de warning y critical
 ok 8 - UT-DEV-08 distingue los limites de warning y critical
   ---
-  duration_ms: 0.1191
+  duration_ms: 0.1071
   type: 'test'
   ...
 # Subtest: UT-DEV-09 identifica texto no numerico como unknown
 ok 9 - UT-DEV-09 identifica texto no numerico como unknown
   ---
-  duration_ms: 0.1282
+  duration_ms: 0.1295
   type: 'test'
   ...
 # Subtest: UT-DEV-10 identifica temperatura null como unknown
 ok 10 - UT-DEV-10 identifica temperatura null como unknown
   ---
-  duration_ms: 0.1852
+  duration_ms: 0.1727
   type: 'test'
   ...
 # Subtest: UT-DEV-11 identifica temperatura vacia como unknown
 ok 11 - UT-DEV-11 identifica temperatura vacia como unknown
   ---
-  duration_ms: 0.179
+  duration_ms: 0.1357
   type: 'test'
   ...
 # Subtest: UT-DEV-12 clasifica puerta abierta como critical
 ok 12 - UT-DEV-12 clasifica puerta abierta como critical
   ---
-  duration_ms: 0.132
+  duration_ms: 0.1212
   type: 'test'
   ...
 # Subtest: UT-DEV-13 clasifica puerta cerrada como ok
 ok 13 - UT-DEV-13 clasifica puerta cerrada como ok
   ---
-  duration_ms: 0.0866
+  duration_ms: 0.096
   type: 'test'
   ...
 # Subtest: UT-DEV-14 recupera luz desde el alias lux
 ok 14 - UT-DEV-14 recupera luz desde el alias lux
   ---
-  duration_ms: 0.2018
+  duration_ms: 0.1575
   type: 'test'
   ...
 # Subtest: UT-SUB-01 traduce basic a BASIC
 ok 15 - UT-SUB-01 traduce basic a BASIC
   ---
-  duration_ms: 0.3008
+  duration_ms: 0.9466
   type: 'test'
   ...
 # Subtest: UT-SUB-02 traduce PREMIUM al catalogo premium
 ok 16 - UT-SUB-02 traduce PREMIUM al catalogo premium
   ---
-  duration_ms: 0.1519
+  duration_ms: 0.1543
   type: 'test'
   ...
 # Subtest: UT-SUB-03 traduce enterprise a ENTERPRISE
 ok 17 - UT-SUB-03 traduce enterprise a ENTERPRISE
   ---
-  duration_ms: 0.108
+  duration_ms: 0.0712
   type: 'test'
   ...
 # Subtest: UT-SUB-04 usa basic ante un plan desconocido
 ok 18 - UT-SUB-04 usa basic ante un plan desconocido
   ---
-  duration_ms: 0.1049
+  duration_ms: 0.093
   type: 'test'
   ...
 # Subtest: UT-IAM-01 normaliza espacios y mayusculas del correo
 ok 19 - UT-IAM-01 normaliza espacios y mayusculas del correo
   ---
-  duration_ms: 0.1519
+  duration_ms: 0.1416
   type: 'test'
   ...
 # Subtest: UT-IAM-02 conserva exactamente la clave y el segmento
 ok 20 - UT-IAM-02 conserva exactamente la clave y el segmento
   ---
-  duration_ms: 0.1179
+  duration_ms: 0.1158
   type: 'test'
   ...
 1..20
@@ -127,4 +127,4 @@ ok 20 - UT-IAM-02 conserva exactamente la clave y el segmento
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 140.1736
+# duration_ms 138.0893

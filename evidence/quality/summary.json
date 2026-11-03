@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-03T01:16:23.567Z",
+  "scope": "src/**/*.js y src/**/*.vue; configuración ESLint publicada",
+  "files": 94,
+  "errors": 0,
+  "warnings": 77,
+  "rules": {
+    "security/detect-object-injection": 26,
+    "complexity": 11,
+    "eqeqeq": 37,
+    "no-unused-vars": 2,
+    "prefer-const": 1
+  },
+  "complexity": {
+    "functions": 773,
+    "average": 2.6752910737386806,
+    "max": 25,
+    "above15": 11,
+    "top": [
+      {
+        "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+        "line": 286,
+        "complexity": 25,
+        "message": "Async function 'completeHealthEntityRegistration' has a complexity of 25. Maximum allowed is 0."
+      },
+      {
+        "file": "src/establishment/domain/model/operator.entity.js",
+        "line": 63,
+        "complexity": 22,
+        "message": "Static method 'formatSchedule' has a complexity of 22. Maximum allowed is 0."
+      },
+      {
+        "file": "src/logistics/domain/model/transport.entity.js",
+        "line": 10,
+        "complexity": 22,
+        "message": "Constructor has a complexity of 22. Maximum allowed is 0."
+      },
+      {
+        "file": "src/monitoring/domain/model/device.entity.js",
+        "line": 7,
+        "complexity": 22,
+        "message": "Constructor has a complexity of 22. Maximum allowed is 0."
+      },
+      {
+        "file": "KairoLabs-Frontend/src/iam/application/iam.store.js",
+        "line": 130,
+        "complexity": 21,
+        "message": "Async function 'loadProfileFromSession' has a complexity of 21. Maximum allowed is 0."
+      },
+      {
+        "file": "src/monitoring/presentation/components/sensor-readings-grid.vue",
+        "line": 41,
+        "complexity": 19,
+        "message": "Function 'tick' has a complexity of 19. Maximum allowed is 0."
+      },
+      {
+        "file": "src/shared/infrastructure/mocks/mock-database.js",
+        "line": 525,
+        "complexity": 17,
+        "message": "Function 'addMockUser' has a complexity of 17. Maximum allowed is 0."
+      },
+      {
+        "file": "src/establishment/domain/model/establishment.entity.js",
+        "line": 10,
+        "complexity": 16,
+        "message": "Constructor has a complexity of 16. Maximum allowed is 0."
+      },
+      {
+        "file": "src/iam/presentation/views/register.vue",
+        "line": 35,
+        "complexity": 16,
+        "message": "Async function 'onSubmit' has a complexity of 16. Maximum allowed is 0."
+      },
+      {
+        "file": "src/monitoring/domain/model/device.entity.js",
+        "line": 96,
+        "complexity": 16,
+        "message": "Static method 'evaluateMetric' has a complexity of 16. Maximum allowed is 0."
+      }
+    ]
+  },
+  "duplication": {
+    "clones": 127,
+    "duplicatedLines": 1496,
+    "duplicatedTokens": 10734,
+    "lines": 29199,
+    "newClones": 0,
+    "newDuplicatedLines": 0,
+    "percentage": 5.123463132299051,
+    "percentageTokens": 5.6463830324453985,
+    "sources": 187,
+    "tokens": 190104
+  },
+  "audit": {
+    "exitCode": 1,
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 7,
+      "high": 14,
+      "critical": 0,
+      "total": 21
+    },
+    "dependencies": {
+      "prod": 116,
+      "dev": 219,
+      "optional": 42,
+      "peer": 1,
+      "peerOptional": 0,
+      "total": 334
+    }
+  },
+  "productionAudit": {
+    "exitCode": 1,
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 13,
+      "critical": 0,
+      "total": 13
+    },
+    "dependencies": {
+      "prod": 116,
+      "dev": 219,
+      "optional": 42,
+      "peer": 1,
+      "peerOptional": 0,
+      "total": 334
+    }
+  },
+  "buildExitCode": 0,
+  "maintainability": "Indicadores de complejidad, duplicación y advertencias; no se calcula Maintainability Index ni se afirma aprobación global."
+}

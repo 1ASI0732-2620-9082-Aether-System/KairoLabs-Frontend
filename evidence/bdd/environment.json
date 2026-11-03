@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-03T01:19:31.764Z",
+  "api": "http://127.0.0.1:5187",
+  "frontend": "http://localhost:5173",
+  "database": "kairolabs_it_2d9bb03993ab",
+  "mocks": false,
+  "browser": "Chromium",
+  "viewports": [
+    "desktop",
+    "mobile"
+  ]
+}

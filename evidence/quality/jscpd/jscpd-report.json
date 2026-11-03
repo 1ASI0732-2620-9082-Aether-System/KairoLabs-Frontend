@@ -1,0 +1,4907 @@
+{
+  "duplicates": [
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 650
+        },
+        "name": "establishment\\infrastructure\\establishment.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 32,
+          "line": 10,
+          "position": 310
+        }
+      },
+      "format": "javascript",
+      "fragment": "        return new Establishment({ ...resource });\n    }\n\n    static toEntitiesFromResponse(response) {\n        if (response.status !== 200) {\n            console.error(`${response.status} ${response.statusText}`);\n            return [];\n        }\n        const resources = response.data instanceof Array\n            ? response.data\n            : response.data?.establishments ?? response.data?.data ?? [];",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 620
+        },
+        "name": "establishment\\infrastructure\\operator.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 27,
+          "line": 10,
+          "position": 280
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 650
+        },
+        "name": "establishment\\infrastructure\\establishment.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 32,
+          "line": 10,
+          "position": 310
+        }
+      },
+      "format": "javascript",
+      "fragment": "        return new Establishment({ ...resource });\n    }\n\n    static toEntitiesFromResponse(response) {\n        if (response.status !== 200) {\n            console.error(`${response.status} ${response.statusText}`);\n            return [];\n        }\n        const resources = response.data instanceof Array\n            ? response.data\n            : response.data?.establishments ?? response.data?.data ?? [];",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 28,
+        "endLoc": {
+          "column": 29,
+          "line": 28,
+          "position": 912
+        },
+        "name": "iam\\infrastructure\\admin.assembler.js",
+        "start": 14,
+        "startLoc": {
+          "column": 24,
+          "line": 14,
+          "position": 402
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 650
+        },
+        "name": "establishment\\infrastructure\\establishment.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 47,
+          "line": 10,
+          "position": 325
+        }
+      },
+      "format": "javascript",
+      "fragment": "        return new Establishment({ ...resource });\n    }\n\n    static toEntitiesFromResponse(response) {\n        if (response.status !== 200) {\n            console.error(`${response.status} ${response.statusText}`);\n            return [];\n        }\n        const resources = response.data instanceof Array\n            ? response.data\n            : response.data?.establishments ?? response.data?.data ?? [];",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 29,
+        "endLoc": {
+          "column": 29,
+          "line": 29,
+          "position": 984
+        },
+        "name": "iam\\infrastructure\\user.assembler.js",
+        "start": 15,
+        "startLoc": {
+          "column": 48,
+          "line": 15,
+          "position": 491
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 650
+        },
+        "name": "establishment\\infrastructure\\establishment.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 32,
+          "line": 10,
+          "position": 310
+        }
+      },
+      "format": "javascript",
+      "fragment": "        return new Establishment({ ...resource });\n    }\n\n    static toEntitiesFromResponse(response) {\n        if (response.status !== 200) {\n            console.error(`${response.status} ${response.statusText}`);\n            return [];\n        }\n        const resources = response.data instanceof Array\n            ? response.data\n            : response.data?.establishments ?? response.data?.data ?? [];",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 636
+        },
+        "name": "logistics\\infrastructure\\transport.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 28,
+          "line": 10,
+          "position": 296
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 650
+        },
+        "name": "establishment\\infrastructure\\establishment.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 32,
+          "line": 10,
+          "position": 310
+        }
+      },
+      "format": "javascript",
+      "fragment": "        return new Establishment({ ...resource });\n    }\n\n    static toEntitiesFromResponse(response) {\n        if (response.status !== 200) {\n            console.error(`${response.status} ${response.statusText}`);\n            return [];\n        }\n        const resources = response.data instanceof Array\n            ? response.data\n            : response.data?.establishments ?? response.data?.data ?? [];",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 619
+        },
+        "name": "monitoring\\infrastructure\\device.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 25,
+          "line": 10,
+          "position": 279
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 20,
+        "endLoc": {
+          "column": 29,
+          "line": 20,
+          "position": 650
+        },
+        "name": "establishment\\infrastructure\\establishment.assembler.js",
+        "start": 10,
+        "startLoc": {
+          "column": 32,
+          "line": 10,
+          "position": 310
+        }
+      },
+      "format": "javascript",
+      "fragment": "        return new Establishment({ ...resource });\n    }\n\n    static toEntitiesFromResponse(response) {\n        if (response.status !== 200) {\n            console.error(`${response.status} ${response.statusText}`);\n            return [];\n        }\n        const resources = response.data instanceof Array\n            ? response.data\n            : response.data?.establishments ?? response.data?.data ?? [];",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 28,
+        "endLoc": {
+          "column": 29,
+          "line": 28,
+          "position": 858
+        },
+        "name": "subscriptions\\infrastructure\\subscription.assembler.js",
+        "start": 14,
+        "startLoc": {
+          "column": 31,
+          "line": 14,
+          "position": 388
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 288,
+        "endLoc": {
+          "column": 52,
+          "line": 288,
+          "position": 9169
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 281,
+        "startLoc": {
+          "column": 77,
+          "line": 281,
+          "position": 8799
+        }
+      },
+      "format": "html",
+      "fragment": "          <p class=\"est-flow-subtitle\">{{ t('establishment.establishmentInfo') }}</p>\n        </header>\n\n        <div class=\"est-inspect-scroll\">\n          <div class=\"est-flow-fields est-flow-fields--span\">\n            <div class=\"est-flow-field\">\n              <span class=\"est-flow-field__label\"><i class=\"pi pi-hashtag\" aria-hidden=\"true\"></i> {{ t('establishment.fieldId') }}</span>\n              <span class=\"est-flow-field__value\">{{ establishment.id }}</span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 593,
+        "endLoc": {
+          "column": 52,
+          "line": 593,
+          "position": 23477
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 586,
+        "startLoc": {
+          "column": 70,
+          "line": 586,
+          "position": 23107
+        }
+      },
+      "tokens": 70
+    },
+    {
+      "firstFile": {
+        "end": 470,
+        "endLoc": {
+          "column": 46,
+          "line": 470,
+          "position": 17593
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 454,
+        "startLoc": {
+          "column": 52,
+          "line": 454,
+          "position": 17013
+        }
+      },
+      "format": "html",
+      "fragment": "          <h2 class=\"op-profile__title\">{{ heroName }}</h2>\n        </header>\n\n        <div class=\"est-inspect-scroll op-profile\">\n          <div class=\"op-profile__banner\">\n            <div class=\"op-profile__identity\">\n              <img\n                v-if=\"photoUrl\"\n                :src=\"photoUrl\"\n                alt=\"\"\n                class=\"op-profile__avatar-img\"\n                width=\"72\"\n                height=\"72\"\n              />\n              <span v-else class=\"op-profile__avatar\">{{ userInitial }}</span>\n              <div class=\"op-profile__meta\">\n                <p class=\"op-profile__role\">{{ activeUser?.job_title || activeUser?.jobTitle || t('iam.operational.badge') }}</p>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 17,
+      "secondFile": {
+        "end": 379,
+        "endLoc": {
+          "column": 22,
+          "line": 379,
+          "position": 13760
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 363,
+        "startLoc": {
+          "column": 100,
+          "line": 363,
+          "position": 13130
+        }
+      },
+      "tokens": 85
+    },
+    {
+      "firstFile": {
+        "end": 470,
+        "endLoc": {
+          "column": 46,
+          "line": 470,
+          "position": 17593
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 457,
+        "startLoc": {
+          "column": 50,
+          "line": 457,
+          "position": 17093
+        }
+      },
+      "format": "html",
+      "fragment": "        <div class=\"est-inspect-scroll op-profile\">\n          <div class=\"op-profile__banner\">\n            <div class=\"op-profile__identity\">\n              <img\n                v-if=\"photoUrl\"\n                :src=\"photoUrl\"\n                alt=\"\"\n                class=\"op-profile__avatar-img\"\n                width=\"72\"\n                height=\"72\"\n              />\n              <span v-else class=\"op-profile__avatar\">{{ userInitial }}</span>\n              <div class=\"op-profile__meta\">\n                <p class=\"op-profile__role\">{{ activeUser?.job_title || activeUser?.jobTitle || t('iam.operational.badge') }}</p>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 14,
+      "secondFile": {
+        "end": 140,
+        "endLoc": {
+          "column": 16,
+          "line": 140,
+          "position": 4738
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 125,
+        "startLoc": {
+          "column": 14,
+          "line": 125,
+          "position": 4272
+        }
+      },
+      "tokens": 70
+    },
+    {
+      "firstFile": {
+        "end": 504,
+        "endLoc": {
+          "column": 53,
+          "line": 504,
+          "position": 19108
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 470,
+        "startLoc": {
+          "column": 82,
+          "line": 470,
+          "position": 17629
+        }
+      },
+      "format": "html",
+      "fragment": "                <p class=\"op-profile__role\">{{ activeUser?.job_title || activeUser?.jobTitle || t('iam.operational.badge') }}</p>\n                <a v-if=\"heroEmail && heroEmail !== '—'\" class=\"op-profile__email\" :href=\"`mailto:${heroEmail}`\">{{ heroEmail }}</a>\n                <p v-else class=\"op-profile__email\">{{ heroEmail }}</p>\n              </div>\n            </div>\n\n            <aside class=\"op-profile__schedule\" aria-label=\"schedule\">\n              <div class=\"op-profile__schedule-head\">\n                <i class=\"pi pi-clock\" aria-hidden=\"true\"></i>\n                <span>{{ t('profileView.scheduleTitle') }}</span>\n              </div>\n              <table>\n                <thead>\n                  <tr>\n                    <th>{{ t('profileView.scheduleShift') }}</th>\n                    <th>{{ t('profileView.scheduleDay') }}</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr v-for=\"(row, idx) in scheduleRows\" :key=\"idx\">\n                    <td>{{ row.turn }}</td>\n                    <td>{{ row.day }}</td>\n                  </tr>\n                </tbody>\n              </table>\n            </aside>\n          </div>\n\n          <div class=\"op-profile__stats\">\n            <div class=\"op-profile__stat\">\n              <span class=\"op-profile__stat-label\">\n                <i class=\"pi pi-bell\" aria-hidden=\"true\"></i>\n                {{ t('establishment.fieldAlertsAnswered') }}\n              </span>\n              <span class=\"op-profile__stat-value\">{{ activeOperator.alerts_answered ?? 0 }}</span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 35,
+      "secondFile": {
+        "end": 179,
+        "endLoc": {
+          "column": 49,
+          "line": 179,
+          "position": 6186
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 140,
+        "startLoc": {
+          "column": 40,
+          "line": 140,
+          "position": 4762
+        }
+      },
+      "tokens": 279
+    },
+    {
+      "firstFile": {
+        "end": 489,
+        "endLoc": {
+          "column": 28,
+          "line": 489,
+          "position": 18519
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 472,
+        "startLoc": {
+          "column": 67,
+          "line": 472,
+          "position": 17881
+        }
+      },
+      "format": "html",
+      "fragment": "                <p v-else class=\"op-profile__email\">{{ heroEmail }}</p>\n              </div>\n            </div>\n\n            <aside class=\"op-profile__schedule\" aria-label=\"schedule\">\n              <div class=\"op-profile__schedule-head\">\n                <i class=\"pi pi-clock\" aria-hidden=\"true\"></i>\n                <span>{{ t('profileView.scheduleTitle') }}</span>\n              </div>\n              <table>\n                <thead>\n                  <tr>\n                    <th>{{ t('profileView.scheduleShift') }}</th>\n                    <th>{{ t('profileView.scheduleDay') }}</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr v-for=\"(row, idx) in scheduleRows\" :key=\"idx\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 18,
+      "secondFile": {
+        "end": 403,
+        "endLoc": {
+          "column": 30,
+          "line": 403,
+          "position": 14832
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 386,
+        "startLoc": {
+          "column": 57,
+          "line": 386,
+          "position": 14162
+        }
+      },
+      "tokens": 119
+    },
+    {
+      "firstFile": {
+        "end": 498,
+        "endLoc": {
+          "column": 21,
+          "line": 498,
+          "position": 18788
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 480,
+        "startLoc": {
+          "column": 19,
+          "line": 480,
+          "position": 18208
+        }
+      },
+      "format": "html",
+      "fragment": "              </div>\n              <table>\n                <thead>\n                  <tr>\n                    <th>{{ t('profileView.scheduleShift') }}</th>\n                    <th>{{ t('profileView.scheduleDay') }}</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr v-for=\"(row, idx) in scheduleRows\" :key=\"idx\">\n                    <td>{{ row.turn }}</td>\n                    <td>{{ row.day }}</td>\n                  </tr>\n                </tbody>\n              </table>\n            </aside>\n          </div>\n\n          <div class=\"op-profile__stats\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 19,
+      "secondFile": {
+        "end": 162,
+        "endLoc": {
+          "column": 17,
+          "line": 162,
+          "position": 5446
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 144,
+        "startLoc": {
+          "column": 87,
+          "line": 144,
+          "position": 4934
+        }
+      },
+      "tokens": 115
+    },
+    {
+      "firstFile": {
+        "end": 489,
+        "endLoc": {
+          "column": 21,
+          "line": 489,
+          "position": 18512
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 481,
+        "startLoc": {
+          "column": 20,
+          "line": 481,
+          "position": 18231
+        }
+      },
+      "format": "html",
+      "fragment": "              <table>\n                <thead>\n                  <tr>\n                    <th>{{ t('profileView.scheduleShift') }}</th>\n                    <th>{{ t('profileView.scheduleDay') }}</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr v-for=\"(row, idx) in scheduleRows\" :key=\"idx\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 194,
+        "endLoc": {
+          "column": 17,
+          "line": 194,
+          "position": 6129
+        },
+        "name": "iam\\presentation\\views\\profile.vue",
+        "start": 186,
+        "startLoc": {
+          "column": 39,
+          "line": 186,
+          "position": 5880
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 504,
+        "endLoc": {
+          "column": 53,
+          "line": 504,
+          "position": 19108
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 491,
+        "startLoc": {
+          "column": 30,
+          "line": 491,
+          "position": 18636
+        }
+      },
+      "format": "html",
+      "fragment": "                    <td>{{ row.day }}</td>\n                  </tr>\n                </tbody>\n              </table>\n            </aside>\n          </div>\n\n          <div class=\"op-profile__stats\">\n            <div class=\"op-profile__stat\">\n              <span class=\"op-profile__stat-label\">\n                <i class=\"pi pi-bell\" aria-hidden=\"true\"></i>\n                {{ t('establishment.fieldAlertsAnswered') }}\n              </span>\n              <span class=\"op-profile__stat-value\">{{ activeOperator.alerts_answered ?? 0 }}</span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 14,
+      "secondFile": {
+        "end": 418,
+        "endLoc": {
+          "column": 55,
+          "line": 418,
+          "position": 15449
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 405,
+        "startLoc": {
+          "column": 32,
+          "line": 405,
+          "position": 14953
+        }
+      },
+      "tokens": 81
+    },
+    {
+      "firstFile": {
+        "end": 518,
+        "endLoc": {
+          "column": 117,
+          "line": 518,
+          "position": 19905
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 504,
+        "startLoc": {
+          "column": 68,
+          "line": 504,
+          "position": 19123
+        }
+      },
+      "format": "html",
+      "fragment": "              <span class=\"op-profile__stat-value\">{{ activeOperator.alerts_answered ?? 0 }}</span>\n            </div>\n            <div class=\"op-profile__stat\">\n              <span class=\"op-profile__stat-label\">\n                <i class=\"pi pi-calendar\" aria-hidden=\"true\"></i>\n                {{ t('establishment.fieldEntryDate') }}\n              </span>\n              <span class=\"op-profile__stat-value op-profile__stat-value--sm\">{{ entryDate }}</span>\n            </div>\n            <div class=\"op-profile__stat\">\n              <span class=\"op-profile__stat-label\">\n                <i class=\"pi pi-building\" aria-hidden=\"true\"></i>\n                {{ t('establishment.fieldAssignedEst') }}\n              </span>\n              <span class=\"op-profile__stat-value op-profile__stat-value--sm\">{{ establishment?.establishment_name || '—' }}</span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 15,
+      "secondFile": {
+        "end": 194,
+        "endLoc": {
+          "column": 51,
+          "line": 194,
+          "position": 6935
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 179,
+        "startLoc": {
+          "column": 58,
+          "line": 179,
+          "position": 6195
+        }
+      },
+      "tokens": 126
+    },
+    {
+      "firstFile": {
+        "end": 525,
+        "endLoc": {
+          "column": 54,
+          "line": 525,
+          "position": 20247
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 518,
+        "startLoc": {
+          "column": 124,
+          "line": 518,
+          "position": 19912
+        }
+      },
+      "format": "html",
+      "fragment": "              <span class=\"op-profile__stat-value op-profile__stat-value--sm\">{{ establishment?.establishment_name || '—' }}</span>\n            </div>\n          </div>\n\n          <div class=\"op-profile__grid\">\n            <div class=\"op-profile__field\">\n              <span class=\"op-profile__field-label\"><i class=\"pi pi-user\" aria-hidden=\"true\"></i> {{ t('establishment.fieldOpName') }}</span>\n              <span class=\"op-profile__field-value\">{{ activeUser?.name || '—' }}</span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 202,
+        "endLoc": {
+          "column": 50,
+          "line": 202,
+          "position": 7293
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 194,
+        "startLoc": {
+          "column": 86,
+          "line": 194,
+          "position": 6970
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 525,
+        "endLoc": {
+          "column": 54,
+          "line": 525,
+          "position": 20247
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 518,
+        "startLoc": {
+          "column": 124,
+          "line": 518,
+          "position": 19912
+        }
+      },
+      "format": "html",
+      "fragment": "              <span class=\"op-profile__stat-value op-profile__stat-value--sm\">{{ establishment?.establishment_name || '—' }}</span>\n            </div>\n          </div>\n\n          <div class=\"op-profile__grid\">\n            <div class=\"op-profile__field\">\n              <span class=\"op-profile__field-label\"><i class=\"pi pi-user\" aria-hidden=\"true\"></i> {{ t('establishment.fieldOpName') }}</span>\n              <span class=\"op-profile__field-value\">{{ activeUser?.name || '—' }}</span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 439,
+        "endLoc": {
+          "column": 56,
+          "line": 439,
+          "position": 16613
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 432,
+        "startLoc": {
+          "column": 107,
+          "line": 432,
+          "position": 16266
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 38,
+        "endLoc": {
+          "column": 4,
+          "line": 38,
+          "position": 1177
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 27,
+        "startLoc": {
+          "column": 31,
+          "line": 27,
+          "position": 766
+        }
+      },
+      "format": "javascript",
+      "fragment": "const activeDeviceId = ref(null);\n\nconst dialogPt = {\n  mask: { class: 'mt-dialog-mask p-dialog-mask est-inspect-mask' },\n  root: {\n    class: 'mt-dialog-wrap p-dialog est-inspect-dialog',\n    style: { border: 'none', background: 'transparent', boxShadow: 'none' },\n  },\n  content: {\n    class: 'mt-dialog-content est-inspect-content',\n    style: { padding: 0, background: 'transparent', border: 'none', overflow: 'visible' },\n  },",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 38,
+        "endLoc": {
+          "column": 4,
+          "line": 38,
+          "position": 1461
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 27,
+        "startLoc": {
+          "column": 37,
+          "line": 27,
+          "position": 1050
+        }
+      },
+      "tokens": 68
+    },
+    {
+      "firstFile": {
+        "end": 38,
+        "endLoc": {
+          "column": 4,
+          "line": 38,
+          "position": 1177
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 27,
+        "startLoc": {
+          "column": 21,
+          "line": 27,
+          "position": 756
+        }
+      },
+      "format": "javascript",
+      "fragment": "const activeDeviceId = ref(null);\n\nconst dialogPt = {\n  mask: { class: 'mt-dialog-mask p-dialog-mask est-inspect-mask' },\n  root: {\n    class: 'mt-dialog-wrap p-dialog est-inspect-dialog',\n    style: { border: 'none', background: 'transparent', boxShadow: 'none' },\n  },\n  content: {\n    class: 'mt-dialog-content est-inspect-content',\n    style: { padding: 0, background: 'transparent', border: 'none', overflow: 'visible' },\n  },",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 35,
+        "endLoc": {
+          "column": 4,
+          "line": 35,
+          "position": 1323
+        },
+        "name": "logistics\\presentation\\views\\view-transports.vue",
+        "start": 24,
+        "startLoc": {
+          "column": 22,
+          "line": 24,
+          "position": 902
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 38,
+        "endLoc": {
+          "column": 4,
+          "line": 38,
+          "position": 1177
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 27,
+        "startLoc": {
+          "column": 21,
+          "line": 27,
+          "position": 756
+        }
+      },
+      "format": "javascript",
+      "fragment": "const activeDeviceId = ref(null);\n\nconst dialogPt = {\n  mask: { class: 'mt-dialog-mask p-dialog-mask est-inspect-mask' },\n  root: {\n    class: 'mt-dialog-wrap p-dialog est-inspect-dialog',\n    style: { border: 'none', background: 'transparent', boxShadow: 'none' },\n  },\n  content: {\n    class: 'mt-dialog-content est-inspect-content',\n    style: { padding: 0, background: 'transparent', border: 'none', overflow: 'visible' },\n  },",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 36,
+        "endLoc": {
+          "column": 4,
+          "line": 36,
+          "position": 1315
+        },
+        "name": "monitoring\\presentation\\views\\view-devices.vue",
+        "start": 25,
+        "startLoc": {
+          "column": 19,
+          "line": 25,
+          "position": 894
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 125,
+        "endLoc": {
+          "column": 1,
+          "line": 125,
+          "position": 3846
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 117,
+        "startLoc": {
+          "column": 57,
+          "line": 117,
+          "position": 3580
+        }
+      },
+      "format": "javascript",
+      "fragment": "  return allPeople.value.find((u) => sameId(u.id, userId)) || { name: '—', email: '—' };\n}\n\nfunction deviceLabel(dev) {\n  const loc = dev.exact_location || dev.name;\n  const med = dev.type_of_medication || dev.medication_type;\n  if (loc && med) return `${loc} — ${med}`;\n  return loc || med || `#${dev.id}`;\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 32,
+        "endLoc": {
+          "column": 1,
+          "line": 32,
+          "position": 986
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-team.vue",
+        "start": 24,
+        "startLoc": {
+          "column": 40,
+          "line": 24,
+          "position": 720
+        }
+      },
+      "tokens": 66
+    },
+    {
+      "firstFile": {
+        "end": 135,
+        "endLoc": {
+          "column": 3,
+          "line": 135,
+          "position": 4265
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 127,
+        "startLoc": {
+          "column": 0,
+          "line": 127,
+          "position": 3850
+        }
+      },
+      "format": "javascript",
+      "fragment": "const displayType = computed(() => {\n  const raw = establishment.value?.establishment_type;\n  if (!raw) return '—';\n  const upper = String(raw).toUpperCase();\n  if (upper === 'HOSPITAL') return t('establishment.typeHospital');\n  if (upper === 'WAREHOUSE') return t('establishment.typeWarehouse');\n  if (upper === 'CLINIC') return t('establishment.typeClinic');\n  return String(raw).replace(/_/g, ' ');\n});",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 47,
+        "endLoc": {
+          "column": 3,
+          "line": 47,
+          "position": 1623
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 39,
+        "startLoc": {
+          "column": 0,
+          "line": 39,
+          "position": 1208
+        }
+      },
+      "tokens": 90
+    },
+    {
+      "firstFile": {
+        "end": 185,
+        "endLoc": {
+          "column": 12,
+          "line": 185,
+          "position": 5885
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 161,
+        "startLoc": {
+          "column": 28,
+          "line": 161,
+          "position": 5097
+        }
+      },
+      "format": "javascript",
+      "fragment": "  const sch = activeOperator.value?.schedule;\n  if (!sch) {\n    return [\n      { turn: t('establishment.scheduleMorning'), day: '—' },\n      { turn: t('establishment.scheduleAfternoon'), day: '—' },\n      { turn: t('establishment.scheduleNight'), day: '—' },\n    ];\n  }\n  if (typeof sch === 'string') {\n    return [{ turn: t('establishment.scheduleShift'), day: sch }];\n  }\n  if (typeof sch === 'object' && !Array.isArray(sch)) {\n    return Object.entries(sch).map(([turn, day]) => ({ turn, day: String(day) }));\n  }\n  if (Array.isArray(sch)) {\n    return sch.map((row) => ({\n      turn: row.turn || row.shift || '—',\n      day: row.day || row.hours || row.range || '—',\n    }));\n  }\n  return [{ turn: '—', day: String(sch) }];\n});\n\nconst entryDate = computed(() => {\n  const op = activeOperator.value;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 25,
+      "secondFile": {
+        "end": 70,
+        "endLoc": {
+          "column": 12,
+          "line": 70,
+          "position": 2251
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 46,
+        "startLoc": {
+          "column": 22,
+          "line": 46,
+          "position": 1463
+        }
+      },
+      "tokens": 214
+    },
+    {
+      "firstFile": {
+        "end": 181,
+        "endLoc": {
+          "column": 17,
+          "line": 181,
+          "position": 5800
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 161,
+        "startLoc": {
+          "column": 34,
+          "line": 161,
+          "position": 5103
+        }
+      },
+      "format": "javascript",
+      "fragment": "  const sch = activeOperator.value?.schedule;\n  if (!sch) {\n    return [\n      { turn: t('establishment.scheduleMorning'), day: '—' },\n      { turn: t('establishment.scheduleAfternoon'), day: '—' },\n      { turn: t('establishment.scheduleNight'), day: '—' },\n    ];\n  }\n  if (typeof sch === 'string') {\n    return [{ turn: t('establishment.scheduleShift'), day: sch }];\n  }\n  if (typeof sch === 'object' && !Array.isArray(sch)) {\n    return Object.entries(sch).map(([turn, day]) => ({ turn, day: String(day) }));\n  }\n  if (Array.isArray(sch)) {\n    return sch.map((row) => ({\n      turn: row.turn || row.shift || '—',\n      day: row.day || row.hours || row.range || '—',\n    }));\n  }\n  return [{ turn: '—', day: String(sch) }];",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 21,
+      "secondFile": {
+        "end": 148,
+        "endLoc": {
+          "column": 17,
+          "line": 148,
+          "position": 4858
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 128,
+        "startLoc": {
+          "column": 39,
+          "line": 128,
+          "position": 4161
+        }
+      },
+      "tokens": 186
+    },
+    {
+      "firstFile": {
+        "end": 192,
+        "endLoc": {
+          "column": 3,
+          "line": 192,
+          "position": 6189
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 186,
+        "startLoc": {
+          "column": 22,
+          "line": 186,
+          "position": 5931
+        }
+      },
+      "format": "javascript",
+      "fragment": "  const u = activeUser.value;\n  if (!op && !u) return '—';\n  const raw = op?.entry_date ?? u?.entry_date ?? op?.createdAt ?? op?.created_at;\n  if (!raw) return '—';\n  const d = new Date(raw);\n  return Number.isNaN(d.getTime()) ? String(raw) : d.toLocaleDateString();\n});",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 77,
+        "endLoc": {
+          "column": 3,
+          "line": 77,
+          "position": 2543
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 71,
+        "startLoc": {
+          "column": 16,
+          "line": 71,
+          "position": 2285
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 194,
+        "endLoc": {
+          "column": 5,
+          "line": 194,
+          "position": 6198
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 186,
+        "startLoc": {
+          "column": 28,
+          "line": 186,
+          "position": 5937
+        }
+      },
+      "format": "javascript",
+      "fragment": "  const u = activeUser.value;\n  if (!op && !u) return '—';\n  const raw = op?.entry_date ?? u?.entry_date ?? op?.createdAt ?? op?.created_at;\n  if (!raw) return '—';\n  const d = new Date(raw);\n  return Number.isNaN(d.getTime()) ? String(raw) : d.toLocaleDateString();\n});\n\nconst heroName = computed(() => activeUser.value?.name || t('establishment.unknownUser'));",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 161,
+        "endLoc": {
+          "column": 5,
+          "line": 161,
+          "position": 5310
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 153,
+        "startLoc": {
+          "column": 33,
+          "line": 153,
+          "position": 5049
+        }
+      },
+      "tokens": 75
+    },
+    {
+      "firstFile": {
+        "end": 218,
+        "endLoc": {
+          "column": 3,
+          "line": 218,
+          "position": 7116
+        },
+        "name": "establishment\\presentation\\components\\establishment-inspect-flow.vue",
+        "start": 205,
+        "startLoc": {
+          "column": 24,
+          "line": 205,
+          "position": 6686
+        }
+      },
+      "format": "javascript",
+      "fragment": "  const d = activeDevice.value;\n  if (!d) return '—';\n  const raw = String(d.type_of_medication || '').toUpperCase();\n  const map = {\n    VACCINES: 'medicationVaccines',\n    PILLS: 'medicationPills',\n    CREAMS: 'medicationCreams',\n    SYRUP: 'medicationSyrup',\n    BIOLOGICALS: 'medicationBiologicals',\n  };\n  const key = map[raw];\n  if (key) return t(`monitoring.${key}`);\n  return d.type_of_medication ?? d.medication_type ?? '—';\n});",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 14,
+      "secondFile": {
+        "end": 64,
+        "endLoc": {
+          "column": 3,
+          "line": 64,
+          "position": 1906
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 51,
+        "startLoc": {
+          "column": 18,
+          "line": 51,
+          "position": 1476
+        }
+      },
+      "tokens": 87
+    },
+    {
+      "firstFile": {
+        "end": 9,
+        "endLoc": {
+          "column": 77,
+          "line": 9,
+          "position": 508
+        },
+        "name": "establishment\\presentation\\views\\assign-operator.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 34,
+          "line": 2,
+          "position": 50
+        }
+      },
+      "format": "javascript",
+      "fragment": "import { ref, computed, onMounted } from 'vue';\nimport { useRouter } from 'vue-router';\nimport { useI18n } from 'vue-i18n';\nimport { useToast } from 'primevue/usetoast';\nimport { fetchDashboardPayload } from '../../../shared/infrastructure/dashboard-payload.js';\nimport { readAuthSession } from '../../../iam/infrastructure/auth-session.js';\nimport { Operator } from '../../domain/model/operator.entity.js';\nimport useEstablishmentStore from '../../application/establishment.store.js';",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 9,
+        "endLoc": {
+          "column": 77,
+          "line": 9,
+          "position": 508
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 34,
+          "line": 2,
+          "position": 50
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 284,
+        "endLoc": {
+          "column": 48,
+          "line": 284,
+          "position": 10169
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 279,
+        "startLoc": {
+          "column": 4,
+          "line": 279,
+          "position": 9995
+        }
+      },
+      "format": "css",
+      "fragment": ".est-back-bar {\n  background: #fff;\n  border: 1px solid var(--mt-border);\n  border-radius: 14px;\n  padding: 0.55rem 0.75rem;\n  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 146,
+        "endLoc": {
+          "column": 48,
+          "line": 146,
+          "position": 3218
+        },
+        "name": "style.css",
+        "start": 141,
+        "startLoc": {
+          "column": 9,
+          "line": 141,
+          "position": 3044
+        }
+      },
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 287,
+        "endLoc": {
+          "column": 1,
+          "line": 287,
+          "position": 10177
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 279,
+        "startLoc": {
+          "column": 4,
+          "line": 279,
+          "position": 9995
+        }
+      },
+      "format": "css",
+      "fragment": ".est-back-bar {\n  background: #fff;\n  border: 1px solid var(--mt-border);\n  border-radius: 14px;\n  padding: 0.55rem 0.75rem;\n  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);\n}\n\n.est-back-btn {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 286,
+        "endLoc": {
+          "column": 1,
+          "line": 286,
+          "position": 9217
+        },
+        "name": "subscriptions\\presentation\\views\\plans-selection.vue",
+        "start": 278,
+        "startLoc": {
+          "column": 6,
+          "line": 278,
+          "position": 9035
+        }
+      },
+      "tokens": 60
+    },
+    {
+      "firstFile": {
+        "end": 303,
+        "endLoc": {
+          "column": 5,
+          "line": 303,
+          "position": 10539
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 287,
+        "startLoc": {
+          "column": 4,
+          "line": 287,
+          "position": 10180
+        }
+      },
+      "format": "css",
+      "fragment": ".est-back-btn {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.35rem 0.5rem;\n  border: none;\n  background: transparent;\n  color: var(--mt-primary);\n  font-size: 0.875rem;\n  font-weight: 600;\n  font-family: inherit;\n  cursor: pointer;\n  border-radius: 8px;\n  transition: background 0.15s ease, color 0.15s ease;\n}\n\n.est-back-btn:hover {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 17,
+      "secondFile": {
+        "end": 166,
+        "endLoc": {
+          "column": 5,
+          "line": 166,
+          "position": 3664
+        },
+        "name": "style.css",
+        "start": 150,
+        "startLoc": {
+          "column": 9,
+          "line": 150,
+          "position": 3305
+        }
+      },
+      "tokens": 94
+    },
+    {
+      "firstFile": {
+        "end": 303,
+        "endLoc": {
+          "column": 1,
+          "line": 303,
+          "position": 10535
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 287,
+        "startLoc": {
+          "column": 4,
+          "line": 287,
+          "position": 10180
+        }
+      },
+      "format": "css",
+      "fragment": ".est-back-btn {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.35rem 0.5rem;\n  border: none;\n  background: transparent;\n  color: var(--mt-primary);\n  font-size: 0.875rem;\n  font-weight: 600;\n  font-family: inherit;\n  cursor: pointer;\n  border-radius: 8px;\n  transition: background 0.15s ease, color 0.15s ease;\n}\n\n.est-back-btn:hover {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 17,
+      "secondFile": {
+        "end": 302,
+        "endLoc": {
+          "column": 1,
+          "line": 302,
+          "position": 9577
+        },
+        "name": "subscriptions\\presentation\\views\\plans-selection.vue",
+        "start": 286,
+        "startLoc": {
+          "column": 6,
+          "line": 286,
+          "position": 9222
+        }
+      },
+      "tokens": 92
+    },
+    {
+      "firstFile": {
+        "end": 317,
+        "endLoc": {
+          "column": 34,
+          "line": 317,
+          "position": 10864
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 312,
+        "startLoc": {
+          "column": 4,
+          "line": 312,
+          "position": 10686
+        }
+      },
+      "format": "css",
+      "fragment": ".est-card {\n  background: #fff;\n  border-radius: 22px;\n  border: 1px solid var(--mt-border);\n  box-shadow: 0 10px 36px rgba(15, 23, 42, 0.07);\n  padding: 1.65rem 1.75rem 1.5rem;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 180,
+        "endLoc": {
+          "column": 34,
+          "line": 180,
+          "position": 4004
+        },
+        "name": "style.css",
+        "start": 175,
+        "startLoc": {
+          "column": 9,
+          "line": 175,
+          "position": 3826
+        }
+      },
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 317,
+        "endLoc": {
+          "column": 26,
+          "line": 317,
+          "position": 10856
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 312,
+        "startLoc": {
+          "column": 4,
+          "line": 312,
+          "position": 10686
+        }
+      },
+      "format": "css",
+      "fragment": ".est-card {\n  background: #fff;\n  border-radius: 22px;\n  border: 1px solid var(--mt-border);\n  box-shadow: 0 10px 36px rgba(15, 23, 42, 0.07);\n  padding: 1.65rem 1.75rem 1.5rem;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 1459,
+        "endLoc": {
+          "column": 26,
+          "line": 1459,
+          "position": 29529
+        },
+        "name": "style.css",
+        "start": 1454,
+        "startLoc": {
+          "column": 6,
+          "line": 1454,
+          "position": 29359
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 335,
+        "endLoc": {
+          "column": 5,
+          "line": 335,
+          "position": 11174
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 327,
+        "startLoc": {
+          "column": 4,
+          "line": 327,
+          "position": 11016
+        }
+      },
+      "format": "css",
+      "fragment": ".est-title {\n  margin: 0;\n  font-size: clamp(1.25rem, 2.5vw, 1.65rem);\n  font-weight: 800;\n  color: var(--mt-heading);\n  letter-spacing: -0.03em;\n}\n\n.est-subtitle {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 224,
+        "endLoc": {
+          "column": 5,
+          "line": 224,
+          "position": 4799
+        },
+        "name": "style.css",
+        "start": 216,
+        "startLoc": {
+          "column": 9,
+          "line": 216,
+          "position": 4641
+        }
+      },
+      "tokens": 52
+    },
+    {
+      "firstFile": {
+        "end": 407,
+        "endLoc": {
+          "column": 25,
+          "line": 407,
+          "position": 12461
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 396,
+        "startLoc": {
+          "column": 11,
+          "line": 396,
+          "position": 12185
+        }
+      },
+      "format": "css",
+      "fragment": ".est-field input {\n  width: 100%;\n  margin: 0;\n  padding: 0.6rem 0.75rem;\n  border: 1.5px solid rgba(17, 36, 51, 0.16);\n  border-radius: 10px;\n  font-size: 0.875rem;\n  font-weight: 500;\n  color: #112433;\n  background: #f8fafc;\n  font-family: inherit;\n  box-sizing: border-box;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 227,
+        "endLoc": {
+          "column": 25,
+          "line": 227,
+          "position": 7669
+        },
+        "name": "monitoring\\presentation\\views\\device-form.vue",
+        "start": 216,
+        "startLoc": {
+          "column": 11,
+          "line": 216,
+          "position": 7393
+        }
+      },
+      "tokens": 78
+    },
+    {
+      "firstFile": {
+        "end": 441,
+        "endLoc": {
+          "column": 5,
+          "line": 441,
+          "position": 13160
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 431,
+        "startLoc": {
+          "column": 19,
+          "line": 431,
+          "position": 12930
+        }
+      },
+      "format": "css",
+      "fragment": "  padding: 0.6rem 1rem;\n  border-radius: 10px;\n  font-size: 0.8125rem;\n  font-weight: 600;\n  font-family: inherit;\n  cursor: pointer;\n  border: none;\n  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;\n}\n\n.est-btn--primary {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 605,
+        "endLoc": {
+          "column": 5,
+          "line": 605,
+          "position": 12319
+        },
+        "name": "style.css",
+        "start": 595,
+        "startLoc": {
+          "column": 21,
+          "line": 595,
+          "position": 12089
+        }
+      },
+      "tokens": 59
+    },
+    {
+      "firstFile": {
+        "end": 483,
+        "endLoc": {
+          "column": 5,
+          "line": 483,
+          "position": 14006
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 471,
+        "startLoc": {
+          "column": 4,
+          "line": 471,
+          "position": 13730
+        }
+      },
+      "format": "css",
+      "fragment": ".est-table th {\n  text-align: left;\n  padding: 0.65rem 0.85rem;\n  background: #f8fafc;\n  color: var(--mt-text-muted);\n  font-size: 0.62rem;\n  font-weight: 700;\n  letter-spacing: 0.06em;\n  text-transform: uppercase;\n  border-bottom: 1px solid var(--mt-border);\n}\n\n.est-table td {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 413,
+        "endLoc": {
+          "column": 5,
+          "line": 413,
+          "position": 8572
+        },
+        "name": "style.css",
+        "start": 401,
+        "startLoc": {
+          "column": 9,
+          "line": 401,
+          "position": 8296
+        }
+      },
+      "tokens": 81
+    },
+    {
+      "firstFile": {
+        "end": 184,
+        "endLoc": {
+          "column": 25,
+          "line": 184,
+          "position": 6498
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 177,
+        "startLoc": {
+          "column": 70,
+          "line": 177,
+          "position": 6108
+        }
+      },
+      "format": "html",
+      "fragment": "                    <span class=\"kl-select-item__text\">{{ selectedType.label }}</span>\n                  </span>\n                </template>\n                <template #option=\"{ option }\">\n                  <span class=\"kl-select-item\">\n                    <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                    <span class=\"kl-select-item__text\">{{ option.label }}</span>\n                  </span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 368,
+        "endLoc": {
+          "column": 23,
+          "line": 368,
+          "position": 12704
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 361,
+        "startLoc": {
+          "column": 107,
+          "line": 361,
+          "position": 12328
+        }
+      },
+      "tokens": 65
+    },
+    {
+      "firstFile": {
+        "end": 184,
+        "endLoc": {
+          "column": 25,
+          "line": 184,
+          "position": 6498
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 177,
+        "startLoc": {
+          "column": 70,
+          "line": 177,
+          "position": 6108
+        }
+      },
+      "format": "html",
+      "fragment": "                    <span class=\"kl-select-item__text\">{{ selectedType.label }}</span>\n                  </span>\n                </template>\n                <template #option=\"{ option }\">\n                  <span class=\"kl-select-item\">\n                    <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                    <span class=\"kl-select-item__text\">{{ option.label }}</span>\n                  </span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 221,
+        "endLoc": {
+          "column": 21,
+          "line": 221,
+          "position": 7758
+        },
+        "name": "logistics\\presentation\\views\\transport-form.vue",
+        "start": 214,
+        "startLoc": {
+          "column": 71,
+          "line": 214,
+          "position": 7396
+        }
+      },
+      "tokens": 65
+    },
+    {
+      "firstFile": {
+        "end": 184,
+        "endLoc": {
+          "column": 25,
+          "line": 184,
+          "position": 6498
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 177,
+        "startLoc": {
+          "column": 70,
+          "line": 177,
+          "position": 6108
+        }
+      },
+      "format": "html",
+      "fragment": "                    <span class=\"kl-select-item__text\">{{ selectedType.label }}</span>\n                  </span>\n                </template>\n                <template #option=\"{ option }\">\n                  <span class=\"kl-select-item\">\n                    <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                    <span class=\"kl-select-item__text\">{{ option.label }}</span>\n                  </span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 246,
+        "endLoc": {
+          "column": 21,
+          "line": 246,
+          "position": 8913
+        },
+        "name": "logistics\\presentation\\views\\transport-form.vue",
+        "start": 239,
+        "startLoc": {
+          "column": 72,
+          "line": 239,
+          "position": 8551
+        }
+      },
+      "tokens": 65
+    },
+    {
+      "firstFile": {
+        "end": 184,
+        "endLoc": {
+          "column": 25,
+          "line": 184,
+          "position": 6498
+        },
+        "name": "establishment\\presentation\\views\\establishment-form.vue",
+        "start": 177,
+        "startLoc": {
+          "column": 70,
+          "line": 177,
+          "position": 6108
+        }
+      },
+      "format": "html",
+      "fragment": "                    <span class=\"kl-select-item__text\">{{ selectedType.label }}</span>\n                  </span>\n                </template>\n                <template #option=\"{ option }\">\n                  <span class=\"kl-select-item\">\n                    <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                    <span class=\"kl-select-item__text\">{{ option.label }}</span>\n                  </span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 273,
+        "endLoc": {
+          "column": 21,
+          "line": 273,
+          "position": 10145
+        },
+        "name": "logistics\\presentation\\views\\transport-form.vue",
+        "start": 266,
+        "startLoc": {
+          "column": 75,
+          "line": 266,
+          "position": 9783
+        }
+      },
+      "tokens": 65
+    },
+    {
+      "firstFile": {
+        "end": 305,
+        "endLoc": {
+          "column": 15,
+          "line": 305,
+          "position": 9766
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 297,
+        "startLoc": {
+          "column": 47,
+          "line": 297,
+          "position": 9464
+        }
+      },
+      "format": "html",
+      "fragment": "  <div class=\"est-flow-page est-flow-page--map\">\n    <nav class=\"est-flow-back-bar\" aria-label=\"Navegación\">\n      <button type=\"button\" class=\"est-flow-back-btn\" @click=\"goHome\">\n        <i class=\"pi pi-arrow-left\" aria-hidden=\"true\"></i>\n        <span>{{ t('establishment.backToHome') }}</span>\n      </button>\n    </nav>\n\n    <div class=\"est-flow-card est-flow-card--map\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 88,
+        "endLoc": {
+          "column": 15,
+          "line": 88,
+          "position": 2701
+        },
+        "name": "establishment\\presentation\\views\\view-establishments.vue",
+        "start": 80,
+        "startLoc": {
+          "column": 28,
+          "line": 80,
+          "position": 2399
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 381,
+        "endLoc": {
+          "column": 27,
+          "line": 381,
+          "position": 13134
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 361,
+        "startLoc": {
+          "column": 106,
+          "line": 361,
+          "position": 12327
+        }
+      },
+      "format": "html",
+      "fragment": "                  <span class=\"kl-select-item__text\">{{ findSelectOption(statusSelectOptions, statusFilter).label }}</span>\n                </span>\n              </template>\n              <template #option=\"{ option }\">\n                <span class=\"kl-select-item\">\n                  <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                  <span class=\"kl-select-item__text\">{{ option.label }}</span>\n                </span>\n              </template>\n            </pv-select>\n            <pv-select\n              v-model=\"typeFilter\"\n              :options=\"typeSelectOptions\"\n              option-label=\"label\"\n              option-value=\"value\"\n              append-to=\"body\"\n              :aria-label=\"t('establishment.mapFilterType')\"\n              :pt=\"selectPt\"\n            >\n              <template #value>\n                <span v-if=\"findSelectOption(typeSelectOptions, typeFilter)\" class=\"kl-select-item\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 21,
+      "secondFile": {
+        "end": 405,
+        "endLoc": {
+          "column": 27,
+          "line": 405,
+          "position": 14316
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 385,
+        "startLoc": {
+          "column": 102,
+          "line": 385,
+          "position": 13503
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 368,
+        "endLoc": {
+          "column": 23,
+          "line": 368,
+          "position": 12704
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 361,
+        "startLoc": {
+          "column": 106,
+          "line": 361,
+          "position": 12327
+        }
+      },
+      "format": "html",
+      "fragment": "                  <span class=\"kl-select-item__text\">{{ findSelectOption(statusSelectOptions, statusFilter).label }}</span>\n                </span>\n              </template>\n              <template #option=\"{ option }\">\n                <span class=\"kl-select-item\">\n                  <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                  <span class=\"kl-select-item__text\">{{ option.label }}</span>\n                </span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 416,
+        "endLoc": {
+          "column": 23,
+          "line": 416,
+          "position": 15074
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 409,
+        "startLoc": {
+          "column": 106,
+          "line": 409,
+          "position": 14697
+        }
+      },
+      "tokens": 66
+    },
+    {
+      "firstFile": {
+        "end": 381,
+        "endLoc": {
+          "column": 27,
+          "line": 381,
+          "position": 13134
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 365,
+        "startLoc": {
+          "column": 28,
+          "line": 365,
+          "position": 12473
+        }
+      },
+      "format": "html",
+      "fragment": "                <span class=\"kl-select-item\">\n                  <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                  <span class=\"kl-select-item__text\">{{ option.label }}</span>\n                </span>\n              </template>\n            </pv-select>\n            <pv-select\n              v-model=\"typeFilter\"\n              :options=\"typeSelectOptions\"\n              option-label=\"label\"\n              option-value=\"value\"\n              append-to=\"body\"\n              :aria-label=\"t('establishment.mapFilterType')\"\n              :pt=\"selectPt\"\n            >\n              <template #value>\n                <span v-if=\"findSelectOption(typeSelectOptions, typeFilter)\" class=\"kl-select-item\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 17,
+      "secondFile": {
+        "end": 237,
+        "endLoc": {
+          "column": 25,
+          "line": 237,
+          "position": 8314
+        },
+        "name": "logistics\\presentation\\views\\transport-form.vue",
+        "start": 218,
+        "startLoc": {
+          "column": 26,
+          "line": 218,
+          "position": 7533
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 381,
+        "endLoc": {
+          "column": 27,
+          "line": 381,
+          "position": 13134
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 365,
+        "startLoc": {
+          "column": 28,
+          "line": 365,
+          "position": 12473
+        }
+      },
+      "format": "html",
+      "fragment": "                <span class=\"kl-select-item\">\n                  <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                  <span class=\"kl-select-item__text\">{{ option.label }}</span>\n                </span>\n              </template>\n            </pv-select>\n            <pv-select\n              v-model=\"typeFilter\"\n              :options=\"typeSelectOptions\"\n              option-label=\"label\"\n              option-value=\"value\"\n              append-to=\"body\"\n              :aria-label=\"t('establishment.mapFilterType')\"\n              :pt=\"selectPt\"\n            >\n              <template #value>\n                <span v-if=\"findSelectOption(typeSelectOptions, typeFilter)\" class=\"kl-select-item\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 17,
+      "secondFile": {
+        "end": 264,
+        "endLoc": {
+          "column": 25,
+          "line": 264,
+          "position": 9537
+        },
+        "name": "logistics\\presentation\\views\\transport-form.vue",
+        "start": 243,
+        "startLoc": {
+          "column": 26,
+          "line": 243,
+          "position": 8688
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 249,
+        "endLoc": {
+          "column": 1,
+          "line": 249,
+          "position": 8209
+        },
+        "name": "establishment\\presentation\\views\\map-of-establishments.vue",
+        "start": 240,
+        "startLoc": {
+          "column": 45,
+          "line": 240,
+          "position": 7898
+        }
+      },
+      "format": "javascript",
+      "fragment": "    : t('establishment.mapStatusMaintenance');\n}\n\nfunction formatType(type) {\n  const raw = String(type || '').toUpperCase();\n  if (raw === 'HOSPITAL') return t('establishment.typeHospital');\n  if (raw === 'WAREHOUSE') return t('establishment.typeWarehouse');\n  if (raw === 'CLINIC') return t('establishment.typeClinic');\n  return type || '—';\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 68,
+        "endLoc": {
+          "column": 1,
+          "line": 68,
+          "position": 2177
+        },
+        "name": "establishment\\presentation\\views\\view-establishments.vue",
+        "start": 59,
+        "startLoc": {
+          "column": 48,
+          "line": 59,
+          "position": 1866
+        }
+      },
+      "tokens": 64
+    },
+    {
+      "firstFile": {
+        "end": 75,
+        "endLoc": {
+          "column": 19,
+          "line": 75,
+          "position": 2401
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 66,
+        "startLoc": {
+          "column": 45,
+          "line": 66,
+          "position": 2138
+        }
+      },
+      "format": "html",
+      "fragment": "        <span>{{ t('establishment.backToList') }}</span>\n      </button>\n    </nav>\n\n    <div v-if=\"loading\" class=\"est-flow-card est-flow-state\">\n      <i class=\"pi pi-spin pi-spinner\" aria-hidden=\"true\"></i>\n      <span>{{ t('establishment.detailLoading') }}</span>\n    </div>\n\n    <div v-else-if=\"!establishment\" class=\"est-flow-card est-flow-state est-flow-state--warn\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 81,
+        "endLoc": {
+          "column": 19,
+          "line": 81,
+          "position": 2467
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 72,
+        "startLoc": {
+          "column": 45,
+          "line": 72,
+          "position": 2204
+        }
+      },
+      "tokens": 68
+    },
+    {
+      "firstFile": {
+        "end": 77,
+        "endLoc": {
+          "column": 76,
+          "line": 77,
+          "position": 2602
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 66,
+        "startLoc": {
+          "column": 45,
+          "line": 66,
+          "position": 2138
+        }
+      },
+      "format": "html",
+      "fragment": "        <span>{{ t('establishment.backToList') }}</span>\n      </button>\n    </nav>\n\n    <div v-if=\"loading\" class=\"est-flow-card est-flow-state\">\n      <i class=\"pi pi-spin pi-spinner\" aria-hidden=\"true\"></i>\n      <span>{{ t('establishment.detailLoading') }}</span>\n    </div>\n\n    <div v-else-if=\"!establishment\" class=\"est-flow-card est-flow-state est-flow-state--warn\">\n      <p>{{ t('establishment.notFound') }}</p>\n      <button type=\"button\" class=\"est-flow-btn est-flow-btn--ghost\" @click=\"goList\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 103,
+        "endLoc": {
+          "column": 76,
+          "line": 103,
+          "position": 3150
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-team.vue",
+        "start": 92,
+        "startLoc": {
+          "column": 54,
+          "line": 92,
+          "position": 2686
+        }
+      },
+      "tokens": 99
+    },
+    {
+      "firstFile": {
+        "end": 75,
+        "endLoc": {
+          "column": 19,
+          "line": 75,
+          "position": 2401
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 66,
+        "startLoc": {
+          "column": 45,
+          "line": 66,
+          "position": 2138
+        }
+      },
+      "format": "html",
+      "fragment": "        <span>{{ t('establishment.backToList') }}</span>\n      </button>\n    </nav>\n\n    <div v-if=\"loading\" class=\"est-flow-card est-flow-state\">\n      <i class=\"pi pi-spin pi-spinner\" aria-hidden=\"true\"></i>\n      <span>{{ t('establishment.detailLoading') }}</span>\n    </div>\n\n    <div v-else-if=\"!establishment\" class=\"est-flow-card est-flow-state est-flow-state--warn\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 114,
+        "endLoc": {
+          "column": 19,
+          "line": 114,
+          "position": 3740
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 105,
+        "startLoc": {
+          "column": 50,
+          "line": 105,
+          "position": 3477
+        }
+      },
+      "tokens": 68
+    },
+    {
+      "firstFile": {
+        "end": 13,
+        "endLoc": {
+          "column": 5,
+          "line": 13,
+          "position": 407
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "format": "javascript",
+      "fragment": "import { ref, computed, onMounted, watch } from 'vue';\nimport { useRoute, useRouter } from 'vue-router';\nimport { useI18n } from 'vue-i18n';\nimport { fetchDashboardPayload } from '../../../shared/infrastructure/dashboard-payload.js';\n\nconst route = useRoute();\nconst router = useRouter();\nconst { t } = useI18n();\n\nconst loading = ref(true);\nconst establishment = ref(null);\nconst operatorsCount = ref(0);",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 13,
+        "endLoc": {
+          "column": 5,
+          "line": 13,
+          "position": 407
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 13,
+        "endLoc": {
+          "column": 5,
+          "line": 13,
+          "position": 407
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "format": "javascript",
+      "fragment": "import { ref, computed, onMounted, watch } from 'vue';\nimport { useRoute, useRouter } from 'vue-router';\nimport { useI18n } from 'vue-i18n';\nimport { fetchDashboardPayload } from '../../../shared/infrastructure/dashboard-payload.js';\n\nconst route = useRoute();\nconst router = useRouter();\nconst { t } = useI18n();\n\nconst loading = ref(true);\nconst establishment = ref(null);\nconst operatorsCount = ref(0);",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 13,
+        "endLoc": {
+          "column": 5,
+          "line": 13,
+          "position": 407
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-team.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 43,
+          "line": 22,
+          "position": 652
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 14,
+        "startLoc": {
+          "column": 26,
+          "line": 14,
+          "position": 460
+        }
+      },
+      "format": "javascript",
+      "fragment": "const devicesCount = ref(0);\n\nfunction sameEst(a, b) {\n  return Number(a) === Number(b) || String(a) === String(b);\n}\n\nasync function load() {\n  loading.value = true;\n  const eid = route.params.establishmentId;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 23,
+        "endLoc": {
+          "column": 43,
+          "line": 23,
+          "position": 723
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 14,
+        "startLoc": {
+          "column": 23,
+          "line": 14,
+          "position": 529
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 25,
+        "endLoc": {
+          "column": 86,
+          "line": 25,
+          "position": 798
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 17,
+        "startLoc": {
+          "column": 59,
+          "line": 17,
+          "position": 551
+        }
+      },
+      "format": "javascript",
+      "fragment": "  return Number(a) === Number(b) || String(a) === String(b);\n}\n\nasync function load() {\n  loading.value = true;\n  const eid = route.params.establishmentId;\n  try {\n    const data = await fetchDashboardPayload();\n    establishment.value = data.establishments.find((e) => sameEst(e.id, eid)) ?? null;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 39,
+        "endLoc": {
+          "column": 86,
+          "line": 39,
+          "position": 1229
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-team.vue",
+        "start": 31,
+        "startLoc": {
+          "column": 35,
+          "line": 31,
+          "position": 982
+        }
+      },
+      "tokens": 59
+    },
+    {
+      "firstFile": {
+        "end": 37,
+        "endLoc": {
+          "column": 48,
+          "line": 37,
+          "position": 1204
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-detail.vue",
+        "start": 27,
+        "startLoc": {
+          "column": 100,
+          "line": 27,
+          "position": 1009
+        }
+      },
+      "format": "javascript",
+      "fragment": "    devicesCount.value = (data.devices || []).filter((d) => sameEst(d.establishment_id, eid)).length;\n  } catch (e) {\n    console.error(e);\n    establishment.value = null;\n  } finally {\n    loading.value = false;\n  }\n}\n\nonMounted(load);\nwatch(() => route.params.establishmentId, load);",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 53,
+        "endLoc": {
+          "column": 48,
+          "line": 53,
+          "position": 1687
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-team.vue",
+        "start": 43,
+        "startLoc": {
+          "column": 88,
+          "line": 43,
+          "position": 1492
+        }
+      },
+      "tokens": 50
+    },
+    {
+      "firstFile": {
+        "end": 81,
+        "endLoc": {
+          "column": 19,
+          "line": 81,
+          "position": 2467
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 68,
+        "startLoc": {
+          "column": 2,
+          "line": 68,
+          "position": 1935
+        }
+      },
+      "format": "html",
+      "fragment": "  <div class=\"est-flow-page\">\n    <nav class=\"est-flow-back-bar\" aria-label=\"Navegación\">\n      <button type=\"button\" class=\"est-flow-back-btn\" @click=\"goTeam\">\n        <i class=\"pi pi-arrow-left\" aria-hidden=\"true\"></i>\n        <span>{{ t('establishment.backToTeam') }}</span>\n      </button>\n    </nav>\n\n    <div v-if=\"loading\" class=\"est-flow-card est-flow-state\">\n      <i class=\"pi pi-spin pi-spinner\" aria-hidden=\"true\"></i>\n      <span>{{ t('establishment.detailLoading') }}</span>\n    </div>\n\n    <div v-else-if=\"!device\" class=\"est-flow-card est-flow-state est-flow-state--warn\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 14,
+      "secondFile": {
+        "end": 111,
+        "endLoc": {
+          "column": 19,
+          "line": 111,
+          "position": 3650
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 98,
+        "startLoc": {
+          "column": 2,
+          "line": 98,
+          "position": 3118
+        }
+      },
+      "tokens": 121
+    },
+    {
+      "firstFile": {
+        "end": 90,
+        "endLoc": {
+          "column": 37,
+          "line": 90,
+          "position": 2863
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 82,
+        "startLoc": {
+          "column": 44,
+          "line": 82,
+          "position": 2581
+        }
+      },
+      "format": "html",
+      "fragment": "      <p>{{ t('establishment.deviceNotFound') }}</p>\n      <button type=\"button\" class=\"est-flow-btn est-flow-btn--ghost\" @click=\"goTeam\">\n        {{ t('establishment.back') }}\n      </button>\n    </div>\n\n    <div v-else class=\"est-flow-card\">\n      <header class=\"est-flow-head\">\n        <h1 class=\"est-flow-title\">{{ device.exact_location || `Device #${device.id}` }}</h1>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 120,
+        "endLoc": {
+          "column": 37,
+          "line": 120,
+          "position": 4050
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 112,
+        "startLoc": {
+          "column": 46,
+          "line": 112,
+          "position": 3768
+        }
+      },
+      "tokens": 59
+    },
+    {
+      "firstFile": {
+        "end": 91,
+        "endLoc": {
+          "column": 42,
+          "line": 91,
+          "position": 2963
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 84,
+        "startLoc": {
+          "column": 33,
+          "line": 84,
+          "position": 2711
+        }
+      },
+      "format": "html",
+      "fragment": "        {{ t('establishment.back') }}\n      </button>\n    </div>\n\n    <div v-else class=\"est-flow-card\">\n      <header class=\"est-flow-head\">\n        <h1 class=\"est-flow-title\">{{ device.exact_location || `Device #${device.id}` }}</h1>\n        <p class=\"est-flow-subtitle\">{{ t('establishment.deviceInfo') }}</p>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 101,
+        "endLoc": {
+          "column": 42,
+          "line": 101,
+          "position": 3300
+        },
+        "name": "monitoring\\presentation\\views\\view-device-detail.vue",
+        "start": 94,
+        "startLoc": {
+          "column": 30,
+          "line": 94,
+          "position": 3048
+        }
+      },
+      "tokens": 65
+    },
+    {
+      "firstFile": {
+        "end": 103,
+        "endLoc": {
+          "column": 19,
+          "line": 103,
+          "position": 3560
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 97,
+        "startLoc": {
+          "column": 59,
+          "line": 97,
+          "position": 3261
+        }
+      },
+      "format": "html",
+      "fragment": "          <span class=\"est-flow-field__value\">{{ device.id }}</span>\n        </div>\n        <div class=\"est-flow-field\">\n          <span class=\"est-flow-field__label\">{{ t('establishment.fieldAssignedEst') }}</span>\n          <span class=\"est-flow-field__value\">{{ establishment?.establishment_name || '—' }}</span>\n        </div>\n        <div class=\"est-flow-field est-flow-field--full\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 171,
+        "endLoc": {
+          "column": 19,
+          "line": 171,
+          "position": 5963
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 165,
+        "startLoc": {
+          "column": 69,
+          "line": 165,
+          "position": 5664
+        }
+      },
+      "tokens": 63
+    },
+    {
+      "firstFile": {
+        "end": 124,
+        "endLoc": {
+          "column": 8,
+          "line": 124,
+          "position": 4612
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 115,
+        "startLoc": {
+          "column": 73,
+          "line": 115,
+          "position": 4304
+        }
+      },
+      "format": "html",
+      "fragment": "      <SensorReadingsGrid :device=\"device\" label-prefix=\"establishment\" />\n\n      <footer class=\"est-flow-actions\">\n        <button type=\"button\" class=\"est-flow-btn est-flow-btn--ghost\" @click=\"goTeam\">\n          <i class=\"pi pi-arrow-left\" aria-hidden=\"true\"></i>\n          <span>{{ t('establishment.back') }}</span>\n        </button>\n      </footer>\n    </div>\n  </div>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 204,
+        "endLoc": {
+          "column": 8,
+          "line": 204,
+          "position": 7663
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 195,
+        "startLoc": {
+          "column": 11,
+          "line": 195,
+          "position": 7355
+        }
+      },
+      "tokens": 66
+    },
+    {
+      "firstFile": {
+        "end": 24,
+        "endLoc": {
+          "column": 7,
+          "line": 24,
+          "position": 732
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-device-detail.vue",
+        "start": 14,
+        "startLoc": {
+          "column": 13,
+          "line": 14,
+          "position": 519
+        }
+      },
+      "format": "javascript",
+      "fragment": "const device = ref(null);\n\n\nfunction sameEst(a, b) {\n  return Number(a) === Number(b) || String(a) === String(b);\n}\n\nasync function load() {\n  loading.value = true;\n  const eid = route.params.establishmentId;\n  const did = route.params.deviceId;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 23,
+        "endLoc": {
+          "column": 7,
+          "line": 23,
+          "position": 653
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 14,
+        "startLoc": {
+          "column": 11,
+          "line": 14,
+          "position": 442
+        }
+      },
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 113,
+        "endLoc": {
+          "column": 76,
+          "line": 113,
+          "position": 3854
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 106,
+        "startLoc": {
+          "column": 11,
+          "line": 106,
+          "position": 3442
+        }
+      },
+      "format": "html",
+      "fragment": "    <div v-if=\"loading\" class=\"est-flow-card est-flow-state\">\n      <i class=\"pi pi-spin pi-spinner\" aria-hidden=\"true\"></i>\n      <span>{{ t('establishment.detailLoading') }}</span>\n    </div>\n\n    <div v-else-if=\"!operator\" class=\"est-flow-card est-flow-state est-flow-state--warn\">\n      <p>{{ t('establishment.operatorNotFound') }}</p>\n      <button type=\"button\" class=\"est-flow-btn est-flow-btn--ghost\" @click=\"goTeam\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 116,
+        "endLoc": {
+          "column": 76,
+          "line": 116,
+          "position": 3944
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 109,
+        "startLoc": {
+          "column": 11,
+          "line": 109,
+          "position": 3532
+        }
+      },
+      "tokens": 80
+    },
+    {
+      "firstFile": {
+        "end": 16,
+        "endLoc": {
+          "column": 8,
+          "line": 16,
+          "position": 466
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 5,
+        "startLoc": {
+          "column": 91,
+          "line": 5,
+          "position": 251
+        }
+      },
+      "format": "javascript",
+      "fragment": "import { fetchDashboardPayload } from '../../../shared/infrastructure/dashboard-payload.js';\n\nconst route = useRoute();\nconst router = useRouter();\nconst { t } = useI18n();\n\nconst loading = ref(true);\nconst establishment = ref(null);\nconst operator = ref(null);\nconst user = ref(null);\n\nfunction sameEst(a, b) {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 17,
+        "endLoc": {
+          "column": 8,
+          "line": 17,
+          "position": 533
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 6,
+        "startLoc": {
+          "column": 64,
+          "line": 6,
+          "position": 318
+        }
+      },
+      "tokens": 57
+    },
+    {
+      "firstFile": {
+        "end": 66,
+        "endLoc": {
+          "column": 17,
+          "line": 66,
+          "position": 2166
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 43,
+        "startLoc": {
+          "column": 67,
+          "line": 43,
+          "position": 1390
+        }
+      },
+      "format": "javascript",
+      "fragment": "watch(() => [route.params.establishmentId, route.params.operatorId], load);\n\nconst scheduleRows = computed(() => {\n  const sch = operator.value?.schedule;\n  if (!sch) {\n    return [\n      { turn: t('establishment.scheduleMorning'), day: '—' },\n      { turn: t('establishment.scheduleAfternoon'), day: '—' },\n      { turn: t('establishment.scheduleNight'), day: '—' },\n    ];\n  }\n  if (typeof sch === 'string') {\n    return [{ turn: t('establishment.scheduleShift'), day: sch }];\n  }\n  if (typeof sch === 'object' && !Array.isArray(sch)) {\n    return Object.entries(sch).map(([turn, day]) => ({ turn, day: String(day) }));\n  }\n  if (Array.isArray(sch)) {\n    return sch.map((row) => ({\n      turn: row.turn || row.shift || '—',\n      day: row.day || row.hours || row.range || '—',\n    }));\n  }\n  return [{ turn: '—', day: String(sch) }];",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 24,
+      "secondFile": {
+        "end": 72,
+        "endLoc": {
+          "column": 17,
+          "line": 72,
+          "position": 2289
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 49,
+        "startLoc": {
+          "column": 35,
+          "line": 49,
+          "position": 1513
+        }
+      },
+      "tokens": 205
+    },
+    {
+      "firstFile": {
+        "end": 79,
+        "endLoc": {
+          "column": 8,
+          "line": 79,
+          "position": 2555
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 66,
+        "startLoc": {
+          "column": 36,
+          "line": 66,
+          "position": 2185
+        }
+      },
+      "format": "javascript",
+      "fragment": "  return [{ turn: '—', day: String(sch) }];\n});\n\nconst entryDate = computed(() => {\n  const op = operator.value;\n  const u = user.value;\n  if (!op && !u) return '—';\n  const raw = op?.entry_date ?? u?.entry_date ?? op?.createdAt ?? op?.created_at;\n  if (!raw) return '—';\n  const d = new Date(raw);\n  return Number.isNaN(d.getTime()) ? String(raw) : d.toLocaleDateString();\n});\n\nfunction goTeam() {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 14,
+      "secondFile": {
+        "end": 85,
+        "endLoc": {
+          "column": 8,
+          "line": 85,
+          "position": 2722
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 72,
+        "startLoc": {
+          "column": 80,
+          "line": 72,
+          "position": 2352
+        }
+      },
+      "tokens": 106
+    },
+    {
+      "firstFile": {
+        "end": 94,
+        "endLoc": {
+          "column": 2,
+          "line": 94,
+          "position": 3089
+        },
+        "name": "establishment\\presentation\\views\\view-establishment-operator-detail.vue",
+        "start": 83,
+        "startLoc": {
+          "column": 2,
+          "line": 83,
+          "position": 2684
+        }
+      },
+      "format": "javascript",
+      "fragment": "  });\n}\n\nconst heroName = computed(() => user.value?.name || t('establishment.unknownUser'));\nconst heroEmail = computed(() => user.value?.email || '—');\nconst userInitial = computed(() => {\n  const n = user.value?.name;\n  return n && n.length ? n.charAt(0).toUpperCase() : '?';\n});\nconst photoUrl = computed(\n  () => user.value?.photo || user.value?.photo_url || user.value?.avatar || null,\n);",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 97,
+        "endLoc": {
+          "column": 2,
+          "line": 97,
+          "position": 3174
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 86,
+        "startLoc": {
+          "column": 34,
+          "line": 86,
+          "position": 2769
+        }
+      },
+      "tokens": 112
+    },
+    {
+      "firstFile": {
+        "end": 124,
+        "endLoc": {
+          "column": 25,
+          "line": 124,
+          "position": 4690
+        },
+        "name": "establishment\\presentation\\views\\view-establishments.vue",
+        "start": 113,
+        "startLoc": {
+          "column": 63,
+          "line": 113,
+          "position": 4385
+        }
+      },
+      "format": "html",
+      "fragment": "            <span class=\"est-flow-stat__value\">{{ stats.others }}</span>\n          </div>\n        </div>\n      </header>\n\n      <div class=\"est-flow-toolbar\">\n        <div class=\"est-flow-search\">\n          <i class=\"pi pi-search\" aria-hidden=\"true\"></i>\n          <input\n            v-model=\"searchQuery\"\n            type=\"search\"\n            :placeholder=\"t('establishment.searchPlaceholder')\"",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 249,
+        "endLoc": {
+          "column": 25,
+          "line": 249,
+          "position": 8682
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 238,
+        "startLoc": {
+          "column": 64,
+          "line": 238,
+          "position": 8377
+        }
+      },
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 194,
+        "endLoc": {
+          "column": 14,
+          "line": 194,
+          "position": 6898
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 179,
+        "startLoc": {
+          "column": 50,
+          "line": 179,
+          "position": 6187
+        }
+      },
+      "format": "html",
+      "fragment": "          <span class=\"op-profile__stat-value\">{{ operator.alerts_answered ?? 0 }}</span>\n        </div>\n        <div class=\"op-profile__stat\">\n          <span class=\"op-profile__stat-label\">\n            <i class=\"pi pi-calendar\" aria-hidden=\"true\"></i>\n            {{ t('establishment.fieldEntryDate') }}\n          </span>\n          <span class=\"op-profile__stat-value op-profile__stat-value--sm\">{{ entryDate }}</span>\n        </div>\n        <div class=\"op-profile__stat\">\n          <span class=\"op-profile__stat-label\">\n            <i class=\"pi pi-building\" aria-hidden=\"true\"></i>\n            {{ t('establishment.fieldAssignedEst') }}\n          </span>\n          <span class=\"op-profile__stat-value op-profile__stat-value--sm\">\n            {{ establishment?.establishment_name || t('establishment.unassignedSite') }}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 16,
+      "secondFile": {
+        "end": 432,
+        "endLoc": {
+          "column": 82,
+          "line": 432,
+          "position": 16241
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 418,
+        "startLoc": {
+          "column": 66,
+          "line": 418,
+          "position": 15460
+        }
+      },
+      "tokens": 121
+    },
+    {
+      "firstFile": {
+        "end": 219,
+        "endLoc": {
+          "column": 14,
+          "line": 219,
+          "position": 8450
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 214,
+        "startLoc": {
+          "column": 51,
+          "line": 214,
+          "position": 8149
+        }
+      },
+      "format": "html",
+      "fragment": "          <span class=\"op-profile__field-value\">{{ user?.phone || '—' }}</span>\n        </div>\n        <div class=\"op-profile__field\">\n          <span class=\"op-profile__field-label\"><i class=\"pi pi-building\" aria-hidden=\"true\"></i> {{ t('establishment.fieldAssignedEst') }}</span>\n          <span class=\"op-profile__field-value\">\n            {{ establishment?.establishment_name || t('establishment.unassignedSite') }}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 455,
+        "endLoc": {
+          "column": 56,
+          "line": 455,
+          "position": 17902
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 451,
+        "startLoc": {
+          "column": 67,
+          "line": 451,
+          "position": 17591
+        }
+      },
+      "tokens": 64
+    },
+    {
+      "firstFile": {
+        "end": 76,
+        "endLoc": {
+          "column": 12,
+          "line": 76,
+          "position": 2418
+        },
+        "name": "establishment\\presentation\\views\\view-operator-detail.vue",
+        "start": 67,
+        "startLoc": {
+          "column": 4,
+          "line": 67,
+          "position": 2128
+        }
+      },
+      "format": "javascript",
+      "fragment": "    return sch.map((row) => ({\n      turn: row.turn || row.shift || '—',\n      day: row.day || row.hours || row.range || '—',\n    }));\n  }\n  return [{ turn: t('establishment.scheduleShift'), day: Operator.formatSchedule(sch) }];\n});\n\nconst entryDate = computed(() => {\n  const op = operator.value;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 152,
+        "endLoc": {
+          "column": 12,
+          "line": 152,
+          "position": 4987
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 143,
+        "startLoc": {
+          "column": 4,
+          "line": 143,
+          "position": 4697
+        }
+      },
+      "tokens": 80
+    },
+    {
+      "firstFile": {
+        "end": 41,
+        "endLoc": {
+          "column": 23,
+          "line": 41,
+          "position": 1492
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 32,
+        "startLoc": {
+          "column": 11,
+          "line": 32,
+          "position": 1167
+        }
+      },
+      "format": "javascript",
+      "fragment": "    class: 'mt-dialog-wrap p-dialog est-inspect-dialog',\n    style: { border: 'none', background: 'transparent', boxShadow: 'none' },\n  },\n  content: {\n    class: 'mt-dialog-content est-inspect-content',\n    style: { padding: 0, background: 'transparent', border: 'none', overflow: 'visible' },\n  },\n};\n\nonMounted(async () => {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 38,
+        "endLoc": {
+          "column": 23,
+          "line": 38,
+          "position": 1354
+        },
+        "name": "logistics\\presentation\\views\\view-transports.vue",
+        "start": 29,
+        "startLoc": {
+          "column": 11,
+          "line": 29,
+          "position": 1029
+        }
+      },
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 41,
+        "endLoc": {
+          "column": 23,
+          "line": 41,
+          "position": 1492
+        },
+        "name": "establishment\\presentation\\views\\view-operators.vue",
+        "start": 32,
+        "startLoc": {
+          "column": 11,
+          "line": 32,
+          "position": 1167
+        }
+      },
+      "format": "javascript",
+      "fragment": "    class: 'mt-dialog-wrap p-dialog est-inspect-dialog',\n    style: { border: 'none', background: 'transparent', boxShadow: 'none' },\n  },\n  content: {\n    class: 'mt-dialog-content est-inspect-content',\n    style: { padding: 0, background: 'transparent', border: 'none', overflow: 'visible' },\n  },\n};\n\nonMounted(async () => {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 39,
+        "endLoc": {
+          "column": 23,
+          "line": 39,
+          "position": 1346
+        },
+        "name": "monitoring\\presentation\\views\\view-devices.vue",
+        "start": 30,
+        "startLoc": {
+          "column": 11,
+          "line": 30,
+          "position": 1021
+        }
+      },
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 207,
+        "endLoc": {
+          "column": 18,
+          "line": 207,
+          "position": 7904
+        },
+        "name": "iam\\application\\iam.store.js",
+        "start": 193,
+        "startLoc": {
+          "column": 12,
+          "line": 193,
+          "position": 7417
+        }
+      },
+      "format": "javascript",
+      "fragment": "            };\n        } catch (err) {\n            const status = err?.response?.status;\n            if (status === 401 || status === 400) return { ok: false, error: 'invalidCredentials' };\n            return { ok: false, error: 'network' };\n        }\n    }\n\n    /**\n     * Signs a health-entity administrator in.\n     * @param {string} email\n     * @param {string} password\n     * @returns {Promise<{ok: true, session: Object} | {ok: false, error: string}>}\n     */\n    async function loginHealthEntity(email, password) {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 15,
+      "secondFile": {
+        "end": 231,
+        "endLoc": {
+          "column": 18,
+          "line": 231,
+          "position": 8884
+        },
+        "name": "iam\\application\\iam.store.js",
+        "start": 217,
+        "startLoc": {
+          "column": 55,
+          "line": 217,
+          "position": 8396
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 207,
+        "endLoc": {
+          "column": 18,
+          "line": 207,
+          "position": 7904
+        },
+        "name": "iam\\application\\iam.store.js",
+        "start": 193,
+        "startLoc": {
+          "column": 12,
+          "line": 193,
+          "position": 7417
+        }
+      },
+      "format": "javascript",
+      "fragment": "            };\n        } catch (err) {\n            const status = err?.response?.status;\n            if (status === 401 || status === 400) return { ok: false, error: 'invalidCredentials' };\n            return { ok: false, error: 'network' };\n        }\n    }\n\n    /**\n     * Signs a health-entity administrator in.\n     * @param {string} email\n     * @param {string} password\n     * @returns {Promise<{ok: true, session: Object} | {ok: false, error: string}>}\n     */\n    async function loginHealthEntity(email, password) {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 15,
+      "secondFile": {
+        "end": 254,
+        "endLoc": {
+          "column": 18,
+          "line": 254,
+          "position": 9916
+        },
+        "name": "iam\\application\\iam.store.js",
+        "start": 241,
+        "startLoc": {
+          "column": 96,
+          "line": 241,
+          "position": 9429
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 216,
+        "endLoc": {
+          "column": 44,
+          "line": 216,
+          "position": 8321
+        },
+        "name": "iam\\application\\iam.store.js",
+        "start": 208,
+        "startLoc": {
+          "column": 86,
+          "line": 208,
+          "position": 8029
+        }
+      },
+      "format": "javascript",
+      "fragment": "        const command = new SignInCommand({ email, password, segment: 'health-entity' });\n        if (!command.email || !command.password) {\n            return { ok: false, error: 'invalidCredentials' };\n        }\n\n        try {\n            const result = await signInReal(command);\n            if (!result.ok) return result;\n            localStorage.setItem('userRole', 'health-entity');",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 240,
+        "endLoc": {
+          "column": 44,
+          "line": 240,
+          "position": 9309
+        },
+        "name": "iam\\application\\iam.store.js",
+        "start": 232,
+        "startLoc": {
+          "column": 90,
+          "line": 232,
+          "position": 9017
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 582,
+        "endLoc": {
+          "column": 12,
+          "line": 582,
+          "position": 15461
+        },
+        "name": "iam\\presentation\\views\\billing-checkout.vue",
+        "start": 577,
+        "startLoc": {
+          "column": 11,
+          "line": 577,
+          "position": 15221
+        }
+      },
+      "format": "css",
+      "fragment": "    #fff 96%,\n    transparent 100%\n  );\n  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));\n  mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));\n  animation: pay-modal-spin 1.15s linear infinite;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 107,
+        "endLoc": {
+          "column": 12,
+          "line": 107,
+          "position": 2566
+        },
+        "name": "shared\\presentation\\components\\page-loader.vue",
+        "start": 102,
+        "startLoc": {
+          "column": 11,
+          "line": 102,
+          "position": 2326
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 60,
+        "endLoc": {
+          "column": 43,
+          "line": 60,
+          "position": 2030
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 53,
+        "startLoc": {
+          "column": 2,
+          "line": 53,
+          "position": 1649
+        }
+      },
+      "format": "html",
+      "fragment": "  <auth-panel show-back @back=\"router.push({ name: 'login' })\">\n    <div class=\"reg-compact\">\n      <header class=\"reg-compact__head\">\n        <div class=\"reg-compact__brand\">\n          <img src=\"/logo.png\" :alt=\"t('common.logoAlt')\" class=\"reg-compact__logo\" />\n          <strong>{{ t('common.brandName') }}</strong>\n        </div>\n        <p class=\"reg-compact__badge\">{{ t('iam.healthEntity.badge') }}</p>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 70,
+        "endLoc": {
+          "column": 43,
+          "line": 70,
+          "position": 2365
+        },
+        "name": "iam\\presentation\\views\\login-operational-staff.vue",
+        "start": 63,
+        "startLoc": {
+          "column": 2,
+          "line": 63,
+          "position": 1984
+        }
+      },
+      "tokens": 73
+    },
+    {
+      "firstFile": {
+        "end": 61,
+        "endLoc": {
+          "column": 44,
+          "line": 61,
+          "position": 2108
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 53,
+        "startLoc": {
+          "column": 62,
+          "line": 53,
+          "position": 1709
+        }
+      },
+      "format": "html",
+      "fragment": "  <auth-panel show-back @back=\"router.push({ name: 'login' })\">\n    <div class=\"reg-compact\">\n      <header class=\"reg-compact__head\">\n        <div class=\"reg-compact__brand\">\n          <img src=\"/logo.png\" :alt=\"t('common.logoAlt')\" class=\"reg-compact__logo\" />\n          <strong>{{ t('common.brandName') }}</strong>\n        </div>\n        <p class=\"reg-compact__badge\">{{ t('iam.healthEntity.badge') }}</p>\n        <h1 class=\"reg-compact__title\">{{ t('iam.login.welcome') }}</h1>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 54,
+        "endLoc": {
+          "column": 44,
+          "line": 54,
+          "position": 1898
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 46,
+        "startLoc": {
+          "column": 87,
+          "line": 46,
+          "position": 1499
+        }
+      },
+      "tokens": 80
+    },
+    {
+      "firstFile": {
+        "end": 60,
+        "endLoc": {
+          "column": 43,
+          "line": 60,
+          "position": 2030
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 53,
+        "startLoc": {
+          "column": 62,
+          "line": 53,
+          "position": 1709
+        }
+      },
+      "format": "html",
+      "fragment": "  <auth-panel show-back @back=\"router.push({ name: 'login' })\">\n    <div class=\"reg-compact\">\n      <header class=\"reg-compact__head\">\n        <div class=\"reg-compact__brand\">\n          <img src=\"/logo.png\" :alt=\"t('common.logoAlt')\" class=\"reg-compact__logo\" />\n          <strong>{{ t('common.brandName') }}</strong>\n        </div>\n        <p class=\"reg-compact__badge\">{{ t('iam.healthEntity.badge') }}</p>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 62,
+        "endLoc": {
+          "column": 43,
+          "line": 62,
+          "position": 2614
+        },
+        "name": "iam\\presentation\\views\\register-operational-staff.vue",
+        "start": 55,
+        "startLoc": {
+          "column": 91,
+          "line": 55,
+          "position": 2293
+        }
+      },
+      "tokens": 62
+    },
+    {
+      "firstFile": {
+        "end": 104,
+        "endLoc": {
+          "column": 54,
+          "line": 104,
+          "position": 3828
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 60,
+        "startLoc": {
+          "column": 67,
+          "line": 60,
+          "position": 2054
+        }
+      },
+      "format": "html",
+      "fragment": "        <p class=\"reg-compact__badge\">{{ t('iam.healthEntity.badge') }}</p>\n        <h1 class=\"reg-compact__title\">{{ t('iam.login.welcome') }}</h1>\n        <p class=\"reg-compact__hint\">{{ t('iam.login.credentialsHint') }}</p>\n      </header>\n\n      <form class=\"reg-compact__form\" @submit.prevent=\"onSubmit\">\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.email') }}</span>\n          <input\n            v-model=\"email\"\n            type=\"email\"\n            :placeholder=\"t('iam.placeholders.email')\"\n            :class=\"{ 'input-invalid': errors.email }\"\n          />\n          <small v-if=\"errors.email\" class=\"reg-compact__error\">{{ errors.email }}</small>\n        </label>\n\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.password') }}</span>\n          <div class=\"reg-compact__pw\">\n            <input\n              v-model=\"password\"\n              :type=\"showPassword ? 'text' : 'password'\"\n              :placeholder=\"t('iam.placeholders.password')\"\n              :class=\"{ 'input-invalid': errors.password }\"\n            />\n            <button\n              type=\"button\"\n              class=\"reg-compact__eye\"\n              @click=\"showPassword = !showPassword\"\n            >\n              <i :class=\"showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'\"></i>\n            </button>\n          </div>\n          <small v-if=\"errors.password\" class=\"reg-compact__error\">{{ errors.password }}</small>\n        </label>\n\n        <button type=\"submit\" class=\"btn-primary reg-compact__btn\" :disabled=\"loading\">\n          {{ loading ? t('iam.login.loading') : t('iam.login.submit') }}\n        </button>\n      </form>\n\n      <p class=\"reg-compact__footer\">\n        {{ t('iam.login.noAccount') }}\n        <button type=\"button\" class=\"link-btn\" @click=\"router.push({ name: 'iam-register-health-entity' })\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 45,
+      "secondFile": {
+        "end": 114,
+        "endLoc": {
+          "column": 54,
+          "line": 114,
+          "position": 4162
+        },
+        "name": "iam\\presentation\\views\\login-operational-staff.vue",
+        "start": 70,
+        "startLoc": {
+          "column": 66,
+          "line": 70,
+          "position": 2388
+        }
+      },
+      "tokens": 293
+    },
+    {
+      "firstFile": {
+        "end": 70,
+        "endLoc": {
+          "column": 24,
+          "line": 70,
+          "position": 2470
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 62,
+        "startLoc": {
+          "column": 69,
+          "line": 62,
+          "position": 2207
+        }
+      },
+      "format": "html",
+      "fragment": "        <p class=\"reg-compact__hint\">{{ t('iam.login.credentialsHint') }}</p>\n      </header>\n\n      <form class=\"reg-compact__form\" @submit.prevent=\"onSubmit\">\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.email') }}</span>\n          <input\n            v-model=\"email\"\n            type=\"email\"",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 73,
+        "endLoc": {
+          "column": 24,
+          "line": 73,
+          "position": 2427
+        },
+        "name": "iam\\presentation\\views\\login.vue",
+        "start": 65,
+        "startLoc": {
+          "column": 64,
+          "line": 65,
+          "position": 2164
+        }
+      },
+      "tokens": 54
+    },
+    {
+      "firstFile": {
+        "end": 82,
+        "endLoc": {
+          "column": 56,
+          "line": 82,
+          "position": 2960
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 71,
+        "startLoc": {
+          "column": 12,
+          "line": 71,
+          "position": 2484
+        }
+      },
+      "format": "html",
+      "fragment": "            :placeholder=\"t('iam.placeholders.email')\"\n            :class=\"{ 'input-invalid': errors.email }\"\n          />\n          <small v-if=\"errors.email\" class=\"reg-compact__error\">{{ errors.email }}</small>\n        </label>\n\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.password') }}</span>\n          <div class=\"reg-compact__pw\">\n            <input\n              v-model=\"password\"\n              :type=\"showPassword ? 'text' : 'password'\"",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 86,
+        "endLoc": {
+          "column": 56,
+          "line": 86,
+          "position": 2954
+        },
+        "name": "iam\\presentation\\views\\login.vue",
+        "start": 75,
+        "startLoc": {
+          "column": 12,
+          "line": 75,
+          "position": 2478
+        }
+      },
+      "tokens": 74
+    },
+    {
+      "firstFile": {
+        "end": 97,
+        "endLoc": {
+          "column": 87,
+          "line": 97,
+          "position": 3583
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 83,
+        "startLoc": {
+          "column": 14,
+          "line": 83,
+          "position": 2976
+        }
+      },
+      "format": "html",
+      "fragment": "              :placeholder=\"t('iam.placeholders.password')\"\n              :class=\"{ 'input-invalid': errors.password }\"\n            />\n            <button\n              type=\"button\"\n              class=\"reg-compact__eye\"\n              @click=\"showPassword = !showPassword\"\n            >\n              <i :class=\"showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'\"></i>\n            </button>\n          </div>\n          <small v-if=\"errors.password\" class=\"reg-compact__error\">{{ errors.password }}</small>\n        </label>\n\n        <button type=\"submit\" class=\"btn-primary reg-compact__btn\" :disabled=\"loading\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 15,
+      "secondFile": {
+        "end": 98,
+        "endLoc": {
+          "column": 87,
+          "line": 98,
+          "position": 3565
+        },
+        "name": "iam\\presentation\\views\\login.vue",
+        "start": 88,
+        "startLoc": {
+          "column": 14,
+          "line": 88,
+          "position": 3017
+        }
+      },
+      "tokens": 81
+    },
+    {
+      "firstFile": {
+        "end": 28,
+        "endLoc": {
+          "column": 34,
+          "line": 28,
+          "position": 889
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "format": "javascript",
+      "fragment": "import { ref } from 'vue';\nimport { useRouter } from 'vue-router';\nimport { useI18n } from 'vue-i18n';\nimport { useToast } from 'primevue/usetoast';\nimport AuthPanel from '../components/auth-panel.vue';\nimport useIamStore from '../../application/iam.store.js';\n\nconst { t } = useI18n();\nconst router = useRouter();\nconst toast = useToast();\nconst iamStore = useIamStore();\n\nconst email = ref('');\nconst password = ref('');\nconst showPassword = ref(false);\nconst loading = ref(false);\nconst errors = ref({ email: '', password: '' });\n\nasync function onSubmit() {\n  errors.value = { email: '', password: '' };\n  if (!email.value || !password.value) {\n    toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: t('iam.errors.required'), life: 4000 });\n    return;\n  }\n  loading.value = true;\n  try {\n    const result = await iamStore.loginHealthEntity(email.value, password.value);",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 27,
+      "secondFile": {
+        "end": 28,
+        "endLoc": {
+          "column": 34,
+          "line": 28,
+          "position": 889
+        },
+        "name": "iam\\presentation\\views\\login-operational-staff.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "tokens": 195
+    },
+    {
+      "firstFile": {
+        "end": 14,
+        "endLoc": {
+          "column": 5,
+          "line": 14,
+          "position": 407
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "format": "javascript",
+      "fragment": "import { ref } from 'vue';\nimport { useRouter } from 'vue-router';\nimport { useI18n } from 'vue-i18n';\nimport { useToast } from 'primevue/usetoast';\nimport AuthPanel from '../components/auth-panel.vue';\nimport useIamStore from '../../application/iam.store.js';\n\nconst { t } = useI18n();\nconst router = useRouter();\nconst toast = useToast();\nconst iamStore = useIamStore();\n\nconst email = ref('');",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 14,
+        "endLoc": {
+          "column": 5,
+          "line": 14,
+          "position": 407
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "tokens": 69
+    },
+    {
+      "firstFile": {
+        "end": 14,
+        "endLoc": {
+          "column": 5,
+          "line": 14,
+          "position": 407
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "format": "javascript",
+      "fragment": "import { ref } from 'vue';\nimport { useRouter } from 'vue-router';\nimport { useI18n } from 'vue-i18n';\nimport { useToast } from 'primevue/usetoast';\nimport AuthPanel from '../components/auth-panel.vue';\nimport useIamStore from '../../application/iam.store.js';\n\nconst { t } = useI18n();\nconst router = useRouter();\nconst toast = useToast();\nconst iamStore = useIamStore();\n\nconst email = ref('');",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 14,
+        "endLoc": {
+          "column": 5,
+          "line": 14,
+          "position": 407
+        },
+        "name": "iam\\presentation\\views\\register-operational-staff.vue",
+        "start": 2,
+        "startLoc": {
+          "column": 0,
+          "line": 2,
+          "position": 16
+        }
+      },
+      "tokens": 69
+    },
+    {
+      "firstFile": {
+        "end": 28,
+        "endLoc": {
+          "column": 34,
+          "line": 28,
+          "position": 889
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 6,
+        "startLoc": {
+          "column": 52,
+          "line": 6,
+          "position": 221
+        }
+      },
+      "format": "javascript",
+      "fragment": "import AuthPanel from '../components/auth-panel.vue';\nimport useIamStore from '../../application/iam.store.js';\n\nconst { t } = useI18n();\nconst router = useRouter();\nconst toast = useToast();\nconst iamStore = useIamStore();\n\nconst email = ref('');\nconst password = ref('');\nconst showPassword = ref(false);\nconst loading = ref(false);\nconst errors = ref({ email: '', password: '' });\n\nasync function onSubmit() {\n  errors.value = { email: '', password: '' };\n  if (!email.value || !password.value) {\n    toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: t('iam.errors.required'), life: 4000 });\n    return;\n  }\n  loading.value = true;\n  try {\n    const result = await iamStore.loginHealthEntity(email.value, password.value);",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 23,
+      "secondFile": {
+        "end": 27,
+        "endLoc": {
+          "column": 34,
+          "line": 27,
+          "position": 834
+        },
+        "name": "iam\\presentation\\views\\login.vue",
+        "start": 5,
+        "startLoc": {
+          "column": 44,
+          "line": 5,
+          "position": 166
+        }
+      },
+      "tokens": 163
+    },
+    {
+      "firstFile": {
+        "end": 35,
+        "endLoc": {
+          "column": 5,
+          "line": 35,
+          "position": 1200
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 28,
+        "startLoc": {
+          "column": 51,
+          "line": 28,
+          "position": 906
+        }
+      },
+      "format": "javascript",
+      "fragment": "    const result = await iamStore.loginHealthEntity(email.value, password.value);\n    if (!result.ok) {\n      const msg = t(`iam.errors.${result.error}`);\n      errors.value.email = msg;\n      errors.value.password = msg;\n      toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: msg, life: 4000 });\n      return;\n    }",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 35,
+        "endLoc": {
+          "column": 5,
+          "line": 35,
+          "position": 1204
+        },
+        "name": "iam\\presentation\\views\\login-operational-staff.vue",
+        "start": 28,
+        "startLoc": {
+          "column": 55,
+          "line": 28,
+          "position": 910
+        }
+      },
+      "tokens": 75
+    },
+    {
+      "firstFile": {
+        "end": 35,
+        "endLoc": {
+          "column": 5,
+          "line": 35,
+          "position": 1200
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 28,
+        "startLoc": {
+          "column": 51,
+          "line": 28,
+          "position": 906
+        }
+      },
+      "format": "javascript",
+      "fragment": "    const result = await iamStore.loginHealthEntity(email.value, password.value);\n    if (!result.ok) {\n      const msg = t(`iam.errors.${result.error}`);\n      errors.value.email = msg;\n      errors.value.password = msg;\n      toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: msg, life: 4000 });\n      return;\n    }",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 34,
+        "endLoc": {
+          "column": 5,
+          "line": 34,
+          "position": 1133
+        },
+        "name": "iam\\presentation\\views\\login.vue",
+        "start": 27,
+        "startLoc": {
+          "column": 39,
+          "line": 27,
+          "position": 839
+        }
+      },
+      "tokens": 75
+    },
+    {
+      "firstFile": {
+        "end": 49,
+        "endLoc": {
+          "column": 1,
+          "line": 49,
+          "position": 1620
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 42,
+        "startLoc": {
+          "column": 45,
+          "line": 42,
+          "position": 1410
+        }
+      },
+      "format": "javascript",
+      "fragment": "    router.push({ name: 'home-health-entity' });\n  } catch (e) {\n    console.error(e);\n    toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: t('iam.errors.network'), life: 4000 });\n  } finally {\n    loading.value = false;\n  }\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 59,
+        "endLoc": {
+          "column": 1,
+          "line": 59,
+          "position": 1955
+        },
+        "name": "iam\\presentation\\views\\login-operational-staff.vue",
+        "start": 52,
+        "startLoc": {
+          "column": 49,
+          "line": 52,
+          "position": 1745
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 49,
+        "endLoc": {
+          "column": 1,
+          "line": 49,
+          "position": 1620
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 42,
+        "startLoc": {
+          "column": 45,
+          "line": 42,
+          "position": 1410
+        }
+      },
+      "format": "javascript",
+      "fragment": "    router.push({ name: 'home-health-entity' });\n  } catch (e) {\n    console.error(e);\n    toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: t('iam.errors.network'), life: 4000 });\n  } finally {\n    loading.value = false;\n  }\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 58,
+        "endLoc": {
+          "column": 1,
+          "line": 58,
+          "position": 1928
+        },
+        "name": "iam\\presentation\\views\\login.vue",
+        "start": 51,
+        "startLoc": {
+          "column": 36,
+          "line": 51,
+          "position": 1718
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 49,
+        "endLoc": {
+          "column": 1,
+          "line": 49,
+          "position": 1620
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 42,
+        "startLoc": {
+          "column": 45,
+          "line": 42,
+          "position": 1410
+        }
+      },
+      "format": "javascript",
+      "fragment": "    router.push({ name: 'home-health-entity' });\n  } catch (e) {\n    console.error(e);\n    toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: t('iam.errors.network'), life: 4000 });\n  } finally {\n    loading.value = false;\n  }\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 42,
+        "endLoc": {
+          "column": 1,
+          "line": 42,
+          "position": 1385
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 35,
+        "startLoc": {
+          "column": 45,
+          "line": 35,
+          "position": 1175
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 49,
+        "endLoc": {
+          "column": 1,
+          "line": 49,
+          "position": 1620
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 42,
+        "startLoc": {
+          "column": 45,
+          "line": 42,
+          "position": 1410
+        }
+      },
+      "format": "javascript",
+      "fragment": "    router.push({ name: 'home-health-entity' });\n  } catch (e) {\n    console.error(e);\n    toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: t('iam.errors.network'), life: 4000 });\n  } finally {\n    loading.value = false;\n  }\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 50,
+        "endLoc": {
+          "column": 1,
+          "line": 50,
+          "position": 2090
+        },
+        "name": "iam\\presentation\\views\\register-operational-staff.vue",
+        "start": 43,
+        "startLoc": {
+          "column": 54,
+          "line": 43,
+          "position": 1880
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 49,
+        "endLoc": {
+          "column": 1,
+          "line": 49,
+          "position": 1620
+        },
+        "name": "iam\\presentation\\views\\login-health-entity.vue",
+        "start": 42,
+        "startLoc": {
+          "column": 45,
+          "line": 42,
+          "position": 1410
+        }
+      },
+      "format": "javascript",
+      "fragment": "    router.push({ name: 'home-health-entity' });\n  } catch (e) {\n    console.error(e);\n    toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: t('iam.errors.network'), life: 4000 });\n  } finally {\n    loading.value = false;\n  }\n}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 94,
+        "endLoc": {
+          "column": 1,
+          "line": 94,
+          "position": 2965
+        },
+        "name": "iam\\presentation\\views\\register.vue",
+        "start": 87,
+        "startLoc": {
+          "column": 32,
+          "line": 87,
+          "position": 2755
+        }
+      },
+      "tokens": 56
+    },
+    {
+      "firstFile": {
+        "end": 71,
+        "endLoc": {
+          "column": 44,
+          "line": 71,
+          "position": 2442
+        },
+        "name": "iam\\presentation\\views\\login-operational-staff.vue",
+        "start": 66,
+        "startLoc": {
+          "column": 8,
+          "line": 66,
+          "position": 2128
+        }
+      },
+      "format": "html",
+      "fragment": "        <div class=\"reg-compact__brand\">\n          <img src=\"/logo.png\" :alt=\"t('common.logoAlt')\" class=\"reg-compact__logo\" />\n          <strong>{{ t('common.brandName') }}</strong>\n        </div>\n        <p class=\"reg-compact__badge\">{{ t('iam.operational.badge') }}</p>\n        <h1 class=\"reg-compact__title\">{{ t('iam.login.welcome') }}</h1>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 6,
+      "secondFile": {
+        "end": 63,
+        "endLoc": {
+          "column": 44,
+          "line": 63,
+          "position": 2691
+        },
+        "name": "iam\\presentation\\views\\register-operational-staff.vue",
+        "start": 58,
+        "startLoc": {
+          "column": 8,
+          "line": 58,
+          "position": 2377
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 36,
+        "endLoc": {
+          "column": 26,
+          "line": 36,
+          "position": 1232
+        },
+        "name": "iam\\presentation\\views\\login-operational-staff.vue",
+        "start": 30,
+        "startLoc": {
+          "column": 41,
+          "line": 30,
+          "position": 1006
+        }
+      },
+      "format": "javascript",
+      "fragment": "      const msg = t(`iam.errors.${result.error}`);\n      errors.value.email = msg;\n      errors.value.password = msg;\n      toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: msg, life: 4000 });\n      return;\n    }\n    if (result.notAssigned) {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 35,
+        "endLoc": {
+          "column": 26,
+          "line": 35,
+          "position": 1161
+        },
+        "name": "iam\\presentation\\views\\login.vue",
+        "start": 29,
+        "startLoc": {
+          "column": 41,
+          "line": 29,
+          "position": 935
+        }
+      },
+      "tokens": 54
+    },
+    {
+      "firstFile": {
+        "end": 52,
+        "endLoc": {
+          "column": 23,
+          "line": 52,
+          "position": 1719
+        },
+        "name": "iam\\presentation\\views\\login-operational-staff.vue",
+        "start": 40,
+        "startLoc": {
+          "column": 84,
+          "line": 40,
+          "position": 1424
+        }
+      },
+      "format": "javascript",
+      "fragment": "        detail: t('iam.login.pendingAssignmentDetail', { admin: result.adminContact }),\n        life: 5000,\n      });\n      router.push({ name: 'iam-not-assigned' });\n      return;\n    }\n    toast.add({\n      severity: 'success',\n      summary: t('iam.login.successTitle'),\n      detail: t('iam.login.successDetail'),\n      life: 2500,\n    });\n    router.push({ name: 'home-operational-staff' });",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 51,
+        "endLoc": {
+          "column": 23,
+          "line": 51,
+          "position": 1705
+        },
+        "name": "iam\\presentation\\views\\login.vue",
+        "start": 39,
+        "startLoc": {
+          "column": 97,
+          "line": 39,
+          "position": 1410
+        }
+      },
+      "tokens": 61
+    },
+    {
+      "firstFile": {
+        "end": 77,
+        "endLoc": {
+          "column": 21,
+          "line": 77,
+          "position": 3127
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 55,
+        "startLoc": {
+          "column": 73,
+          "line": 55,
+          "position": 2007
+        }
+      },
+      "format": "html",
+      "fragment": "        <p class=\"reg-compact__hint\">{{ t('iam.register.healthEntityHint') }}</p>\n      </header>\n\n      <form class=\"reg-compact__form reg-compact__form--signup\" @submit.prevent=\"onSubmit\">\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.name') }}</span>\n          <input v-model=\"form.name\" type=\"text\" :placeholder=\"t('iam.placeholders.name')\" />\n        </label>\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.email') }}</span>\n          <input v-model=\"form.email\" type=\"email\" :placeholder=\"t('iam.placeholders.email')\" />\n        </label>\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.password') }}</span>\n          <div class=\"reg-compact__pw\">\n            <input v-model=\"form.password\" :type=\"showPassword ? 'text' : 'password'\" :placeholder=\"t('iam.placeholders.password')\" />\n            <button type=\"button\" class=\"reg-compact__eye\" @click=\"showPassword = !showPassword\">\n              <i :class=\"showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'\"></i>\n            </button>\n          </div>\n        </label>\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.entityNameShort') }}</span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 23,
+      "secondFile": {
+        "end": 86,
+        "endLoc": {
+          "column": 21,
+          "line": 86,
+          "position": 3920
+        },
+        "name": "iam\\presentation\\views\\register-operational-staff.vue",
+        "start": 64,
+        "startLoc": {
+          "column": 73,
+          "line": 64,
+          "position": 2800
+        }
+      },
+      "tokens": 198
+    },
+    {
+      "firstFile": {
+        "end": 62,
+        "endLoc": {
+          "column": 9,
+          "line": 62,
+          "position": 2328
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 56,
+        "startLoc": {
+          "column": 14,
+          "line": 56,
+          "position": 2031
+        }
+      },
+      "format": "html",
+      "fragment": "      </header>\n\n      <form class=\"reg-compact__form reg-compact__form--signup\" @submit.prevent=\"onSubmit\">\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.name') }}</span>\n          <input v-model=\"form.name\" type=\"text\" :placeholder=\"t('iam.placeholders.name')\" />\n        </label>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 139,
+        "endLoc": {
+          "column": 11,
+          "line": 139,
+          "position": 4672
+        },
+        "name": "iam\\presentation\\views\\register.vue",
+        "start": 133,
+        "startLoc": {
+          "column": 18,
+          "line": 133,
+          "position": 4373
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 75,
+        "endLoc": {
+          "column": 9,
+          "line": 75,
+          "position": 3053
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 65,
+        "startLoc": {
+          "column": 95,
+          "line": 65,
+          "position": 2528
+        }
+      },
+      "format": "html",
+      "fragment": "          <input v-model=\"form.email\" type=\"email\" :placeholder=\"t('iam.placeholders.email')\" />\n        </label>\n        <label class=\"reg-compact__field\">\n          <span>{{ t('iam.fields.password') }}</span>\n          <div class=\"reg-compact__pw\">\n            <input v-model=\"form.password\" :type=\"showPassword ? 'text' : 'password'\" :placeholder=\"t('iam.placeholders.password')\" />\n            <button type=\"button\" class=\"reg-compact__eye\" @click=\"showPassword = !showPassword\">\n              <i :class=\"showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'\"></i>\n            </button>\n          </div>\n        </label>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 158,
+        "endLoc": {
+          "column": 11,
+          "line": 158,
+          "position": 5657
+        },
+        "name": "iam\\presentation\\views\\register.vue",
+        "start": 144,
+        "startLoc": {
+          "column": 99,
+          "line": 144,
+          "position": 5072
+        }
+      },
+      "tokens": 82
+    },
+    {
+      "firstFile": {
+        "end": 14,
+        "endLoc": {
+          "column": 53,
+          "line": 14,
+          "position": 455
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 4,
+        "startLoc": {
+          "column": 34,
+          "line": 4,
+          "position": 119
+        }
+      },
+      "format": "javascript",
+      "fragment": "import { useI18n } from 'vue-i18n';\nimport { useToast } from 'primevue/usetoast';\nimport AuthPanel from '../components/auth-panel.vue';\nimport useIamStore from '../../application/iam.store.js';\n\nconst { t } = useI18n();\nconst router = useRouter();\nconst toast = useToast();\nconst iamStore = useIamStore();\n\nconst form = ref({ name: '', email: '', password: '', entityName: '' });",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 14,
+        "endLoc": {
+          "column": 53,
+          "line": 14,
+          "position": 455
+        },
+        "name": "iam\\presentation\\views\\register-operational-staff.vue",
+        "start": 4,
+        "startLoc": {
+          "column": 34,
+          "line": 4,
+          "position": 119
+        }
+      },
+      "tokens": 66
+    },
+    {
+      "firstFile": {
+        "end": 35,
+        "endLoc": {
+          "column": 48,
+          "line": 35,
+          "position": 1178
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 24,
+        "startLoc": {
+          "column": 6,
+          "line": 24,
+          "position": 834
+        }
+      },
+      "format": "javascript",
+      "fragment": "  try {\n    const result = await iamStore.startHealthEntityRegistration(form.value);\n    if (!result.ok) {\n      toast.add({\n        severity: 'error',\n        summary: t('iam.errors.title'),\n        detail: t(`iam.errors.${result.error}`),\n        life: 4000,\n      });\n      return;\n    }\n    router.push({ name: 'iam-register-plans' });",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 12,
+      "secondFile": {
+        "end": 67,
+        "endLoc": {
+          "column": 50,
+          "line": 67,
+          "position": 2187
+        },
+        "name": "iam\\presentation\\views\\register.vue",
+        "start": 56,
+        "startLoc": {
+          "column": 25,
+          "line": 56,
+          "position": 1821
+        }
+      },
+      "tokens": 70
+    },
+    {
+      "firstFile": {
+        "end": 34,
+        "endLoc": {
+          "column": 5,
+          "line": 34,
+          "position": 1128
+        },
+        "name": "iam\\presentation\\views\\register-health-entity.vue",
+        "start": 25,
+        "startLoc": {
+          "column": 63,
+          "line": 25,
+          "position": 900
+        }
+      },
+      "format": "javascript",
+      "fragment": "    const result = await iamStore.startHealthEntityRegistration(form.value);\n    if (!result.ok) {\n      toast.add({\n        severity: 'error',\n        summary: t('iam.errors.title'),\n        detail: t(`iam.errors.${result.error}`),\n        life: 4000,\n      });\n      return;\n    }",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 80,
+        "endLoc": {
+          "column": 5,
+          "line": 80,
+          "position": 2499
+        },
+        "name": "iam\\presentation\\views\\register.vue",
+        "start": 71,
+        "startLoc": {
+          "column": 58,
+          "line": 71,
+          "position": 2271
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 43,
+        "endLoc": {
+          "column": 23,
+          "line": 43,
+          "position": 1849
+        },
+        "name": "iam\\presentation\\views\\register-operational-staff.vue",
+        "start": 34,
+        "startLoc": {
+          "column": 121,
+          "line": 34,
+          "position": 1577
+        }
+      },
+      "format": "javascript",
+      "fragment": "      toast.add({ severity: 'error', summary: t('iam.errors.title'), detail: t(`iam.errors.${result.error}`), life: 4000 });\n      return;\n    }\n    toast.add({\n      severity: 'success',\n      summary: t('iam.register.operatorSuccessTitle'),\n      detail: t('iam.register.operatorSuccessDetail', { entity: result.entityName ?? '' }),\n      life: 6000,\n    });\n    router.push({ name: 'iam-login-operational-staff' });",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 87,
+        "endLoc": {
+          "column": 23,
+          "line": 87,
+          "position": 2746
+        },
+        "name": "iam\\presentation\\views\\register.vue",
+        "start": 78,
+        "startLoc": {
+          "column": 6,
+          "line": 78,
+          "position": 2474
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 79,
+        "endLoc": {
+          "column": 18,
+          "line": 79,
+          "position": 2634
+        },
+        "name": "iam\\presentation\\views\\register-plans.vue",
+        "start": 72,
+        "startLoc": {
+          "column": 78,
+          "line": 72,
+          "position": 2400
+        }
+      },
+      "format": "html",
+      "fragment": "          <img src=\"/logo.png\" :alt=\"t('common.logoAlt')\" class=\"plans-logo\" />\n          <h1 class=\"plans-title\">{{ t('plansPage.title') }}</h1>\n          <p class=\"plans-subtitle\">{{ t('plansPage.subtitle') }}</p>\n        </header>\n\n        <div class=\"plans-grid\">\n          <article\n            v-for=\"plan in plans\"",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 8,
+      "secondFile": {
+        "end": 209,
+        "endLoc": {
+          "column": 16,
+          "line": 209,
+          "position": 6474
+        },
+        "name": "subscriptions\\presentation\\views\\plans-selection.vue",
+        "start": 202,
+        "startLoc": {
+          "column": 32,
+          "line": 202,
+          "position": 6252
+        }
+      },
+      "tokens": 53
+    },
+    {
+      "firstFile": {
+        "end": 89,
+        "endLoc": {
+          "column": 24,
+          "line": 89,
+          "position": 3121
+        },
+        "name": "iam\\presentation\\views\\register-plans.vue",
+        "start": 83,
+        "startLoc": {
+          "column": 10,
+          "line": 83,
+          "position": 2789
+        }
+      },
+      "format": "html",
+      "fragment": "          >\n            <div v-if=\"plan.recommended\" class=\"badge-rec\">{{ t('plansPage.recommended') }}</div>\n            <h2 class=\"plan-name\">{{ plan.name }}</h2>\n            <p class=\"plan-price\">{{ plan.price }}</p>\n            <p class=\"plan-desc\">{{ plan.desc }}</p>\n            <ul class=\"plan-features\">\n              <li v-for=\"(f, i) in plan.features\" :key=\"i\" class=\"ok\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 7,
+      "secondFile": {
+        "end": 222,
+        "endLoc": {
+          "column": 22,
+          "line": 222,
+          "position": 7024
+        },
+        "name": "subscriptions\\presentation\\views\\plans-selection.vue",
+        "start": 216,
+        "startLoc": {
+          "column": 8,
+          "line": 216,
+          "position": 6704
+        }
+      },
+      "tokens": 87
+    },
+    {
+      "firstFile": {
+        "end": 527,
+        "endLoc": {
+          "column": 3,
+          "line": 527,
+          "position": 23247
+        },
+        "name": "locales\\en.json",
+        "start": 494,
+        "startLoc": {
+          "column": 2,
+          "line": 494,
+          "position": 22040
+        }
+      },
+      "format": "json",
+      "fragment": "  },\n  \"profileView\": {\n    \"loading\": \"Loading profile…\",\n    \"loadError\": \"Could not load data. Check your connection and environment variables.\",\n    \"retry\": \"Retry\",\n    \"back\": \"Back to home\",\n    \"userProfile\": \"User profile\",\n    \"scheduleTitle\": \"Schedule\",\n    \"scheduleShift\": \"Shift\",\n    \"scheduleDay\": \"Hours\",\n    \"scheduleShiftValue\": \"Administrative\",\n    \"scheduleDayValue\": \"Mon — Fri 08:00 AM — 06:00 PM\",\n    \"name\": \"Name\",\n    \"dni\": \"ID number\",\n    \"email\": \"Email\",\n    \"phone\": \"Phone\",\n    \"password\": \"Password\",\n    \"entity\": \"Health entity or pharmaceutical manager\",\n    \"entityCode\": \"Entity code\",\n    \"jobTitle\": \"Job title\",\n    \"actualPlan\": \"Current plan\",\n    \"update\": \"Update\",\n    \"updatePlan\": \"Update plan\",\n    \"backToHome\": \"Back to home\",\n    \"backToStaffHome\": \"Back to operations home\",\n    \"return\": \"Return\",\n    \"edit\": \"Edit\",\n    \"save\": \"Save\",\n    \"cancelEdit\": \"Cancel\",\n    \"editSavedTitle\": \"Changes saved\",\n    \"editSavedDetail\": \"Your details were updated for this session (demo).\",\n    \"editSoonTitle\": \"Coming soon\",\n    \"editSoonDetail\": \"Editing will be available when real authentication is enabled.\"\n  },",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 34,
+      "secondFile": {
+        "end": 644,
+        "endLoc": {
+          "column": 3,
+          "line": 644,
+          "position": 27452
+        },
+        "name": "locales\\en.json",
+        "start": 611,
+        "startLoc": {
+          "column": 2,
+          "line": 611,
+          "position": 26245
+        }
+      },
+      "tokens": 129
+    },
+    {
+      "firstFile": {
+        "end": 527,
+        "endLoc": {
+          "column": 3,
+          "line": 527,
+          "position": 24663
+        },
+        "name": "locales\\es.json",
+        "start": 494,
+        "startLoc": {
+          "column": 2,
+          "line": 494,
+          "position": 23400
+        }
+      },
+      "format": "json",
+      "fragment": "  },\n  \"profileView\": {\n    \"loading\": \"Cargando perfil…\",\n    \"loadError\": \"No se pudieron cargar los datos. Revisa la conexión y las variables de entorno.\",\n    \"retry\": \"Reintentar\",\n    \"back\": \"Volver al inicio\",\n    \"userProfile\": \"Perfil de usuario\",\n    \"scheduleTitle\": \"Horario\",\n    \"scheduleShift\": \"Turno\",\n    \"scheduleDay\": \"Jornada\",\n    \"scheduleShiftValue\": \"Administrativo\",\n    \"scheduleDayValue\": \"Lun — Vie 08:00 — 18:00\",\n    \"name\": \"Nombre\",\n    \"dni\": \"DNI\",\n    \"email\": \"Correo\",\n    \"phone\": \"Teléfono\",\n    \"password\": \"Contraseña\",\n    \"entity\": \"Entidad de salud o gestor farmacéutico\",\n    \"entityCode\": \"Código de entidad\",\n    \"jobTitle\": \"Cargo\",\n    \"actualPlan\": \"Plan actual\",\n    \"update\": \"Actualizar\",\n    \"updatePlan\": \"Actualizar plan\",\n    \"backToHome\": \"Volver a inicio\",\n    \"backToStaffHome\": \"Volver a inicio operativo\",\n    \"return\": \"Volver\",\n    \"edit\": \"Editar\",\n    \"save\": \"Guardar\",\n    \"cancelEdit\": \"Cancelar\",\n    \"editSavedTitle\": \"Cambios guardados\",\n    \"editSavedDetail\": \"Los datos se actualizaron en esta sesión (demo).\",\n    \"editSoonTitle\": \"Próximamente\",\n    \"editSoonDetail\": \"La edición de datos estará disponible cuando exista sesión real.\"\n  },",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 34,
+      "secondFile": {
+        "end": 644,
+        "endLoc": {
+          "column": 3,
+          "line": 644,
+          "position": 29104
+        },
+        "name": "locales\\es.json",
+        "start": 611,
+        "startLoc": {
+          "column": 2,
+          "line": 611,
+          "position": 27841
+        }
+      },
+      "tokens": 129
+    },
+    {
+      "firstFile": {
+        "end": 29,
+        "endLoc": {
+          "column": 5,
+          "line": 29,
+          "position": 1774
+        },
+        "name": "logistics\\application\\logistics.store.js",
+        "start": 12,
+        "startLoc": {
+          "column": 37,
+          "line": 12,
+          "position": 421
+        }
+      },
+      "format": "javascript",
+      "fragment": "const logisticsApi = new LogisticsApi();\n\nfunction generateSensorReading(typeOfMedication) {\n    const r = (min, max, dec = 1) => parseFloat((min + Math.random() * (max - min)).toFixed(dec));\n    const door = Math.random() < 0.15 ? 'Open' : 'Closed';\n    switch (String(typeOfMedication).toLowerCase()) {\n        case 'refrigerated':\n            return { temperature: r(2, 8), humidity: r(40, 60), light_intensity: r(0, 50), air_quality: r(350, 420), vibration: r(0.01, 0.08, 3), atmospheric_pressure: r(1010, 1015), suspended_particles: r(5, 15), door_status: door };\n        case 'biological':\n            return { temperature: r(-20, -15), humidity: r(20, 35), light_intensity: r(0, 30), air_quality: r(380, 450), vibration: r(0.00, 0.03, 3), atmospheric_pressure: r(1008, 1013), suspended_particles: r(3, 10), door_status: door };\n        case 'controlled':\n            return { temperature: r(15, 25), humidity: r(35, 55), light_intensity: r(100, 300), air_quality: r(400, 500), vibration: r(0.05, 0.15, 3), atmospheric_pressure: r(1005, 1015), suspended_particles: r(10, 30), door_status: door };\n        default:\n            return { temperature: r(18, 28), humidity: r(30, 60), light_intensity: r(50, 400), air_quality: r(350, 500), vibration: r(0.02, 0.12, 3), atmospheric_pressure: r(1005, 1020), suspended_particles: r(5, 25), door_status: door };\n    }\n}\n\nconst useLogisticsStore = defineStore('logistics', () => {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 18,
+      "secondFile": {
+        "end": 29,
+        "endLoc": {
+          "column": 5,
+          "line": 29,
+          "position": 1774
+        },
+        "name": "monitoring\\application\\monitoring.store.js",
+        "start": 12,
+        "startLoc": {
+          "column": 39,
+          "line": 12,
+          "position": 421
+        }
+      },
+      "tokens": 377
+    },
+    {
+      "firstFile": {
+        "end": 97,
+        "endLoc": {
+          "column": 12,
+          "line": 97,
+          "position": 4319
+        },
+        "name": "logistics\\application\\logistics.store.js",
+        "start": 78,
+        "startLoc": {
+          "column": 75,
+          "line": 78,
+          "position": 3788
+        }
+      },
+      "format": "javascript",
+      "fragment": "                    if (idx !== -1) transports.value[idx] = { ...transports.value[idx], ...reading };\n                } catch { /* non-fatal */ }\n            }),\n        );\n    }\n\n    function startSimulation(intervalMs = 10000) {\n        if (simulationInterval !== null) return;\n        pushSimulatedReadings();\n        simulationInterval = setInterval(pushSimulatedReadings, intervalMs);\n    }\n\n    function stopSimulation() {\n        if (simulationInterval !== null) {\n            clearInterval(simulationInterval);\n            simulationInterval = null;\n        }\n    }\n\n    return {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 20,
+      "secondFile": {
+        "end": 99,
+        "endLoc": {
+          "column": 12,
+          "line": 99,
+          "position": 4296
+        },
+        "name": "monitoring\\application\\monitoring.store.js",
+        "start": 80,
+        "startLoc": {
+          "column": 69,
+          "line": 80,
+          "position": 3759
+        }
+      },
+      "tokens": 75
+    },
+    {
+      "firstFile": {
+        "end": 28,
+        "endLoc": {
+          "column": 13,
+          "line": 28,
+          "position": 727
+        },
+        "name": "logistics\\domain\\model\\transport.entity.js",
+        "start": 12,
+        "startLoc": {
+          "column": 26,
+          "line": 12,
+          "position": 270
+        }
+      },
+      "format": "javascript",
+      "fragment": "        type_of_transport = '',\n        type_of_medication = '',\n        temperature = null,\n        humidity = null,\n        light_intensity = null,\n        air_quality = null,\n        vibration = null,\n        door_status = '',\n        atmospheric_pressure = null,\n        suspended_particles = null,\n        created_at = '',\n        updated_at = '',\n        establishment_id = null,\n        enabled_sensors = null,\n    } = {}) {\n        this.id = id;\n        this.type_of_transport = type_of_transport;",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 17,
+      "secondFile": {
+        "end": 25,
+        "endLoc": {
+          "column": 13,
+          "line": 25,
+          "position": 640
+        },
+        "name": "monitoring\\domain\\model\\device.entity.js",
+        "start": 9,
+        "startLoc": {
+          "column": 23,
+          "line": 9,
+          "position": 183
+        }
+      },
+      "tokens": 69
+    },
+    {
+      "firstFile": {
+        "end": 49,
+        "endLoc": {
+          "column": 5,
+          "line": 49,
+          "position": 1783
+        },
+        "name": "logistics\\domain\\model\\transport.entity.js",
+        "start": 28,
+        "startLoc": {
+          "column": 50,
+          "line": 28,
+          "position": 764
+        }
+      },
+      "format": "javascript",
+      "fragment": "        this.type_of_transport = type_of_transport;\n        this.type_of_medication = type_of_medication;\n        this.temperature = temperature;\n        this.humidity = humidity;\n        this.light_intensity = light_intensity;\n        this.air_quality = air_quality;\n        this.vibration = vibration;\n        this.door_status = door_status;\n        this.atmospheric_pressure = atmospheric_pressure;\n        this.suspended_particles = suspended_particles;\n        this.created_at = created_at;\n        this.updated_at = updated_at;\n        this.establishment_id = establishment_id;\n        // Parse enabled_sensors JSON string from backend\n        if (typeof enabled_sensors === 'string' && enabled_sensors.trim().startsWith('{')) {\n            try { this.enabled_sensors = JSON.parse(enabled_sensors); } catch { this.enabled_sensors = null; }\n        } else if (enabled_sensors && typeof enabled_sensors === 'object') {\n            this.enabled_sensors = enabled_sensors;\n        } else {\n            this.enabled_sensors = null;\n        }\n    }",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 22,
+      "secondFile": {
+        "end": 46,
+        "endLoc": {
+          "column": 5,
+          "line": 46,
+          "position": 1690
+        },
+        "name": "monitoring\\domain\\model\\device.entity.js",
+        "start": 25,
+        "startLoc": {
+          "column": 44,
+          "line": 25,
+          "position": 671
+        }
+      },
+      "tokens": 144
+    },
+    {
+      "firstFile": {
+        "end": 54,
+        "endLoc": {
+          "column": 67,
+          "line": 54,
+          "position": 1986
+        },
+        "name": "logistics\\infrastructure\\logistics-api.js",
+        "start": 46,
+        "startLoc": {
+          "column": 39,
+          "line": 46,
+          "position": 1647
+        }
+      },
+      "format": "javascript",
+      "fragment": "        return this.#transportsEndpoint.update(resource.id, resource);\n    }\n\n    updateSensorData(id, sensorData, establishmentId) {\n        if (isMockMode()) {\n            return Promise.resolve({ status: 200, statusText: 'OK', data: { id, ...sensorData } });\n        }\n        if (establishmentId) {\n            return this.http.put(`/establishments/${establishmentId}/transports/${id}/sensor-data`, sensorData);",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 54,
+        "endLoc": {
+          "column": 67,
+          "line": 54,
+          "position": 1939
+        },
+        "name": "monitoring\\infrastructure\\monitoring-api.js",
+        "start": 46,
+        "startLoc": {
+          "column": 36,
+          "line": 46,
+          "position": 1600
+        }
+      },
+      "tokens": 67
+    },
+    {
+      "firstFile": {
+        "end": 246,
+        "endLoc": {
+          "column": 21,
+          "line": 246,
+          "position": 8913
+        },
+        "name": "logistics\\presentation\\views\\transport-form.vue",
+        "start": 221,
+        "startLoc": {
+          "column": 20,
+          "line": 221,
+          "position": 7757
+        }
+      },
+      "format": "html",
+      "fragment": "              </span>\n            </template>\n          </pv-select>\n        </div>\n        <div class=\"est-flow-field est-flow-field--full\">\n          <span class=\"est-flow-field__label\">{{ t('logistics.fieldMedication') }} *</span>\n          <pv-select\n            v-model=\"form.type_of_medication\"\n            :options=\"medicationOptions\"\n            option-label=\"label\"\n            option-value=\"value\"\n            class=\"kl-select\"\n            append-to=\"body\"\n            :pt=\"selectPt\"\n          >\n            <template #value>\n              <span v-if=\"selectedMedication\" class=\"kl-select-item\">\n                <span class=\"kl-select-item__icon\"><i :class=\"selectedMedication.icon\" aria-hidden=\"true\"></i></span>\n                <span class=\"kl-select-item__text\">{{ selectedMedication.label }}</span>\n              </span>\n            </template>\n            <template #option=\"{ option }\">\n              <span class=\"kl-select-item\">\n                <span class=\"kl-select-item__icon\"><i :class=\"option.icon\" aria-hidden=\"true\"></i></span>\n                <span class=\"kl-select-item__text\">{{ option.label }}</span>\n              </span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 26,
+      "secondFile": {
+        "end": 166,
+        "endLoc": {
+          "column": 21,
+          "line": 166,
+          "position": 5503
+        },
+        "name": "monitoring\\presentation\\views\\device-form.vue",
+        "start": 156,
+        "startLoc": {
+          "column": 28,
+          "line": 156,
+          "position": 4876
+        }
+      },
+      "tokens": 112
+    },
+    {
+      "firstFile": {
+        "end": 58,
+        "endLoc": {
+          "column": 23,
+          "line": 58,
+          "position": 1656
+        },
+        "name": "logistics\\presentation\\views\\transport-form.vue",
+        "start": 42,
+        "startLoc": {
+          "column": 12,
+          "line": 42,
+          "position": 1174
+        }
+      },
+      "format": "javascript",
+      "fragment": "  door: true,\n  pressure: false,\n  pm25: false,\n});\n\nconst sensorDefs = [\n  { key: 'temperature', labelKey: 'sensorTemp' },\n  { key: 'humidity', labelKey: 'sensorHumidity' },\n  { key: 'light', labelKey: 'sensorLight' },\n  { key: 'co2', labelKey: 'sensorCo2' },\n  { key: 'vibration', labelKey: 'sensorVibration' },\n  { key: 'door', labelKey: 'sensorDoor' },\n  { key: 'pressure', labelKey: 'sensorPressure' },\n  { key: 'pm25', labelKey: 'sensorPm25' },\n];\n\nonMounted(async () => {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 17,
+      "secondFile": {
+        "end": 53,
+        "endLoc": {
+          "column": 23,
+          "line": 53,
+          "position": 1386
+        },
+        "name": "monitoring\\presentation\\views\\device-form.vue",
+        "start": 37,
+        "startLoc": {
+          "column": 13,
+          "line": 37,
+          "position": 904
+        }
+      },
+      "tokens": 105
+    },
+    {
+      "firstFile": {
+        "end": 214,
+        "endLoc": {
+          "column": 21,
+          "line": 214,
+          "position": 7086
+        },
+        "name": "logistics\\presentation\\views\\view-transports.vue",
+        "start": 206,
+        "startLoc": {
+          "column": 63,
+          "line": 206,
+          "position": 6812
+        }
+      },
+      "format": "html",
+      "fragment": "            <span class=\"est-flow-stat__value\">{{ stats.alerts }}</span>\n          </div>\n        </div>\n      </header>\n\n      <div class=\"mon-toolbar-actions\">\n        <button type=\"button\" class=\"est-flow-btn est-flow-btn--accent\" @click=\"openAdd\">\n          <i class=\"pi pi-plus\" aria-hidden=\"true\"></i>\n          <span>{{ t('logistics.addTransport') }}</span>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 9,
+      "secondFile": {
+        "end": 201,
+        "endLoc": {
+          "column": 21,
+          "line": 201,
+          "position": 6689
+        },
+        "name": "monitoring\\presentation\\views\\view-devices.vue",
+        "start": 192,
+        "startLoc": {
+          "column": 76,
+          "line": 192,
+          "position": 6401
+        }
+      },
+      "tokens": 59
+    },
+    {
+      "firstFile": {
+        "end": 224,
+        "endLoc": {
+          "column": 25,
+          "line": 224,
+          "position": 7399
+        },
+        "name": "logistics\\presentation\\views\\view-transports.vue",
+        "start": 214,
+        "startLoc": {
+          "column": 45,
+          "line": 214,
+          "position": 7110
+        }
+      },
+      "format": "html",
+      "fragment": "          <span>{{ t('logistics.addTransport') }}</span>\n        </button>\n      </div>\n\n      <div class=\"est-flow-toolbar\">\n        <div class=\"est-flow-search\">\n          <i class=\"pi pi-search\" aria-hidden=\"true\"></i>\n          <input\n            v-model=\"searchQuery\"\n            type=\"search\"\n            :placeholder=\"t('logistics.searchPlaceholder')\"",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 211,
+        "endLoc": {
+          "column": 25,
+          "line": 211,
+          "position": 7000
+        },
+        "name": "monitoring\\presentation\\views\\view-devices.vue",
+        "start": 201,
+        "startLoc": {
+          "column": 43,
+          "line": 201,
+          "position": 6711
+        }
+      },
+      "tokens": 55
+    },
+    {
+      "firstFile": {
+        "end": 336,
+        "endLoc": {
+          "column": 42,
+          "line": 336,
+          "position": 11545
+        },
+        "name": "logistics\\presentation\\views\\view-transports.vue",
+        "start": 304,
+        "startLoc": {
+          "column": 18,
+          "line": 304,
+          "position": 10664
+        }
+      },
+      "format": "html",
+      "fragment": "                  >\n                    <i class=\"pi pi-trash\" aria-hidden=\"true\"></i>\n                  </button>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n\n    <pv-dialog\n      v-model:visible=\"addOpen\"\n      modal\n      append-to=\"body\"\n      :draggable=\"false\"\n      :closable=\"false\"\n      :show-header=\"false\"\n      dismissable-mask\n      :style=\"{ width: 'min(94vw, 720px)' }\"\n      :pt=\"dialogPt\"\n    >\n      <div class=\"mt-dialog-shell est-inspect-shell\">\n        <button\n          type=\"button\"\n          class=\"mt-dialog-close\"\n          :aria-label=\"t('common.cancel')\"\n          @click=\"addOpen = false\"\n        >\n          <i class=\"pi pi-times\" aria-hidden=\"true\"></i>\n        </button>\n        <header class=\"est-inspect-header\">\n          <h2 class=\"est-flow-title\">{{ t('logistics.addTransportTitle') }}</h2>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 33,
+      "secondFile": {
+        "end": 306,
+        "endLoc": {
+          "column": 42,
+          "line": 306,
+          "position": 10601
+        },
+        "name": "monitoring\\presentation\\views\\view-devices.vue",
+        "start": 274,
+        "startLoc": {
+          "column": 18,
+          "line": 274,
+          "position": 9720
+        }
+      },
+      "tokens": 151
+    },
+    {
+      "firstFile": {
+        "end": 370,
+        "endLoc": {
+          "column": 23,
+          "line": 370,
+          "position": 12543
+        },
+        "name": "logistics\\presentation\\views\\view-transports.vue",
+        "start": 344,
+        "startLoc": {
+          "column": 12,
+          "line": 344,
+          "position": 11859
+        }
+      },
+      "format": "html",
+      "fragment": "            @cancel=\"addOpen = false\"\n          />\n        </div>\n      </div>\n    </pv-dialog>\n\n    <pv-dialog\n      v-model:visible=\"detailOpen\"\n      modal\n      append-to=\"body\"\n      :draggable=\"false\"\n      :closable=\"false\"\n      :show-header=\"false\"\n      dismissable-mask\n      :style=\"{ width: 'min(94vw, 780px)' }\"\n      :pt=\"dialogPt\"\n    >\n      <div class=\"mt-dialog-shell est-inspect-shell\">\n        <button\n          type=\"button\"\n          class=\"mt-dialog-close\"\n          :aria-label=\"t('common.cancel')\"\n          @click=\"detailOpen = false\"\n        >\n          <i class=\"pi pi-times\" aria-hidden=\"true\"></i>\n        </button>\n        <template v-if=\"liveDetail\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 27,
+      "secondFile": {
+        "end": 340,
+        "endLoc": {
+          "column": 23,
+          "line": 340,
+          "position": 11589
+        },
+        "name": "monitoring\\presentation\\views\\view-devices.vue",
+        "start": 314,
+        "startLoc": {
+          "column": 12,
+          "line": 314,
+          "position": 10905
+        }
+      },
+      "tokens": 113
+    },
+    {
+      "firstFile": {
+        "end": 39,
+        "endLoc": {
+          "column": 7,
+          "line": 39,
+          "position": 1363
+        },
+        "name": "logistics\\presentation\\views\\view-transports.vue",
+        "start": 30,
+        "startLoc": {
+          "column": 29,
+          "line": 30,
+          "position": 1105
+        }
+      },
+      "format": "javascript",
+      "fragment": "    style: { border: 'none', background: 'transparent', boxShadow: 'none' },\n  },\n  content: {\n    class: 'mt-dialog-content est-inspect-content',\n    style: { padding: 0, background: 'transparent', border: 'none', overflow: 'visible' },\n  },\n};\n\nonMounted(async () => {\n  try {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 10,
+      "secondFile": {
+        "end": 40,
+        "endLoc": {
+          "column": 7,
+          "line": 40,
+          "position": 1355
+        },
+        "name": "monitoring\\presentation\\views\\view-devices.vue",
+        "start": 31,
+        "startLoc": {
+          "column": 29,
+          "line": 31,
+          "position": 1097
+        }
+      },
+      "tokens": 51
+    },
+    {
+      "firstFile": {
+        "end": 287,
+        "endLoc": {
+          "column": 11,
+          "line": 287,
+          "position": 8377
+        },
+        "name": "monitoring\\presentation\\components\\control-center-panel.vue",
+        "start": 274,
+        "startLoc": {
+          "column": 2,
+          "line": 274,
+          "position": 8045
+        }
+      },
+      "format": "javascript",
+      "fragment": "  responsive: true,\n  maintainAspectRatio: false,\n  animation: { duration: 900, easing: 'easeOutQuart' },\n  plugins: {\n    legend: { display: false },\n    tooltip: {\n      backgroundColor: KL.navy,\n      titleColor: '#f8fafc',\n      bodyColor: '#e2e8f0',\n      padding: 12,\n      cornerRadius: 10,\n    },\n  },\n  scales: {",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 14,
+      "secondFile": {
+        "end": 347,
+        "endLoc": {
+          "column": 11,
+          "line": 347,
+          "position": 10000
+        },
+        "name": "monitoring\\presentation\\components\\control-center-panel.vue",
+        "start": 334,
+        "startLoc": {
+          "column": 2,
+          "line": 334,
+          "position": 9668
+        }
+      },
+      "tokens": 63
+    },
+    {
+      "firstFile": {
+        "end": 73,
+        "endLoc": {
+          "column": 39,
+          "line": 73,
+          "position": 2204
+        },
+        "name": "monitoring\\presentation\\views\\view-device-detail.vue",
+        "start": 59,
+        "startLoc": {
+          "column": 27,
+          "line": 59,
+          "position": 1714
+        }
+      },
+      "format": "javascript",
+      "fragment": "  const raw = String(device.value?.type_of_medication || '').toUpperCase();\n  const map = {\n    REFRIGERATED: 'medicationVaccines',\n    BIOLOGICAL: 'medicationBiologicals',\n    CONTROLLED: 'medicationCreams',\n    GENERAL: 'medicationSyrup',\n    // legacy mock keys\n    VACCINES: 'medicationVaccines',\n    PILLS: 'medicationPills',\n    CREAMS: 'medicationCreams',\n    SYRUP: 'medicationSyrup',\n    BIOLOGICALS: 'medicationBiologicals',\n  };\n  const key = map[raw];\n  return key ? t(`monitoring.${key}`) : device.value?.type_of_medication || '—';",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 15,
+      "secondFile": {
+        "end": 91,
+        "endLoc": {
+          "column": 39,
+          "line": 91,
+          "position": 2920
+        },
+        "name": "monitoring\\presentation\\views\\view-devices.vue",
+        "start": 78,
+        "startLoc": {
+          "column": 37,
+          "line": 78,
+          "position": 2455
+        }
+      },
+      "tokens": 72
+    },
+    {
+      "firstFile": {
+        "end": 144,
+        "endLoc": {
+          "column": 9,
+          "line": 144,
+          "position": 5633
+        },
+        "name": "shared\\presentation\\components\\layout.vue",
+        "start": 134,
+        "startLoc": {
+          "column": 10,
+          "line": 134,
+          "position": 5231
+        }
+      },
+      "format": "html",
+      "fragment": "          :key=\"item.to\"\n          :to=\"item.to\"\n          class=\"sidebar-link\"\n          :class=\"{ 'is-active': isActive(item.to) }\"\n          :title=\"t(item.label)\"\n        >\n          <span class=\"sidebar-link__icon\"><i :class=\"item.icon\" aria-hidden=\"true\"></i></span>\n          <span v-if=\"!sidebarCollapsed\" class=\"sidebar-link__label\">{{ t(item.label) }}</span>\n        </router-link>\n\n        <p v-if=\"!sidebarCollapsed && moduleItems.length\" class=\"sidebar-section\">{{ t('layout.sectionModules') }}</p>",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 156,
+        "endLoc": {
+          "column": 7,
+          "line": 156,
+          "position": 6213
+        },
+        "name": "shared\\presentation\\components\\layout.vue",
+        "start": 147,
+        "startLoc": {
+          "column": 10,
+          "line": 147,
+          "position": 5815
+        }
+      },
+      "tokens": 78
+    },
+    {
+      "firstFile": {
+        "end": 93,
+        "endLoc": {
+          "column": 15,
+          "line": 93,
+          "position": 2721
+        },
+        "name": "shared\\presentation\\views\\home-health-entity.vue",
+        "start": 83,
+        "startLoc": {
+          "column": 78,
+          "line": 83,
+          "position": 2350
+        }
+      },
+      "format": "html",
+      "fragment": "          <p class=\"home-hero-banner__subtitle\">{{ t('homeHealth.subtitle') }}</p>\n        </div>\n        <span class=\"home-hero-banner__status\">\n          <i class=\"home-hero-banner__dot\" aria-hidden=\"true\"></i>\n          {{ t('layout.systemActive') }}\n        </span>\n      </div>\n      <div class=\"home-hero-banner__chips\">\n        <span class=\"home-hero-chip\">\n          <i class=\"pi pi-desktop\" aria-hidden=\"true\"></i>\n          {{ t('homeHealth.title') }}",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 11,
+      "secondFile": {
+        "end": 99,
+        "endLoc": {
+          "column": 15,
+          "line": 99,
+          "position": 3105
+        },
+        "name": "shared\\presentation\\views\\home-operational-staff.vue",
+        "start": 89,
+        "startLoc": {
+          "column": 10,
+          "line": 89,
+          "position": 2734
+        }
+      },
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 129,
+        "endLoc": {
+          "column": 5,
+          "line": 129,
+          "position": 3940
+        },
+        "name": "shared\\presentation\\views\\home-health-entity.vue",
+        "start": 106,
+        "startLoc": {
+          "column": 83,
+          "line": 106,
+          "position": 3180
+        }
+      },
+      "format": "html",
+      "fragment": "    <div class=\"home-actions\" role=\"navigation\" :aria-label=\"t('homeHealth.title')\">\n      <button\n        v-for=\"action in quickActions\"\n        :key=\"action.titleKey\"\n        type=\"button\"\n        class=\"home-action\"\n        @click=\"navigateTo(action.to)\"\n      >\n        <span\n          class=\"home-action__icon\"\n          :class=\"action.tone === 'teal' ? 'home-action__icon--teal' : 'home-action__icon--navy'\"\n          aria-hidden=\"true\"\n        >\n          <i :class=\"action.icon\"></i>\n        </span>\n        <span class=\"home-action__body\">\n          <h2 class=\"home-action__title\">{{ t(action.titleKey) }}</h2>\n          <p class=\"home-action__desc\">{{ t(action.descKey) }}</p>\n        </span>\n        <i class=\"pi pi-chevron-right home-action__chevron\" aria-hidden=\"true\"></i>\n      </button>\n    </div>\n\n    <section class=\"est-flow-card home-cc-section\" aria-busy=\"isLoading\">",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 24,
+      "secondFile": {
+        "end": 138,
+        "endLoc": {
+          "column": 3,
+          "line": 138,
+          "position": 4555
+        },
+        "name": "shared\\presentation\\views\\home-operational-staff.vue",
+        "start": 116,
+        "startLoc": {
+          "column": 88,
+          "line": 116,
+          "position": 3799
+        }
+      },
+      "tokens": 127
+    },
+    {
+      "firstFile": {
+        "end": 37,
+        "endLoc": {
+          "column": 3,
+          "line": 37,
+          "position": 1127
+        },
+        "name": "shared\\presentation\\views\\home-health-entity.vue",
+        "start": 25,
+        "startLoc": {
+          "column": 80,
+          "line": 25,
+          "position": 851
+        }
+      },
+      "format": "javascript",
+      "fragment": "const userName = computed(() => readAuthSession()?.name ?? t('layout.guestUser'));\nconst todayLabel = computed(() => {\n  try {\n    return new Date().toLocaleDateString(locale.value === 'es' ? 'es-PE' : 'en-US', {\n      weekday: 'long',\n      day: 'numeric',\n      month: 'long',\n      year: 'numeric',\n    });\n  } catch {\n    return '';\n  }\n});",
+      "isNew": false,
+      "kind": "exact",
+      "lines": 13,
+      "secondFile": {
+        "end": 27,
+        "endLoc": {
+          "column": 3,
+          "line": 27,
+          "position": 895
+        },
+        "name": "shared\\presentation\\views\\home-operational-staff.vue",
+        "start": 15,
+        "startLoc": {
+          "column": 31,
+          "line": 15,
+          "position": 619
+        }
+      },
+      "tokens": 61
+    }
+  ],
+  "statistics": {
+    "detectionDate": "2026-11-03T01:16:18.167Z",
+    "formats": {
+      "css": {
+        "clones": 11,
+        "duplicatedLines": 106,
+        "duplicatedTokens": 763,
+        "lines": 5917,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 1.791448369105966,
+        "percentageTokens": 1.9846534009624137,
+        "sources": 19,
+        "tokens": 38445
+      },
+      "html": {
+        "clones": 53,
+        "duplicatedLines": 607,
+        "duplicatedTokens": 4662,
+        "lines": 3082,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 19.695003244646333,
+        "percentageTokens": 17.915609868572744,
+        "sources": 39,
+        "tokens": 26022
+      },
+      "javascript": {
+        "clones": 61,
+        "duplicatedLines": 715,
+        "duplicatedTokens": 5051,
+        "lines": 7234,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 9.883881669892176,
+        "percentageTokens": 10.829295484756228,
+        "sources": 86,
+        "tokens": 46642
+      },
+      "json": {
+        "clones": 2,
+        "duplicatedLines": 68,
+        "duplicatedTokens": 258,
+        "lines": 1290,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 5.271317829457364,
+        "percentageTokens": 5.25030525030525,
+        "sources": 2,
+        "tokens": 4914
+      },
+      "vue": {
+        "clones": 0,
+        "duplicatedLines": 0,
+        "duplicatedTokens": 0,
+        "lines": 11676,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 0.0,
+        "percentageTokens": 0.0,
+        "sources": 41,
+        "tokens": 74081
+      }
+    },
+    "total": {
+      "clones": 127,
+      "duplicatedLines": 1496,
+      "duplicatedTokens": 10734,
+      "lines": 29199,
+      "newClones": 0,
+      "newDuplicatedLines": 0,
+      "percentage": 5.123463132299051,
+      "percentageTokens": 5.6463830324453985,
+      "sources": 187,
+      "tokens": 190104
+    }
+  }
+}
