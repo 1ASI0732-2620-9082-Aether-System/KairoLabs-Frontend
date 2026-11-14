@@ -1,0 +1,106 @@
+name: Core CI
+on:
+  push:
+    branches: [master, main, develop, 'feature/**', 'codex/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  frontend-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.11.1'
+          cache: npm
+      - name: Inspect build entry points
+        run: node scripts/ci/guard-build.mjs
+      - run: node scripts/ci/prepare-evidence.mjs
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run lint
+      - name: Unit tests with TAP artifact
+        run: |
+          node -e "require('node:fs').mkdirSync('evidence/unit', { recursive: true })"
+          node --test --test-reporter=tap --test-reporter-destination=evidence/unit/latest.tap tests/unit/core-entities.test.mjs
+      - run: npm run build
+      - name: Quality measurements (audit exit codes recorded separately)
+        run: npm run quality
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: frontend-checks-${{ github.run_id }}
+          path: |
+            evidence/unit/latest.tap
+            evidence/quality/
+          retention-days: 14
+          if-no-files-found: warn
+  real-system:
+    needs: frontend-checks
+    runs-on: windows-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - name: Require reviewed immutable companion revision
+        env:
+          PLATFORM_REF: ${{ vars.CI_PLATFORM_REF }}
+        run: |
+          if ($env:PLATFORM_REF -notmatch '^[a-f0-9]{40}$') { throw 'Configurar CI_PLATFORM_REF con el SHA revisado del backend tras aprobar/publicar ambos cambios.' }
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          path: KairoLabs-Frontend
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: 1ASI0732-2620-9082-Aether-System/KairoLabs-Platform
+          ref: ${{ vars.CI_PLATFORM_REF }}
+          path: KairoLabs-Platform
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.11.1'
+      - name: Inspect both build entry points
+        run: |
+          Set-Location KairoLabs-Frontend
+          node scripts/ci/guard-build.mjs
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          node scripts/ci/prepare-evidence.mjs
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Set-Location ../KairoLabs-Platform
+          node scripts/ci/guard-build.mjs
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          node scripts/ci/prepare-evidence.mjs
+          exit $LASTEXITCODE
+      - name: Install frontend dependencies
+        working-directory: KairoLabs-Frontend
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Prepare portable .NET and MySQL
+        working-directory: KairoLabs-Platform
+        run: npm run setup
+      - name: Integration suite (14 cases)
+        working-directory: KairoLabs-Platform
+        run: npm test
+      - name: Install Chromium
+        working-directory: KairoLabs-Frontend
+        run: npx --no-install playwright install chromium
+      - name: BDD desktop and emulated mobile
+        working-directory: KairoLabs-Frontend
+        run: npm run test:bdd
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: real-system-${{ github.run_id }}
+          path: |
+            KairoLabs-Frontend/evidence/bdd/
+            KairoLabs-Platform/evidence/
+          retention-days: 14
+          if-no-files-found: warn
